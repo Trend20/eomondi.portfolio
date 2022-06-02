@@ -46,11 +46,6 @@ const LogoContainer = styled.div`
   width: 40%;
 `
 
-const ImageElement = styled.img`
-  max-width: 100%;
-  background: none;
-`
-
 const NavElement = styled.nav`
   display: flex;
   align-items: center;
