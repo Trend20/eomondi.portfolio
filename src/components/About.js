@@ -24,7 +24,7 @@ const About = () =>{
         <Icon><FiTwitter /></Icon>
       </AboutIcons>
       <AboutButton>
-        <Button>Let us Connect!</Button>
+        <Anchor href="#">Let us Connect!</Anchor>
       </AboutButton>
     </AboutContainer>
   )
@@ -89,14 +89,17 @@ const AboutButton = styled.div`
   margin-top: 15px;
 `
 
-const Button = styled.button`
+const Anchor = styled.a`
   margin-top: 20px;
   width: 30%;
   padding: 20px;
   border: 1px solid #cc2121;
   border-radius: 5px;
   outline: none;
-  background: none;
+  background: transparent;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   color: #cc2121;
   font-weight: 500;
   cursor: pointer;
