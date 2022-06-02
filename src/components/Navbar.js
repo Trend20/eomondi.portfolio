@@ -6,7 +6,8 @@ const Navbar = ({about, experience, work, contact}) =>{
   return (
     <HeaderElement>
       <LogoContainer className="logo">
-        <ImageElement src="/img/logo1.png" alt="logo" />
+        {/* <ImageElement src="/img/logo1.png" alt="logo" /> */}
+        <h1>Enock</h1>
       </LogoContainer>
       <NavElement>
         <NavUlElements>
@@ -34,7 +35,7 @@ const HeaderElement = styled.header`
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
+  padding: 20px;
   color: #8892b0;
 `
 
