@@ -91,8 +91,4 @@ const Anchor = styled.a`
   width: 80%;
 `
 
-
-
-
-
-export default Navbar
+export default Navbar;

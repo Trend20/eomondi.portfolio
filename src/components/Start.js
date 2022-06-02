@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
-const About = () =>{
+const Start = () =>{
   return (
     <AboutContainer>
       <AboutHeading>
@@ -24,7 +24,7 @@ const About = () =>{
         <Icon><FiTwitter /></Icon>
       </AboutIcons>
       <AboutButton>
-        <Anchor href="#">Let us Connect!</Anchor>
+        <AboutAnchor href="#">Let us Connect!</AboutAnchor>
       </AboutButton>
     </AboutContainer>
   )
@@ -89,7 +89,7 @@ const AboutButton = styled.div`
   margin-top: 15px;
 `
 
-const Anchor = styled.a`
+const AboutAnchor = styled.a`
   margin-top: 20px;
   width: 30%;
   padding: 20px;
@@ -105,6 +105,4 @@ const Anchor = styled.a`
   cursor: pointer;
 `
 
-
-
-export default About;
+export default Start;
