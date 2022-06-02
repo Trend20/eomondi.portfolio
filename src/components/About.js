@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const About = () =>{
   return (
@@ -12,10 +13,16 @@ const About = () =>{
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-          I am a Frontend Web Developer based in Nairobi who converts complex UI designs to beautiful websites while helping Professionals and Businesses to build their websites using technologies like HTML&CSS, 
+          I'm a Frontend Web Developer based in Nairobi who converts complex UI designs to beautiful websites 
+          while helping Professionals and Businesses to build their websites using technologies like HTML&CSS, 
           JavaScript, Angular, React, Nodejs, Express, and MongoDB.
         </DescriptionContent>
       </AboutDescription>
+      <AboutIcons>
+        <Icon><FiGithub /></Icon>
+        <Icon><FiLinkedin /></Icon>
+        <Icon><FiTwitter /></Icon>
+      </AboutIcons>
       <AboutButton>
         <Button>Let us Connect!</Button>
       </AboutButton>
@@ -58,6 +65,23 @@ const DescriptionContent = styled.p`
   display: flex;
   font-size: 0.9rem;
   line-height: 1.6;
+`
+
+const AboutIcons = styled.div`
+  margin-top: 10px;
+  display: flex;
+  width: 20%;
+  align-items: center;
+`
+
+const Icon = styled.i`
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover{
+    color: #cc2121;
+  }
 `
 
 const AboutButton = styled.div`
