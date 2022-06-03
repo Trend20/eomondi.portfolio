@@ -107,14 +107,16 @@ const List = styled.li`
 const AboutImage = styled.div`
   display: flex;
   width: 40%;
+  justify-content: center;
+  margin-top: 50px;
 `
 
 const Img = styled.img`
-  border: 1px solid #fff;
-  max-width: 100%;
+  width: 100%;
   padding: 20px;
-  border-radius: 10px;
-  margin: 30px;
+  border-radius: 50%;
+  margin: 70px 50px;
+  height: 100%;
 `
 
 export default AboutMe;
