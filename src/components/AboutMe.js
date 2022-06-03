@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const technologies = ['Javascript', 'React', 'Angular', 'Node.js', 'MongoDB'];
+const technologies = ['Javascript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git'];
 
 const AboutMe = () =>{
   return(
