@@ -253,6 +253,7 @@ margin: auto;
 background: transparent;
 outline: none;
 border: 1px solid #cc2121;
+border-radius: 5px;
 
 a{
   display: flex;

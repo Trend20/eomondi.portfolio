@@ -1,5 +1,6 @@
 import './App.css';
 import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Navbar from './components/Navbar'
 import Start from './components/Start'
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <Experience />
       <Work />
+      <Contact />
     </div>
   );
 }
