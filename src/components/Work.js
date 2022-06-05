@@ -254,11 +254,6 @@ background: transparent;
 outline: none;
 border: 1px solid #cc2121;
 
-// &:hover{
-//   background: #cc2121;
-//   opacity: 0.3;
-// }
-
 a{
   display: flex;
   text-decoration: none;
