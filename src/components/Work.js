@@ -39,6 +39,70 @@ const Work = () =>{
           </ProjectLinks>
         </ProjectDescription>
       </ProjectsWrapper>
+
+      {/* second project */}
+
+      <SecondProjectsWrapper>
+        <SecondProjectDescription>
+          <h5>Featured Project</h5>
+          <h3>Family Doctor</h3>
+          <p>
+            Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
+            the doctors and they can also be able to call for emergencey services
+          </p>
+          <Stack style={{ justifyContent: 'flex-start' }}>
+            <li>ExpressJS</li>
+            <li>React</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+          </Stack>
+          <ProjectLinks style={{ justifyContent: 'flex-start' }}>
+            <a href="#">
+              <FiGithub />
+            </a>
+            <a href="#">
+              <FiExternalLink />
+            </a>
+          </ProjectLinks>
+        </SecondProjectDescription>
+        <ProjectImage>
+          <a href="#">
+            <img src="/img/project.png" alt="project1" />
+          </a>
+        </ProjectImage>
+      </SecondProjectsWrapper>
+
+
+{/* third project */}
+      <ProjectsWrapper>
+        <ProjectImage>
+          <a href="#">
+            <img src="/img/project.png" alt="project1" />
+          </a>
+        </ProjectImage>
+        <ProjectDescription>
+          <h5>Featured Project</h5>
+          <h3>Family Doctor</h3>
+          <p>
+            Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
+            the doctors and they can also be able to call for emergencey services
+          </p>
+          <Stack>
+            <li>ExpressJS</li>
+            <li>React</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+          </Stack>
+          <ProjectLinks>
+            <a href="#">
+              <FiGithub />
+            </a>
+            <a href="#">
+              <FiExternalLink />
+            </a>
+          </ProjectLinks>
+        </ProjectDescription>
+      </ProjectsWrapper>
     </WorkContainer>
   )
 }
@@ -68,6 +132,7 @@ const ProjectsWrapper = styled.div`
 display: flex;
 position: relative;
 margin: auto;
+padding: 50px 0px;
 `
 
 const ProjectImage = styled.div`
@@ -137,6 +202,41 @@ a{
 }
 &:hover{
   color: #cc2121;
+}
+`
+
+const SecondProjectsWrapper = styled.div`
+display: flex;
+position: relative;
+margin: auto;
+padding: 50px 0px;
+`
+
+const SecondProjectDescription = styled.div`
+display: flex;
+flex-direction: column;
+width: auto;
+
+h5{
+  color: #cc2121;
+  font-size: 0.7rem;
+  padding: 10px 0px;
+}
+
+h3{
+  color: #cbd2e6;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+p{
+  font-size: 0.7rem;
+  background: #112240;
+  padding: 20px;
+  z-index: 10;
+  text-align: justify;
+  text-indent: 20px;
+  width: 90%;
 }
 `
 
