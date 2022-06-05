@@ -24,10 +24,10 @@ const Work = () =>{
             the doctors and they can also be able to call for emergencey services
           </p>
           <Stack>
+            <li>MongoDB</li>
             <li>ExpressJS</li>
             <li>React</li>
             <li>NodeJS</li>
-            <li>MongoDB</li>
           </Stack>
           <ProjectLinks>
             <a href="#">
@@ -51,10 +51,10 @@ const Work = () =>{
             the doctors and they can also be able to call for emergencey services
           </p>
           <Stack style={{ justifyContent: 'flex-start' }}>
+            <li>MongoDB</li>
             <li>ExpressJS</li>
             <li>React</li>
             <li>NodeJS</li>
-            <li>MongoDB</li>
           </Stack>
           <ProjectLinks style={{ justifyContent: 'flex-start' }}>
             <a href="#">
@@ -88,10 +88,10 @@ const Work = () =>{
             the doctors and they can also be able to call for emergencey services
           </p>
           <Stack>
+            <li>MongoDB</li>
             <li>ExpressJS</li>
             <li>React</li>
             <li>NodeJS</li>
-            <li>MongoDB</li>
           </Stack>
           <ProjectLinks>
             <a href="#">
@@ -103,6 +103,10 @@ const Work = () =>{
           </ProjectLinks>
         </ProjectDescription>
       </ProjectsWrapper>
+
+      <ShowMoreButton>
+        <a href="#">Show More</a>
+      </ShowMoreButton>
     </WorkContainer>
   )
 }
@@ -237,6 +241,32 @@ p{
   text-align: justify;
   text-indent: 20px;
   width: 90%;
+}
+`
+
+const ShowMoreButton = styled.button`
+display: flex;
+width: 20%;
+justify-content: center;
+align-items: center;
+margin: auto;
+background: transparent;
+outline: none;
+border: 1px solid #cc2121;
+
+// &:hover{
+//   background: #cc2121;
+//   opacity: 0.3;
+// }
+
+a{
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #cc2121
 }
 `
 
