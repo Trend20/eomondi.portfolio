@@ -266,7 +266,8 @@ a{
   justify-content: center;
   align-items: center;
   padding: 15px;
-  color: #cc2121
+  color: #cc2121;
+  font-weight: 500;
 }
 `
 
