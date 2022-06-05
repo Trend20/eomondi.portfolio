@@ -28,6 +28,7 @@ width: 100%;
 justify-content: center;
 align-items: center;
 padding: 100px;
+color: #8892b0;
 
 h3{
 display: flex;

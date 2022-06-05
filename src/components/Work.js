@@ -116,6 +116,7 @@ display: flex;
 flex-direction: column;
 padding: 100px;
 width: 100%;
+color: #8892b0;
 `
 
 const H3 = styled.h3`
@@ -203,9 +204,11 @@ align-items: center;
 
 a{
   padding: 10px;
-}
-&:hover{
-  color: #cc2121;
+  color: #8892b0;
+
+  &:hover{
+    color: #cc2121;
+  }
 }
 `
 

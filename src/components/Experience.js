@@ -99,6 +99,7 @@ const ExperienceContainer = styled.div`
   flex-direction: column;
   padding: 100px;
   width: 100%;
+  color: #8892b0;
 `
 
 const H3 = styled.h3`
