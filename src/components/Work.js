@@ -268,6 +268,10 @@ a{
   color: #cc2121;
   font-weight: 500;
 }
+
+&:hover{
+  background: rgb(39, 39, 66);
+}
 `
 
 export default Work;

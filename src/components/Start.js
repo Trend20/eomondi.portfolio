@@ -104,6 +104,10 @@ const AboutAnchor = styled.a`
   color: #cc2121;
   font-weight: 500;
   cursor: pointer;
+
+  &:hover{
+    background: rgb(39, 39, 66);
+  }
 `
 
 export default Start;

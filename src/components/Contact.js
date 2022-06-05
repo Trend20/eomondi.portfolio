@@ -79,6 +79,10 @@ button{
   font-weight: 500;
   margin: 50px 0px;
   cursor: pointer;
+
+  &:hover{
+    background: rgb(39, 39, 66);
+  }
 }
 `
 
