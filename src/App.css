@@ -28,20 +28,25 @@
   width: 30%;
   margin: 0;
   padding: 0;
+  border: none !important;
 }
 
 .react-tabs__tab {
   height: auto;
   list-style: none;
-  padding: 12px 6px;
+  padding: 20px 6px;
   cursor: pointer;
   color: #bbb;
+  border: none !important;
+  font-size: 0.8rem;
+  margin-top: 20px;
+  background: transparent !important;
 }
 
 .react-tabs__tab--selected {
-  border-color: #1c1d1f;
-  border-left: 4px solid #cc2121;
+  border-left: 4px solid #cc2121 !important;
   background: transparent;
+  color: #cc2121 !important;
 }
 
 .react-tabs__tab-panel {
