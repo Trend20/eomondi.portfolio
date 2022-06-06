@@ -47,6 +47,7 @@ const AboutWrapper = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: flex-start;
+  color: #8892b0;
 `
 
 const Description = styled.div`

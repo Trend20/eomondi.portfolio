@@ -35,6 +35,7 @@ const AboutContainer = styled.div`
   flex-direction: column;
   width: 100%;
   padding: 50px 100px; 
+  color: #8892b0;
 `
 
 const AboutHeading = styled.div`
@@ -103,6 +104,10 @@ const AboutAnchor = styled.a`
   color: #cc2121;
   font-weight: 500;
   cursor: pointer;
+
+  &:hover{
+    background: rgb(39, 39, 66);
+  }
 `
 
 export default Start;

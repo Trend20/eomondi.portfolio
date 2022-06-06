@@ -89,6 +89,10 @@ const Anchor = styled.a`
   text-decoration: none;
   color: #cc2121;
   width: 80%;
+
+  &:hover{
+    background: rgb(39, 39, 66);
+  }
 `
 
 export default Navbar;

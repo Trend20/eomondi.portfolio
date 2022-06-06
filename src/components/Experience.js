@@ -2,6 +2,7 @@ import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
+import '../App.css';
 
 const Experience = () =>{
   return(
@@ -14,11 +15,16 @@ const Experience = () =>{
         <PreviousCompanies className="previous-companies">
         <Tabs>
           <TabList>
-            <Tab>Mortgage Ezy</Tab>
-            <Tab>Jag Technology LLC</Tab>
-            <Tab>Outgrowify</Tab>
+            <Tab>
+              Mortgage Ezy
+            </Tab>
+            <Tab style={{background: 'transparent'}}>
+              Jag Technology LLC
+            </Tab>
+            <Tab style={{background: 'transparent'}}>
+              Outgrowify
+            </Tab>
           </TabList>
-
           <TabPanel>
             <TabContentContainer>
               <Tittle>Frontend Engineer <TittleAnchor href="#">@ Mortgage Ezy</TittleAnchor></Tittle>
@@ -99,6 +105,7 @@ const ExperienceContainer = styled.div`
   flex-direction: column;
   padding: 100px;
   width: 100%;
+  color: #8892b0;
 `
 
 const H3 = styled.h3`
@@ -155,6 +162,8 @@ const JobDetails = styled.p`
  padding-top: 10px;
  width: 100%;
  font-size: 0.8rem;
+ text-align: justify;
+ text-indent: 0px;
 `
 
 

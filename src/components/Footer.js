@@ -15,6 +15,7 @@ justify-content: center;
 align-items: center;
 width: 100%;
 padding: 20px 0px;
+color: #8892b0;
 
 p{
   font-size: 0.7rem;
