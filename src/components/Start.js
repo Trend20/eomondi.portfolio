@@ -24,7 +24,7 @@ const Start = () =>{
         <Icon><FiTwitter /></Icon>
       </AboutIcons>
       <AboutButton>
-        <AboutAnchor href="#">Let us Connect!</AboutAnchor>
+        <AboutAnchor href="mailto:enockomondi305@gmail.com">Let us Connect!</AboutAnchor>
       </AboutButton>
     </AboutContainer>
   )
@@ -92,7 +92,6 @@ const AboutButton = styled.div`
 
 const AboutAnchor = styled.a`
   margin-top: 20px;
-  width: 30%;
   padding: 20px;
   border: 1px solid #cc2121;
   border-radius: 5px;

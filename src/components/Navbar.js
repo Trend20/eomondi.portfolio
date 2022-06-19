@@ -23,7 +23,7 @@ const Navbar = ({about, experience, work, contact}) =>{
           <ListElement>
             <Link to='contact'><Span>04.</Span>{contact}</Link>
           </ListElement>
-          <ListElement><Anchor href="#">Resume</Anchor></ListElement>
+          <ListElement><Anchor href="https://drive.google.com/file/d/15JaZmoRjmYKfuG8caLkDVsEquy0fuoST/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
       </NavElement>
     </HeaderElement>
