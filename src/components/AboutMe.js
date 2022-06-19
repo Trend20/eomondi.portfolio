@@ -5,7 +5,7 @@ const technologies = ['Javascript', 'React', 'Angular', 'Node.js', 'MongoDB', 'B
 
 const AboutMe = () =>{
   return(
-    <AboutWrapper className='about-me'>
+    <AboutWrapper className='about-me' id='about' data-aos="fade-down" data-aos-duration="2000">
         <Description className="description">
           <H3>
             <AboutSpan>01.</AboutSpan>

@@ -12,16 +12,16 @@ const Navbar = ({about, experience, work, contact}) =>{
       <NavElement>
         <NavUlElements>
           <ListElement>
-            <Link><Span>01.</Span>{about}</Link>
+            <Link to='about'><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link><Span>02.</Span>{experience}</Link>
+            <Link to='experience'><Span>02.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
-            <Link><Span>03.</Span>{work}</Link>
+            <Link to='work'><Span>03.</Span>{work}</Link>
           </ListElement>
           <ListElement>
-            <Link><Span>04.</Span>{contact}</Link>
+            <Link to='contact'><Span>04.</Span>{contact}</Link>
           </ListElement>
           <ListElement><Anchor href="#">Resume</Anchor></ListElement>
         </NavUlElements>

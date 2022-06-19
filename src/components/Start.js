@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Start = () =>{
   return (
-    <AboutContainer>
+    <AboutContainer id='intro' data-aos="fade-down" data-aos-duration="2000">
       <AboutHeading>
         <H1>
           <Span>Enock Omondi</Span>

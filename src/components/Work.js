@@ -4,13 +4,13 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 const Work = () =>{
   return(
-    <WorkContainer className='work'>
+    <WorkContainer className='work' id='work' data-aos="fade-down" data-aos-duration="2000">
       <H3>
           <WorkSpan>03.</WorkSpan>
           Some Things I’ve Built
         </H3>
 
-      <ProjectsWrapper>
+      <ProjectsWrapper data-aos="fade-down" data-aos-duration="2000">
         <ProjectImage>
           <a href="#">
             <img src="/img/project.png" alt="project1" />
@@ -42,7 +42,7 @@ const Work = () =>{
 
       {/* second project */}
 
-      <SecondProjectsWrapper>
+      <SecondProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
         <SecondProjectDescription>
           <h5>Featured Project</h5>
           <h3>Family Doctor</h3>
@@ -74,7 +74,7 @@ const Work = () =>{
 
 
 {/* third project */}
-      <ProjectsWrapper>
+      <ProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
         <ProjectImage>
           <a href="#">
             <img src="/img/project.png" alt="project1" />
