@@ -6,7 +6,7 @@ import '../App.css';
 
 const Experience = () =>{
   return(
-    <ExperienceContainer className='experience'>
+    <ExperienceContainer className='experience' id='experience'>
         <H3>
           <ExperienceSpan>02.</ExperienceSpan>
           Where I've Worked

@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const Footer = () =>{
   return (
     <FooterContainer className='footer'>
-      <p>Built Enock Omondi ©2022 </p>
+      <p>© Copyright 2022. All right reserved </p>
     </FooterContainer>
   )
 }

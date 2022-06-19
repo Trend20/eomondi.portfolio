@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Contact = () =>{
   return(
-    <ContactContainer className='contact'>
+    <ContactContainer className='contact' id='contact' data-aos="fade-down" data-aos-duration="2000">
       <h3>
         <span>04.</span>
         What's Next?
@@ -15,7 +15,7 @@ const Contact = () =>{
           Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have
           a question or just want to say hi, I’ll try my best to get back to you!
         </p>
-        <button>Say Hello</button>
+        <a href="mailto:enockomondi305@gmail.com">Say Hello</a>
       </ContactDetails>
     </ContactContainer>
   )
@@ -64,7 +64,7 @@ p{
   font-size: 0.9rem;
 }
 
-button{
+a{
   display: flex;
   width: 20%;
   justify-content: center;
@@ -73,6 +73,7 @@ button{
   background: transparent;
   outline: none;
   border: 1px solid #cc2121;
+  text-decoration: none;
   border-radius: 5px;
   padding: 15px;
   color: #cc2121;
