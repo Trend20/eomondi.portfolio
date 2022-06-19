@@ -15,10 +15,10 @@ const Experience = () =>{
         <PreviousCompanies className="previous-companies">
         <Tabs>
           <TabList>
-            <Tab>
+            <Tab style={{ borderBottomWidth: 0 }}>
               Mortgage Ezy
             </Tab>
-            <Tab style={{background: 'transparent'}}>
+            <Tab>
               Jag Technology LLC
             </Tab>
             <Tab style={{background: 'transparent'}}>
