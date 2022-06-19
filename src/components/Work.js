@@ -45,10 +45,10 @@ const Work = () =>{
       <SecondProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
         <SecondProjectDescription>
           <h5>Featured Project</h5>
-          <h3>Family Doctor</h3>
+          <h3>CoursEfree</h3>
           <p>
-            Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
-            the doctors and they can also be able to call for emergencey services
+          CoursEfree is a fiction EdTech web application providing a learning platform where
+          students can log in and get access to different courses for free.  
           </p>
           <Stack style={{ justifyContent: 'flex-start' }}>
             <li>MongoDB</li>
@@ -67,7 +67,7 @@ const Work = () =>{
         </SecondProjectDescription>
         <ProjectImage>
           <a href="#">
-            <img src="/img/project.png" alt="project1" />
+            <img src="/img/coursefree.png" alt="project1" />
           </a>
         </ProjectImage>
       </SecondProjectsWrapper>
