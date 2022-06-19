@@ -12,7 +12,7 @@ const Work = () =>{
 
       <ProjectsWrapper data-aos="fade-down" data-aos-duration="2000">
         <ProjectImage>
-          <a href="#">
+          <a href="https://familydoctor.netlify.app/" target="_blank">
             <img src="/img/project.png" alt="project1" />
           </a>
         </ProjectImage>
@@ -21,7 +21,7 @@ const Work = () =>{
           <h3>Family Doctor</h3>
           <p>
             Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
-            the doctors and they can also be able to call for emergencey services
+            the doctors and they can also be able to call for emergency services
           </p>
           <Stack>
             <li>MongoDB</li>
@@ -30,10 +30,10 @@ const Work = () =>{
             <li>NodeJS</li>
           </Stack>
           <ProjectLinks>
-            <a href="#">
+            <a href="https://github.com/Trend20/Family-Doctor" target="_blank">
               <FiGithub />
             </a>
-            <a href="#">
+            <a href="https://familydoctor.netlify.app/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
@@ -57,16 +57,16 @@ const Work = () =>{
             <li>NodeJS</li>
           </Stack>
           <ProjectLinks style={{ justifyContent: 'flex-start' }}>
-            <a href="#">
+            <a href="https://github.com/Trend20/CoursEfree" target="_blank">
               <FiGithub />
             </a>
-            <a href="#">
+            <a href="https://masomo.netlify.app/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
         </SecondProjectDescription>
         <ProjectImage>
-          <a href="#">
+          <a href="https://masomo.netlify.app/" target="_blank">
             <img src="/img/coursefree.png" alt="project1" />
           </a>
         </ProjectImage>
@@ -76,7 +76,7 @@ const Work = () =>{
 {/* third project */}
       <ProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
         <ProjectImage>
-          <a href="#">
+          <a href="https://myremind.netlify.app/" target="_blank">
             <img src="/img/project.png" alt="project1" />
           </a>
         </ProjectImage>
@@ -94,10 +94,10 @@ const Work = () =>{
             <li>NodeJS</li>
           </Stack>
           <ProjectLinks>
-            <a href="#">
+            <a href="https://github.com/Trend20/excercise-tracker" target="_blank">
               <FiGithub />
             </a>
-            <a href="#">
+            <a href="https://myremind.netlify.app/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
@@ -105,7 +105,7 @@ const Work = () =>{
       </ProjectsWrapper>
 
       <ShowMoreButton>
-        <a href="#">Show More</a>
+        <a href="https://github.com/Trend20" target="_blank">Show More</a>
       </ShowMoreButton>
     </WorkContainer>
   )
