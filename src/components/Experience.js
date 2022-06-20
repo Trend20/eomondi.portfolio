@@ -106,6 +106,14 @@ const ExperienceContainer = styled.div`
   padding: 100px;
   width: 100%;
   color: #8892b0;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 20px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const H3 = styled.h3`
@@ -114,6 +122,15 @@ const H3 = styled.h3`
   color:  #cbd2e6;
   font-size: 1.5rem;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const ExperienceSpan = styled.span`
@@ -121,28 +138,68 @@ const ExperienceSpan = styled.span`
   margin-right: 20px;
   color: #cc2121;
   font-size: 1rem;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const PreviousCompanies = styled.div`
   display: flex;
   width: 100%;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const TabContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Tittle = styled.h3`
   display: flex;
   font-size: 1rem;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    font-size: 0.8rem;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const TittleAnchor = styled.a`
   color: #cc2121;
   margin-left: 5px;
   text-decoration: none;
+
+  @media screen and (max-width: 768px){
+    margin-left: 3px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const JobDuration = styled.p`
@@ -150,6 +207,15 @@ const JobDuration = styled.p`
   font-size: 0.8rem;
   line-height: 12px;
   margin-top: 20px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const JobDetails = styled.p`
@@ -164,6 +230,15 @@ const JobDetails = styled.p`
  font-size: 0.8rem;
  text-align: justify;
  text-indent: 0px;
+
+ @media screen and (max-width: 768px){
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+@media (min-width: 1024px) {
+  width: 100%;
+}
 `
 
 
