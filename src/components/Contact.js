@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Contact = () =>{
   return(
-    <ContactContainer className='contact' id='contact' data-aos="fade-down" data-aos-duration="2000">
+    <ContactContainer className='contact' id='contact'>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
       <h3>
         <span>04.</span>
         What's Next?

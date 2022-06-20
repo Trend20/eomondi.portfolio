@@ -30,6 +30,7 @@
 .toggle i {
 	font-size: 2rem;
 }
+
 @media screen and (max-width: 768px) {
 
   .nav-options {

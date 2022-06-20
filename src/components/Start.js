@@ -4,7 +4,8 @@ import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Start = () =>{
   return (
-    <AboutContainer id='intro' data-aos="fade-down" data-aos-duration="2000">
+    <AboutContainer id='intro'>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
       <AboutHeading>
         <H1>
           <Span>Enock Omondi</Span>
@@ -177,7 +178,6 @@ const AboutAnchor = styled.a`
 
   @media screen and (max-width: 768px){
     width: 100%;
-    font-size: 0.9rem !important;
   }
   @media (min-width: 1024px) {
     width: 100%;

@@ -4,13 +4,15 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
 const Work = () =>{
   return(
-    <WorkContainer className='work' id='work' data-aos="fade-down" data-aos-duration="2000">
+    <WorkContainer className='work' id='work'>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
       <H3>
           <WorkSpan>03.</WorkSpan>
           Some Things I’ve Built
         </H3>
 
-      <ProjectsWrapper data-aos="fade-down" data-aos-duration="2000">
+      <ProjectsWrapper>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
         <ProjectImage>
           <a href="https://familydoctor.netlify.app/" target="_blank">
             <img src="/img/project.png" alt="project1" />
@@ -42,7 +44,8 @@ const Work = () =>{
 
       {/* second project */}
 
-      <SecondProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
+      <SecondProjectsWrapper>
+      {/* data-aos="fade-up" data-aos-duration="2000" */}
         <SecondProjectDescription>
           <h5>Featured Project</h5>
           <h3>CoursEfree</h3>
@@ -74,7 +77,8 @@ const Work = () =>{
 
 
 {/* third project */}
-      <ProjectsWrapper data-aos="fade-up" data-aos-duration="2000">
+      <ProjectsWrapper>
+      {/* data-aos="fade-up" data-aos-duration="2000" */}
         <ProjectImage>
           <a href="https://myremind.netlify.app/" target="_blank">
             <img src="/img/project.png" alt="project1" />
@@ -117,6 +121,10 @@ flex-direction: column;
 padding: 100px;
 width: 100%;
 color: #8892b0;
+
+@media screen and (max-width: 768px){
+  padding: 20px;
+}
 `
 
 const H3 = styled.h3`
@@ -125,12 +133,21 @@ padding: 20px 0px;
 color:  #cbd2e6;
 font-size: 1.5rem;
 align-items: center;
+
+@media screen and (max-width: 768px){
+  padding: 0px;
+  width: 100%;
+}
 `
 const WorkSpan = styled.span`
 display: flex;
 margin-right: 20px;
 color: #cc2121;
 font-size: 1rem;
+
+@media screen and (max-width: 768px){
+  margin-right: 0px;
+}
 ` 
 
 const ProjectsWrapper = styled.div`
@@ -138,6 +155,12 @@ display: flex;
 position: relative;
 margin: auto;
 padding: 50px 0px;
+
+@media screen and (max-width: 768px){
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 `
 
 const ProjectImage = styled.div`
@@ -183,6 +206,37 @@ p{
   justify-content: flex-end;
   margin-left: 38px;
 }
+
+@media screen and (max-width: 768px){
+display: flex;
+flex-direction: column;
+width: auto;
+text-align: right;
+
+h5{
+  color: #cc2121;
+  font-size: 0.7rem;
+  padding: 10px 0px;
+}
+
+h3{
+  color: #cbd2e6;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+p{
+  font-size: 0.7rem;
+  background: #112240;
+  padding: 20px;
+  z-index: 10;
+  text-align: justify;
+  text-indent: 20px;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+}
 `
 const Stack = styled.ul`
 display: flex;
@@ -217,6 +271,12 @@ display: flex;
 position: relative;
 margin: auto;
 padding: 50px 0px;
+
+@media screen and (max-width: 768px){
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
 `
 
 const SecondProjectDescription = styled.div`
@@ -245,6 +305,34 @@ p{
   text-indent: 20px;
   width: 90%;
 }
+@media screen and (max-width: 768px){
+display: flex;
+flex-direction: column;
+width: auto;
+
+h5{
+  color: #cc2121;
+  font-size: 0.7rem;
+  padding: 10px 0px;
+}
+
+h3{
+  color: #cbd2e6;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+p{
+  font-size: 0.7rem;
+  background: #112240;
+  padding: 20px;
+  z-index: 10;
+  text-align: justify;
+  text-indent: 20px;
+  width: 100%;
+}
+}
+  
 `
 
 const ShowMoreButton = styled.button`
@@ -271,6 +359,10 @@ a{
 
 &:hover{
   background: rgb(39, 39, 66);
+}
+
+@media screen and (max-width: 768px){
+width: 50%;
 }
 `
 
