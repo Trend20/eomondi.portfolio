@@ -36,6 +36,14 @@ const AboutContainer = styled.div`
   width: 100%;
   padding: 50px 100px; 
   color: #8892b0;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 50px 20px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutHeading = styled.div`
@@ -43,29 +51,66 @@ const AboutHeading = styled.div`
   flex-direction: column;
   width: 80%;
 
+  @media screen and (max-width: 768px){
+    width: 100%;
+    display: flex;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const H1 = styled.h1`
   display: flex;
   font-size: 3.5rem;
   flex-direction: column;
+
+  @media screen and (max-width: 768px){
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Span = styled.span`
   display: flex;
   color: #cbd2e6;
+
+  @media screen and (max-width: 768px){
+    display: flex;
+    color: #cbd2e6;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutDescription = styled.div`
   display: flex;
   width: 80%;
   margin-top: 10px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const DescriptionContent = styled.p`
   display: flex;
   font-size: 0.9rem;
   line-height: 1.6;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutIcons = styled.div`
@@ -73,6 +118,13 @@ const AboutIcons = styled.div`
   display: flex;
   width: 20%;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Icon = styled.i`
@@ -83,11 +135,26 @@ const Icon = styled.i`
   &:hover{
     color: #cc2121;
   }
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutButton = styled.div`
   display: flex;
   margin-top: 15px;
+
+  @media screen and (max-width: 768px){
+    width: 80%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutAnchor = styled.a`
@@ -106,6 +173,14 @@ const AboutAnchor = styled.a`
 
   &:hover{
     background: rgb(39, 39, 66);
+  }
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    font-size: 0.9rem !important;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
   }
 `
 
