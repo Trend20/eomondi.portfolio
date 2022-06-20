@@ -10,7 +10,7 @@ import Start from './components/Start'
 import Work from './components/Work';
 function App() {
 
-  AOS.init()
+  // AOS.init()
   
   return (
     <div className="app">

@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 const Contact = () =>{
   return(
-    <ContactContainer className='contact' id='contact' data-aos="fade-down" data-aos-duration="2000">
+    <ContactContainer className='contact' id='contact'>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
       <h3>
         <span>04.</span>
         What's Next?
@@ -44,6 +45,18 @@ margin-right: 20px;
 color: #cc2121;
 font-size: 1rem;
 }
+
+@media screen and (max-width: 768px){
+padding: 20px;
+
+h3{
+font-size: 1rem;
+}
+
+span{
+font-size: 1rem;
+}
+}
 `
 const ContactDetails = styled.div`
 display: flex;
@@ -80,6 +93,28 @@ a{
   font-weight: 500;
   margin: 50px 0px;
   cursor: pointer;
+
+  &:hover{
+    background: rgb(39, 39, 66);
+  }
+}
+
+@media screen and (max-width: 768px){
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+
+p{
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+a{
+  width: 50%;
 
   &:hover{
     background: rgb(39, 39, 66);

@@ -1,31 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import { AiOutlineClose } from 'react-icons/ai';
+import { FaBars } from 'react-icons/fa';
 
 const Navbar = ({about, experience, work, contact}) =>{
+  const [click, setClick] = useState(false);
+	const handleClick = () => setClick(!click);
+	const closeMobileMenu = () => setClick(false);
+
   return (
     <HeaderElement>
       <LogoContainer className="logo">
         {/* <ImageElement src="/img/logo1.png" alt="logo" /> */}
         <h1>Enock</h1>
       </LogoContainer>
-      <NavElement>
+      <NavElement className={click ? 'nav-options active' : 'nav-options'}>
         <NavUlElements>
           <ListElement>
-            <Link to='about'><Span>01.</Span>{about}</Link>
+            <Link to='about' spy={true} smooth={true} onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link to='experience'><Span>02.</Span>{experience}</Link>
+            <Link to='experience' spy={true} smooth={true} onClick={closeMobileMenu}><Span>02.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
-            <Link to='work'><Span>03.</Span>{work}</Link>
+            <Link to='work' spy={true} smooth={true} onClick={closeMobileMenu}><Span>03.</Span>{work}</Link>
           </ListElement>
           <ListElement>
-            <Link to='contact'><Span>04.</Span>{contact}</Link>
+            <Link to='contact' spy={true} smooth={true} onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
           </ListElement>
           <ListElement><Anchor href="https://drive.google.com/file/d/15JaZmoRjmYKfuG8caLkDVsEquy0fuoST/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
       </NavElement>
+      <div className="toggle mobile-menu" onClick={handleClick}>
+					{click ? <AiOutlineClose className="menu-icon" /> : <FaBars className="menu-icon" />}
+				</div>
     </HeaderElement>
   )
 }
@@ -37,6 +46,13 @@ const HeaderElement = styled.header`
   align-items: center;
   padding: 20px;
   color: #8892b0;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const LogoContainer = styled.div`
@@ -44,6 +60,13 @@ const LogoContainer = styled.div`
   justify-content: flex-start;
   align-items: center;
   width: 40%;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const NavElement = styled.nav`
@@ -51,6 +74,13 @@ const NavElement = styled.nav`
   align-items: center;
   width: 60%;
   justify-content: center;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const NavUlElements = styled.ul`
@@ -58,6 +88,15 @@ const NavUlElements = styled.ul`
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @media screen and (max-width: 768px){
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+      width: 100%;
+    }
 `
 
 const ListElement = styled.li`
@@ -72,10 +111,32 @@ const ListElement = styled.li`
   &:hover{
     color: #cc2121;
   }
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 30%;
+    cursor: pointer;
+
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 const Span = styled.span`
   color: #cc2121;
   margin-right: 5px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Anchor = styled.a`
@@ -92,6 +153,13 @@ const Anchor = styled.a`
 
   &:hover{
     background: rgb(39, 39, 66);
+  }
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
   }
 `
 
