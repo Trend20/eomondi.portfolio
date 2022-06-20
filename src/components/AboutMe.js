@@ -5,11 +5,12 @@ const technologies = ['Javascript', 'React', 'Angular', 'Node.js', 'MongoDB', 'B
 
 const AboutMe = () =>{
   return(
-    <AboutWrapper className='about-me' id='about' data-aos="fade-down" data-aos-duration="2000">
+    <AboutWrapper className='about-me' id='about'>
+      {/* data-aos="fade-down" data-aos-duration="2000" */}
         <Description className="description">
           <H3>
             <AboutSpan>01.</AboutSpan>
-            About Me
+            <span>About Me</span>
           </H3>
           <AboutMeContent className="contents">
           <ContentParagraph>
@@ -48,12 +49,29 @@ const AboutWrapper = styled.div`
   justify-content: space-between;
   align-items: flex-start;
   color: #8892b0;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Description = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const H3 = styled.h3`
@@ -62,6 +80,15 @@ const H3 = styled.h3`
   color:  #cbd2e6;
   font-size: 1.5rem;
   align-items: center;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutSpan = styled.span`
@@ -69,12 +96,27 @@ const AboutSpan = styled.span`
   margin-right: 20px;
   color: #cc2121;
   font-size: 1rem;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin-right: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutMeContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const ContentParagraph = styled.p`
@@ -83,12 +125,26 @@ const ContentParagraph = styled.p`
   width: 100%;
   line-height: 1.6;
   font-size: 0.8rem;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const TechStackContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 30px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const List = styled.li`
@@ -103,6 +159,13 @@ const List = styled.li`
   align-items: center;
   font-size: 0.8rem;
   padding-top: 10px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const AboutImage = styled.div`
@@ -110,6 +173,15 @@ const AboutImage = styled.div`
   width: 40%;
   justify-content: center;
   margin-top: 50px;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 const Img = styled.img`
@@ -118,6 +190,15 @@ const Img = styled.img`
   border-radius: 50%;
   margin: 70px 50px;
   height: 100%;
+
+  @media screen and (max-width: 768px){
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  @media (min-width: 1024px) {
+    width: 100%;
+  }
 `
 
 export default AboutMe;
