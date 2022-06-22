@@ -12,8 +12,7 @@ const Navbar = ({about, experience, work, contact}) =>{
   return (
     <HeaderElement>
       <LogoContainer className="logo">
-        {/* <ImageElement src="/img/logo1.png" alt="logo" /> */}
-        <h1>Enock</h1>
+        <a href="/"><img src="/img/logo.png" alt="logo" /></a>
       </LogoContainer>
       <NavElement className={click ? 'nav-options active' : 'nav-options'}>
         <NavUlElements>
@@ -57,9 +56,13 @@ const HeaderElement = styled.header`
 
 const LogoContainer = styled.div`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 30%;
+
+  img{
+    margin-left: 30px;
+  }
 
   @media screen and (max-width: 768px){
     width: 100%;
