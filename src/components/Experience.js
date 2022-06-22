@@ -9,7 +9,7 @@ const Experience = () =>{
     <ExperienceContainer className='experience' id='experience'>
         <H3>
           <ExperienceSpan>02.</ExperienceSpan>
-          Where I've Worked
+          <span>Where I've Worked</span>
         </H3>
 
         <PreviousCompanies className="previous-companies">
@@ -49,7 +49,7 @@ const Experience = () =>{
             </TabContentContainer>
           </TabPanel>
           <TabPanel>
-          <div>
+          <TabContentContainer>
               <Tittle>Frontend React Developer <TittleAnchor href="#">@ Jag Technology</TittleAnchor></Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
@@ -69,10 +69,10 @@ const Experience = () =>{
                   the application and reducing the load time of the site by 50%.
                 </JobDetails>
               </div>
-            </div>
+            </TabContentContainer>
           </TabPanel>
           <TabPanel>
-          <div>
+          <TabContentContainer>
               <Tittle>Frontend Developer Intern <TittleAnchor href="#">@ Outgrowify</TittleAnchor></Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
@@ -92,7 +92,7 @@ const Experience = () =>{
                   the application and reducing the load time of the site by 50%.
                 </JobDetails>
               </div>
-            </div>
+            </TabContentContainer>
           </TabPanel>
         </Tabs>
         </PreviousCompanies>
@@ -110,6 +110,7 @@ const ExperienceContainer = styled.div`
   @media screen and (max-width: 768px){
     width: 100%;
     padding: 20px;
+    margin-top: 50px;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -122,11 +123,13 @@ const H3 = styled.h3`
   color:  #cbd2e6;
   font-size: 1.5rem;
   align-items: center;
+  width: 50%;
 
   @media screen and (max-width: 768px){
     width: 100%;
     margin: 0px;
     padding: 0px;
+    display: flex;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -140,8 +143,7 @@ const ExperienceSpan = styled.span`
   font-size: 1rem;
 
   @media screen and (max-width: 768px){
-    width: 100%;
-    margin: 0px;
+    margin-right: 10px;
     padding: 0px;
   }
   @media (min-width: 1024px) {
@@ -152,6 +154,7 @@ const ExperienceSpan = styled.span`
 const PreviousCompanies = styled.div`
   display: flex;
   width: 100%;
+  margin-top: 30px;
 
   @media screen and (max-width: 768px){
     width: 100%;

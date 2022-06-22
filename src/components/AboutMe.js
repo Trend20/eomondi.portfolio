@@ -80,6 +80,7 @@ const H3 = styled.h3`
   color:  #cbd2e6;
   font-size: 1.5rem;
   align-items: center;
+  width: 50%;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -93,13 +94,12 @@ const H3 = styled.h3`
 
 const AboutSpan = styled.span`
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
   color: #cc2121;
   font-size: 1rem;
 
   @media screen and (max-width: 768px){
-    width: 100%;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -175,9 +175,11 @@ const AboutImage = styled.div`
   margin-top: 50px;
 
   @media screen and (max-width: 768px){
-    width: 100%;
     margin-top: 10px;
-    justify-content: flex-start;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -185,16 +187,17 @@ const AboutImage = styled.div`
 `
 
 const Img = styled.img`
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
-  border-radius: 50%;
   margin: 70px 50px;
   height: 100%;
 
   @media screen and (max-width: 768px){
-    width: 100%;
+    max-width: 100%;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
   }
   @media (min-width: 1024px) {
     width: 100%;
