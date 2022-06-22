@@ -175,9 +175,11 @@ const AboutImage = styled.div`
   margin-top: 50px;
 
   @media screen and (max-width: 768px){
-    width: 100%;
     margin-top: 10px;
-    justify-content: flex-start;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
   }
   @media (min-width: 1024px) {
     width: 100%;
@@ -185,16 +187,17 @@ const AboutImage = styled.div`
 `
 
 const Img = styled.img`
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
-  border-radius: 50%;
   margin: 70px 50px;
   height: 100%;
 
   @media screen and (max-width: 768px){
-    width: 100%;
+    max-width: 100%;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    justify-content: center;
   }
   @media (min-width: 1024px) {
     width: 100%;
