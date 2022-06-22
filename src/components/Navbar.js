@@ -29,7 +29,7 @@ const Navbar = ({about, experience, work, contact}) =>{
           <ListElement>
             <Link to='contact' spy={true} smooth={true} onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
           </ListElement>
-          <ListElement><Anchor href="https://drive.google.com/file/d/15JaZmoRjmYKfuG8caLkDVsEquy0fuoST/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
+          <ListElement><Anchor href="https://drive.google.com/file/d/1R6lyD47pE1LyM9V4H41OqgST-xBoy3a8/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
       </NavElement>
       <div className="toggle mobile-menu" onClick={handleClick}>
