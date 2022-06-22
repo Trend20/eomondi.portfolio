@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div className="app">
-      <Navbar about={"About"} experience={"Experiences"} work={"Work"} contact={"Contact"} />
+      <Navbar about={"About"} services={"Services"} experience={"Experiences"} work={"Work"} contact={"Contact"} />
       <Start />
       <AboutMe />
       <Experience />

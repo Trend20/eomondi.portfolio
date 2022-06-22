@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 import { AiOutlineClose } from 'react-icons/ai';
 import { FaBars } from 'react-icons/fa';
 
-const Navbar = ({about, experience, work, contact}) =>{
+const Navbar = ({about, services,  experience, work, contact}) =>{
   const [click, setClick] = useState(false);
 	const handleClick = () => setClick(!click);
 	const closeMobileMenu = () => setClick(false);
@@ -20,13 +20,16 @@ const Navbar = ({about, experience, work, contact}) =>{
             <Link to='about' onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link to='experience' onClick={closeMobileMenu}><Span>02.</Span>{experience}</Link>
+            <Link to='services' onClick={closeMobileMenu}><Span>02.</Span>{services}</Link>
           </ListElement>
           <ListElement>
-            <Link to='work' onClick={closeMobileMenu}><Span>03.</Span>{work}</Link>
+            <Link to='experience' onClick={closeMobileMenu}><Span>03.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
-            <Link to='contact' onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
+            <Link to='work' onClick={closeMobileMenu}><Span>04.</Span>{work}</Link>
+          </ListElement>
+          <ListElement>
+            <Link to='contact' onClick={closeMobileMenu}><Span>05.</Span>{contact}</Link>
           </ListElement>
           <ListElement><Anchor href="https://drive.google.com/file/d/1R6lyD47pE1LyM9V4H41OqgST-xBoy3a8/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
