@@ -80,6 +80,7 @@ const H3 = styled.h3`
   color:  #cbd2e6;
   font-size: 1.5rem;
   align-items: center;
+  width: 50%;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -93,13 +94,12 @@ const H3 = styled.h3`
 
 const AboutSpan = styled.span`
   display: flex;
-  margin-right: 20px;
+  margin-right: 10px;
   color: #cc2121;
   font-size: 1rem;
 
   @media screen and (max-width: 768px){
-    width: 100%;
-    margin-right: 0px;
+    margin-right: 10px;
   }
   @media (min-width: 1024px) {
     width: 100%;
