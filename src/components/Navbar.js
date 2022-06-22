@@ -17,16 +17,16 @@ const Navbar = ({about, experience, work, contact}) =>{
       <NavElement className={click ? 'nav-options active' : 'nav-options'}>
         <NavUlElements>
           <ListElement>
-            <Link to='about' spy={true} smooth={true} onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
+            <Link to='about' onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link to='experience' spy={true} smooth={true} onClick={closeMobileMenu}><Span>02.</Span>{experience}</Link>
+            <Link to='experience' onClick={closeMobileMenu}><Span>02.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
-            <Link to='work' spy={true} smooth={true} onClick={closeMobileMenu}><Span>03.</Span>{work}</Link>
+            <Link to='work' onClick={closeMobileMenu}><Span>03.</Span>{work}</Link>
           </ListElement>
           <ListElement>
-            <Link to='contact' spy={true} smooth={true} onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
+            <Link to='contact' onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
           </ListElement>
           <ListElement><Anchor href="https://drive.google.com/file/d/1R6lyD47pE1LyM9V4H41OqgST-xBoy3a8/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
