@@ -65,7 +65,12 @@ const LogoContainer = styled.div`
   }
 
   @media screen and (max-width: 768px){
-    width: 100%;
+    width: 50%;
+
+
+    img{
+      margin-left: 0px;
+    }
   }
   @media (min-width: 1024px) {
     width: 100%;
