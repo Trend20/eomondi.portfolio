@@ -69,8 +69,9 @@ const Service = styled.div`
   flex-direction: column;
 
   i img{
-  color: #cc2121;
-  max-width: 120%;
+    filter: invert(76%) sepia(30%) saturate(3461%) hue-rotate(321deg)
+    brightness(98%) contrast(91%);
+    max-width: 120%;
   }
 
   h3{
