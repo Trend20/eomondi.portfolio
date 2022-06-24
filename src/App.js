@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar'
 import Start from './components/Start'
 import Work from './components/Work';
+import Services from './components/Services';
 function App() {
 
   // AOS.init()
@@ -17,6 +18,7 @@ function App() {
       <Navbar about={"About"} services={"Services"} experience={"Experiences"} work={"Work"} contact={"Contact"} />
       <Start />
       <AboutMe />
+      <Services />
       <Experience />
       <Work />
       <Contact />
