@@ -123,10 +123,11 @@ const ListElement = styled.li`
   @media screen and (max-width: 768px){
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     font-size: 0.8rem;
     font-weight: 500;
+    padding-top: 20px;
     width: 30%;
     cursor: pointer;
 
