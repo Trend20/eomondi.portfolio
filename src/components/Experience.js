@@ -142,6 +142,11 @@ const PreviousCompanies = styled.div`
   margin-top: 70px;
 
   @media screen and (max-width: 768px){
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: 100%;
+    grid-gap: 20px;
+    margin-top: 30px;
     width: 100%;
   }
   @media (min-width: 1024px) {
@@ -167,7 +172,6 @@ const TabContentContainer = styled.div`
   @media screen and (max-width: 768px){
     width: 100%;
     margin: 0px;
-    padding: 0px;
   }
   @media (min-width: 1024px) {
     
@@ -216,11 +220,10 @@ const JobDetails = styled.p`
  font-size: 0.8rem;
  text-align: justify;
  text-indent: 0px;
+ margin-top: 5px;
 
  @media screen and (max-width: 768px){
   width: 100%;
-  margin: 0px;
-  padding: 0px;
 }
 @media (min-width: 1024px) {
  
