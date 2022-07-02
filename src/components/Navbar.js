@@ -20,9 +20,6 @@ const Navbar = ({about, services,  experience, work, contact}) =>{
             <Link to='about' onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link to='services' onClick={closeMobileMenu}><Span>02.</Span>{services}</Link>
-          </ListElement>
-          <ListElement>
             <Link to='experience' onClick={closeMobileMenu}><Span>03.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
@@ -61,7 +58,7 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 20%;
 
   img{
     margin-left: 30px;
