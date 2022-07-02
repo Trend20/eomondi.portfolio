@@ -57,7 +57,7 @@ const AboutWrapper = styled.div`
     justify-content: center;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+
   }
 `
 
@@ -70,7 +70,7 @@ const Description = styled.div`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+   
   }
 `
 
@@ -88,7 +88,7 @@ const H3 = styled.h3`
     display: flex;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -102,7 +102,7 @@ const AboutSpan = styled.span`
     margin-right: 10px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+   
   }
 `
 
@@ -115,7 +115,7 @@ const AboutMeContent = styled.div`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -130,7 +130,7 @@ const ContentParagraph = styled.p`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -143,7 +143,7 @@ const TechStackContainer = styled.div`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -164,7 +164,7 @@ const List = styled.li`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -182,7 +182,7 @@ const AboutImage = styled.div`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -200,7 +200,7 @@ const Img = styled.img`
     justify-content: center;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
