@@ -167,6 +167,9 @@ const TabContentContainer = styled.div`
     display: flex;
     height: 120px;
     cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
   }
 
   @media screen and (max-width: 768px){
