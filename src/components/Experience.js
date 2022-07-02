@@ -155,6 +155,7 @@ const TabContentContainer = styled.div`
   width: 100%;
   box-shadow: rgb(39, 39, 66) 0px 5px 15px;
   padding: 20px;
+  cursor: pointer;
 
   img{
     max-width: 120px;
