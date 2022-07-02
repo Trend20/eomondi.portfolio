@@ -113,7 +113,7 @@ const ExperienceContainer = styled.div`
     margin-top: 50px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+   
   }
 `
 
@@ -132,7 +132,7 @@ const H3 = styled.h3`
     display: flex;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -147,7 +147,7 @@ const ExperienceSpan = styled.span`
     padding: 0px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -160,7 +160,7 @@ const PreviousCompanies = styled.div`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+   
   }
 `
 
@@ -175,7 +175,7 @@ const TabContentContainer = styled.div`
     padding: 0px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -188,7 +188,7 @@ const Tittle = styled.h3`
     font-size: 0.8rem;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -201,7 +201,7 @@ const TittleAnchor = styled.a`
     margin-left: 3px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -217,7 +217,7 @@ const JobDuration = styled.p`
     padding: 0px;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -240,7 +240,7 @@ const JobDetails = styled.p`
   padding: 0px;
 }
 @media (min-width: 1024px) {
-  width: 100%;
+ 
 }
 `
 
