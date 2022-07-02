@@ -1,5 +1,4 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
 import '../App.css';
@@ -13,26 +12,11 @@ const Experience = () =>{
         </H3>
 
         <PreviousCompanies className="previous-companies">
-        <Tabs>
-          <TabList>
-            <Tab style={{ borderBottomWidth: 0 }}>
-              Mortgage Ezy
-            </Tab>
-            <Tab>
-              Jag Technology LLC
-            </Tab>
-            <Tab style={{background: 'transparent'}}>
-              Outgrowify
-            </Tab>
-          </TabList>
-          <TabPanel>
             <TabContentContainer>
-              <Tittle>Frontend Engineer <TittleAnchor href="#">@ Mortgage Ezy</TittleAnchor></Tittle>
-              <JobDuration>June 2021 - May 2022</JobDuration>
+              <img src="/img/whrrl.png" alt="whrrl" />
+              <Tittle>FullStack Engineer</Tittle>
+              <JobDuration>June 2022 - Present</JobDuration>
               <div className="roles">
-                <JobDetails>Contributed to the Frontend code for the SMSF application in Angular.</JobDetails>
-                <JobDetails>Wrote unit tests for different Angular components.</JobDetails>
-                <JobDetails>Used TypeScript to write Angular components and services.</JobDetails>
                 <JobDetails>
                   Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
                   using Axios from a SpringBoot Backend.
@@ -47,54 +31,53 @@ const Experience = () =>{
                 </JobDetails>
               </div>
             </TabContentContainer>
-          </TabPanel>
-          <TabPanel>
+            <TabContentContainer>
+              <img src="/img/mezy.png" alt="mezy" />
+              <Tittle>Frontend Engineer</Tittle>
+              <JobDuration>June 2021 - May 2022</JobDuration>
+              <div className="roles">
+                <JobDetails>
+                  Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
+                  using Axios from a SpringBoot Backend.
+                </JobDetails>
+                <JobDetails>
+                  Utilized the latest frontend libraries and built reusable 
+                  components using React.js to speed up development time by 30%.
+                </JobDetails>
+                <JobDetails>
+                  Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
+                  the application and reducing the load time of the site by 50%.
+                </JobDetails>
+              </div>
+            </TabContentContainer>
           <TabContentContainer>
-              <Tittle>Frontend React Developer <TittleAnchor href="#">@ Jag Technology</TittleAnchor></Tittle>
+            <img src="/img/jag.png" alt="jag" />
+              <Tittle>Frontend React Developer</Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
-                <JobDetails>Contributed to the Frontend code for the SMSF application in Angular.</JobDetails>
-                <JobDetails>Wrote unit tests for different Angular components.</JobDetails>
-                <JobDetails>Used TypeScript to write Angular components and services.</JobDetails>
+                <JobDetails>Developed and implemented highly responsive user interface components using react concepts. </JobDetails>
+                <JobDetails>Created website layouts from simple designs by using React.js, and HTML/CSS /JavaScript practices.</JobDetails>
                 <JobDetails>
-                  Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
-                  using Axios from a SpringBoot Backend.
-                </JobDetails>
-                <JobDetails>
-                  Utilized the latest frontend libraries and built reusable 
-                  components using React.js to speed up development time by 30%.
-                </JobDetails>
-                <JobDetails>
-                  Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
-                  the application and reducing the load time of the site by 50%.
+                Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.
                 </JobDetails>
               </div>
             </TabContentContainer>
-          </TabPanel>
-          <TabPanel>
           <TabContentContainer>
-              <Tittle>Frontend Developer Intern <TittleAnchor href="#">@ Outgrowify</TittleAnchor></Tittle>
+            <img src="/img/outgrowify.png" alt="outgrowify" />
+              <Tittle>Frontend Developer Intern</Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
-                <JobDetails>Contributed to the Frontend code for the SMSF application in Angular.</JobDetails>
-                <JobDetails>Wrote unit tests for different Angular components.</JobDetails>
-                <JobDetails>Used TypeScript to write Angular components and services.</JobDetails>
                 <JobDetails>
-                  Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
-                  using Axios from a SpringBoot Backend.
+                 Collaborated, designed, and tested innovative applications, and supported those applications for our highly valued customers. 
                 </JobDetails>
                 <JobDetails>
-                  Utilized the latest frontend libraries and built reusable 
-                  components using React.js to speed up development time by 30%.
+                  Created and maintained the company website while documenting the different releases.
                 </JobDetails>
                 <JobDetails>
-                  Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
-                  the application and reducing the load time of the site by 50%.
+                  Employed Design Thinking to create products that provided a great user experience along with high performance, security, quality, and stability. 
                 </JobDetails>
               </div>
             </TabContentContainer>
-          </TabPanel>
-        </Tabs>
         </PreviousCompanies>
     </ExperienceContainer>
   )
@@ -152,9 +135,11 @@ const ExperienceSpan = styled.span`
 `
 
 const PreviousCompanies = styled.div`
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
   width: 100%;
-  margin-top: 30px;
+  grid-gap: 20px;
+  margin-top: 70px;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -168,6 +153,15 @@ const TabContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  box-shadow: rgb(39, 39, 66) 0px 5px 15px;
+  padding: 20px;
+
+  img{
+    max-width: 120px;
+    display: flex;
+    height: 120px;
+    cursor: pointer;
+  }
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -181,7 +175,8 @@ const TabContentContainer = styled.div`
 
 const Tittle = styled.h3`
   display: flex;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -192,24 +187,11 @@ const Tittle = styled.h3`
   }
 `
 
-const TittleAnchor = styled.a`
-  color: #cc2121;
-  margin-left: 5px;
-  text-decoration: none;
-
-  @media screen and (max-width: 768px){
-    margin-left: 3px;
-  }
-  @media (min-width: 1024px) {
-    
-  }
-`
-
 const JobDuration = styled.p`
   display: flex;
   font-size: 0.8rem;
   line-height: 12px;
-  margin-top: 20px;
+  margin-top: 10px;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -225,10 +207,10 @@ const JobDetails = styled.p`
  &::before{
   content: "▹";
   line-height: 12px;
-  margin-right: 20px;
+  margin-right: 3px;
   color: #cc2121;
  }
- padding-top: 10px;
+ padding-top: 5px;
  width: 100%;
  font-size: 0.8rem;
  text-align: justify;
