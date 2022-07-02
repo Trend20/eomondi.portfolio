@@ -53,7 +53,7 @@ const HeaderElement = styled.header`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -76,7 +76,7 @@ const LogoContainer = styled.div`
     }
   }
   @media (min-width: 1024px) {
-    width: 100%;
+   
   }
 `
 
@@ -90,7 +90,7 @@ const NavElement = styled.nav`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -106,7 +106,7 @@ const NavUlElements = styled.ul`
       width: 100%;
     }
     @media (min-width: 1024px) {
-      width: 100%;
+      
     }
 `
 
@@ -135,7 +135,7 @@ const ListElement = styled.li`
 
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 const Span = styled.span`
@@ -146,7 +146,7 @@ const Span = styled.span`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
@@ -170,7 +170,7 @@ const Anchor = styled.a`
     width: 100%;
   }
   @media (min-width: 1024px) {
-    width: 100%;
+    
   }
 `
 
