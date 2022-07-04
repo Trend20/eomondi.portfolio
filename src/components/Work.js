@@ -81,7 +81,7 @@ const Work = () =>{
       {/* data-aos="fade-up" data-aos-duration="2000" */}
         <ProjectImage>
           <a href="https://myremind.netlify.app/" target="_blank">
-            <img src="/img/project.png" alt="project1" />
+            <img src="/img/mguide.png" alt="project3" />
           </a>
         </ProjectImage>
         <ProjectDescription>
@@ -92,16 +92,15 @@ const Work = () =>{
             the doctors and they can also be able to call for emergencey services
           </p>
           <Stack>
-            <li>MongoDB</li>
-            <li>ExpressJS</li>
-            <li>React</li>
-            <li>NodeJS</li>
+            <li>HTML</li>
+            <li>CSS3</li>
+            <li>Vanilla JavaScript</li>
           </Stack>
           <ProjectLinks>
-            <a href="https://github.com/Trend20/excercise-tracker" target="_blank">
+            <a href="https://github.com/Trend20/M-Guide" target="_blank">
               <FiGithub />
             </a>
-            <a href="https://myremind.netlify.app/" target="_blank">
+            <a href="https://m-guide.netlify.app/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
