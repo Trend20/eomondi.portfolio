@@ -86,10 +86,9 @@ const Work = () =>{
         </ProjectImage>
         <ProjectDescription>
           <h5>Featured Project</h5>
-          <h3>Family Doctor</h3>
+          <h3>M-Guide</h3>
           <p>
-            Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
-            the doctors and they can also be able to call for emergencey services
+            This is a landing page for a marketing startup that gives entrepreneurs light on how to best do their marketing for their products and services.
           </p>
           <Stack>
             <li>HTML</li>
