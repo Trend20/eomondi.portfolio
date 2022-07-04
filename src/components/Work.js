@@ -63,13 +63,13 @@ const Work = () =>{
             <a href="https://github.com/Trend20/CoursEfree" target="_blank">
               <FiGithub />
             </a>
-            <a href="https://masomo.netlify.app/" target="_blank">
+            <a href="https://super-cool-site-by-trend20.netlify.app/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
         </SecondProjectDescription>
         <ProjectImage>
-          <a href="https://masomo.netlify.app/" target="_blank">
+          <a href="https://super-cool-site-by-trend20.netlify.app/" target="_blank">
             <img src="/img/coursefree.png" alt="project1" />
           </a>
         </ProjectImage>
