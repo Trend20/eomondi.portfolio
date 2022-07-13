@@ -118,6 +118,7 @@ display: flex;
 flex-direction: column;
 padding: 100px;
 width: 100%;
+margin: auto;
 color: #8892b0;
 
 @media screen and (max-width: 768px){
@@ -165,12 +166,15 @@ const ProjectImage = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-height: auto;
+width: 50%;
 
+a{
+  width: 100%
+}
 img{
   display: flex;
   max-width: 100%;
-  max-height: 70%;
+  height: auto;
   position: relative;
   background-color: #cc2121;
 }
@@ -178,7 +182,7 @@ img{
 const ProjectDescription = styled.div`
 display: flex;
 flex-direction: column;
-width: auto;
+width: 50%;
 text-align: right;
 
 h5{
@@ -280,7 +284,7 @@ padding: 50px 0px;
 const SecondProjectDescription = styled.div`
 display: flex;
 flex-direction: column;
-width: auto;
+width: 50%;
 
 h5{
   color: #cc2121;
