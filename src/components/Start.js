@@ -14,9 +14,8 @@ const Start = () =>{
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-          I'm a Frontend Web Developer based in Nairobi who converts complex UI designs to beautiful websites 
-          while helping Professionals and Businesses to build their websites using technologies like HTML&CSS, 
-          JavaScript, Angular, React, Nodejs, Express, and MongoDB.
+        Software Developer based in Nairobi who converts complex problems to beautiful Web Solutions while helping Professionals and Businesses to build their Web Apps using 
+        technologies like HTML&CSS, JavaScript, Typescript, Angular, React, Nodejs, Express, and MongoDB.
         </DescriptionContent>
       </AboutDescription>
       <AboutIcons>
@@ -37,7 +36,7 @@ const AboutContainer = styled.div`
   width: 100%;
   padding: 50px 100px; 
   color: #8892b0;
-  margin-top: 70px;
+  margin-top: 50px;
 
   @media screen and (max-width: 768px){
     width: 100%;
