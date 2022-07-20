@@ -19,9 +19,9 @@ const Start = () =>{
         </DescriptionContent>
       </AboutDescription>
       <AboutIcons>
-        <Icon><FiGithub /></Icon>
-        <Icon><FiLinkedin /></Icon>
-        <Icon><FiTwitter /></Icon>
+        <Icon><a href="https://github.com/Trend20" target="_blank"><FiGithub /></a></Icon>
+        <Icon><a href="https://www.linkedin.com/in/enock-omondi-278554174/" target="_blank"><FiLinkedin /></a></Icon>
+        <Icon><a href="https://twitter.com/dev_enock" target="_blank"><FiTwitter /></a></Icon>
       </AboutIcons>
       <AboutButton>
         <AboutAnchor href="mailto:enockomondi305@gmail.com">Let us Connect!</AboutAnchor>
