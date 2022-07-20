@@ -133,8 +133,11 @@ const Icon = styled.i`
   padding: 10px;
   cursor: pointer;
 
-  &:hover{
-    color: #cc2121;
+  a{
+    color: 
+    &:hover{
+      color: #cc2121;
+    }
   }
 
   @media screen and (max-width: 768px){
