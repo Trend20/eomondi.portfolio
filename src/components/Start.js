@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'animate.css';
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Start = () =>{
@@ -8,21 +9,20 @@ const Start = () =>{
       {/* data-aos="fade-down" data-aos-duration="2000" */}
       <AboutHeading>
         <H1>
-          <Span>Enock Omondi</Span>
+          <Span className='animate__animated animate__shakeY'>Enock Omondi</Span>
           I build interactive web stuff.
         </H1>
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-          I'm a Frontend Web Developer based in Nairobi who converts complex UI designs to beautiful websites 
-          while helping Professionals and Businesses to build their websites using technologies like HTML&CSS, 
-          JavaScript, Angular, React, Nodejs, Express, and MongoDB.
+        Software Developer based in Nairobi who converts complex problems to beautiful Web Solutions while helping Professionals and Businesses to build their Web Apps using 
+        technologies like HTML&CSS, JavaScript, Typescript, Angular, React, Nodejs, Express, and MongoDB.
         </DescriptionContent>
       </AboutDescription>
       <AboutIcons>
-        <Icon><FiGithub /></Icon>
-        <Icon><FiLinkedin /></Icon>
-        <Icon><FiTwitter /></Icon>
+        <Icon><a href="https://github.com/Trend20" target="_blank"><FiGithub /></a></Icon>
+        <Icon><a href="https://www.linkedin.com/in/enock-omondi-278554174/" target="_blank"><FiLinkedin /></a></Icon>
+        <Icon><a href="https://twitter.com/dev_enock" target="_blank"><FiTwitter /></a></Icon>
       </AboutIcons>
       <AboutButton>
         <AboutAnchor href="mailto:enockomondi305@gmail.com">Let us Connect!</AboutAnchor>
@@ -35,9 +35,9 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 50px 100px; 
+  padding: 30px 100px; 
   color: #8892b0;
-  margin-top: 70px;
+  margin-top: 50px;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -80,6 +80,9 @@ const Span = styled.span`
   display: flex;
   color: #cbd2e6;
 
+  &hover{
+      --animate-duration: 2s;
+  }
   @media screen and (max-width: 768px){
     display: flex;
     color: #cbd2e6;
@@ -134,9 +137,13 @@ const Icon = styled.i`
   padding: 10px;
   cursor: pointer;
 
-  &:hover{
-    color: #cc2121;
-  }
+  a{
+    padding: 10px;
+    color: #8892b0;
+  
+    &:hover{
+      color: #cc2121;
+    }
 
   @media screen and (max-width: 768px){
     width: 100%;
