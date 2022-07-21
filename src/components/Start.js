@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import 'animate.css';
 import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi'
 
 const Start = () =>{
@@ -8,7 +9,7 @@ const Start = () =>{
       {/* data-aos="fade-down" data-aos-duration="2000" */}
       <AboutHeading>
         <H1>
-          <Span>Enock Omondi</Span>
+          <Span className='animate__animated animate__shakeY'>Enock Omondi</Span>
           I build interactive web stuff.
         </H1>
       </AboutHeading>
@@ -34,7 +35,7 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 50px 100px; 
+  padding: 30px 100px; 
   color: #8892b0;
   margin-top: 50px;
 
@@ -79,6 +80,9 @@ const Span = styled.span`
   display: flex;
   color: #cbd2e6;
 
+  &hover{
+      --animate-duration: 2s;
+  }
   @media screen and (max-width: 768px){
     display: flex;
     color: #cbd2e6;
@@ -134,11 +138,12 @@ const Icon = styled.i`
   cursor: pointer;
 
   a{
-    color: 
+    padding: 10px;
+    color: #8892b0;
+  
     &:hover{
       color: #cc2121;
     }
-  }
 
   @media screen and (max-width: 768px){
     width: 100%;
