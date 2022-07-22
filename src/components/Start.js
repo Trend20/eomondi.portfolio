@@ -15,7 +15,7 @@ const Start = () =>{
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-        Software Developer based in Nairobi who converts complex problems to beautiful Web Solutions while helping Professionals and Businesses to build their Web Apps using 
+        I am a Software Developer based in Nairobi who converts complex problems to beautiful Web Solutions while helping Professionals and Businesses to build their Web Apps using 
         technologies like HTML&CSS, JavaScript, Typescript, Angular, React, Nodejs, Express, and MongoDB.
         </DescriptionContent>
       </AboutDescription>
@@ -35,7 +35,7 @@ const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 30px 100px; 
+  padding: 20px 100px; 
   color: #8892b0;
   margin-top: 50px;
 
