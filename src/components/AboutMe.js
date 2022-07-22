@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const technologies = ['Javascript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git'];
+const technologies = ['Javascript', 'Typescript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git'];
 
 const AboutMe = () =>{
   return(
@@ -14,8 +14,8 @@ const AboutMe = () =>{
           </H3>
           <AboutMeContent className="contents">
           <ContentParagraph>
-            Hello! My name is Enock and I enjoy creating things that live on the internet. My interest in web development started back in 2017 when I decided to try editing custom Tumblr themes — turns out hacking 
-            together a custom reblog button taught me a lot about HTML & CSS!
+            Hello! My name is Enock and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try and edit a web template but it turned 
+            to be my first web project and it taught me a lot about HTML & CSS!
           </ContentParagraph>
           <ContentParagraph>
             My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.
