@@ -18,16 +18,13 @@ const Experience = () =>{
               <JobDuration>June 2022 - Present</JobDuration>
               <div className="roles">
                 <JobDetails>
-                  Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
-                  using Axios from a SpringBoot Backend.
+                  Participating in the design and creation of scalable software.
                 </JobDetails>
                 <JobDetails>
-                  Utilized the latest frontend libraries and built reusable 
-                  components using React.js to speed up development time by 30%.
+                  Writing clean, functional code on the front- and back-end.
                 </JobDetails>
                 <JobDetails>
-                  Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
-                  the application and reducing the load time of the site by 50%.
+                  Testing and fixing bugs or other coding issues.
                 </JobDetails>
               </div>
             </TabContentContainer>
@@ -55,10 +52,14 @@ const Experience = () =>{
               <Tittle>Frontend React Developer</Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
-                <JobDetails>Developed and implemented highly responsive user interface components using react concepts. </JobDetails>
-                <JobDetails>Created website layouts from simple designs by using React.js, and HTML/CSS /JavaScript practices.</JobDetails>
                 <JobDetails>
-                Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.
+                  Developed and implemented highly responsive user interface components using react concepts. 
+                </JobDetails>
+                <JobDetails>
+                  Created website layouts from simple designs by using React.js, and HTML/CSS /JavaScript practices.
+                </JobDetails>
+                <JobDetails>
+                  Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.
                 </JobDetails>
               </div>
             </TabContentContainer>
@@ -163,13 +164,18 @@ const TabContentContainer = styled.div`
   cursor: pointer;
 
   img{
-    max-width: 120px;
+    max-width: 100px;
     display: flex;
-    height: 120px;
+    height: 100px;
     cursor: pointer;
     background-color: #fff;
     border-radius: 50%;
     padding: 20px;
+    transition: 0.3s ease;
+
+    &:hover{
+      background: rgb(39, 39, 66);
+    }
   }
 
   @media screen and (max-width: 768px){
@@ -185,6 +191,7 @@ const Tittle = styled.h3`
   display: flex;
   font-size: 0.8rem;
   font-weight: 700;
+  margin-top: 5px;
 
   @media screen and (max-width: 768px){
     width: 100%;
