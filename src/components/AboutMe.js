@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 
 const technologies = ['Javascript', 'Typescript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git'];
 
@@ -42,7 +43,7 @@ const AboutMe = () =>{
   )
 }
 
-const AboutWrapper = styled.div`
+const AboutWrapper = styled(motion.div)`
   display: flex;
   padding: 100px;
   width: 100%;
