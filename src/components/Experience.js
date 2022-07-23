@@ -1,6 +1,7 @@
 import React from 'react';
 import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
+import { motion } from "framer-motion";
 import '../App.css';
 
 const Experience = () =>{
@@ -155,7 +156,7 @@ const PreviousCompanies = styled.div`
   }
 `
 
-const TabContentContainer = styled.div`
+const TabContentContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 100%;

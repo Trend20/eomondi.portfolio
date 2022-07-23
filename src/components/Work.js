@@ -178,6 +178,10 @@ img{
   position: relative;
   background-color: #cc2121;
 }
+
+@media screen and (max-width: 768px){
+  width: 100%;
+  }
 `
 const ProjectDescription = styled.div`
 display: flex;
