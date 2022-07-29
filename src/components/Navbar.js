@@ -28,7 +28,7 @@ const Navbar = ({about, services,  experience, work, contact}) =>{
           <ListElement>
             <Link to='contact' onClick={closeMobileMenu}><Span>05.</Span>{contact}</Link>
           </ListElement>
-          <ListElement><Anchor href="https://drive.google.com/file/d/1R6lyD47pE1LyM9V4H41OqgST-xBoy3a8/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
+          <ListElement><Anchor href="https://drive.google.com/file/d/1ogV17OSDfV6q7-AkJUtlT-XKm_sPhCYH/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
       </NavElement>
       <div className="toggle mobile-menu" onClick={handleClick}>
