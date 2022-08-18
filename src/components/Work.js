@@ -119,6 +119,7 @@ flex-direction: column;
 padding: 100px;
 width: 100%;
 margin: auto;
+margin-bottom: 50px;
 color: #8892b0;
 
 @media screen and (max-width: 768px){
@@ -347,6 +348,7 @@ width: 20%;
 justify-content: center;
 align-items: center;
 margin: auto;
+margin-top: 30px;
 background: transparent;
 outline: none;
 border: 1px solid #cc2121;

@@ -37,7 +37,7 @@ const AboutContainer = styled.div`
   width: 100%;
   padding: 20px 100px; 
   color: #8892b0;
-  margin-top: 50px;
+  margin-top: 200px;
 
   @media screen and (max-width: 768px){
     width: 100%;
