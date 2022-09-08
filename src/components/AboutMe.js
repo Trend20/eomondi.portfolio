@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 
-const technologies = ['Javascript', 'Typescript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git'];
+const technologies = ['Javascript', 'Typescript', 'React', 'Angular', 'Node.js', 'MongoDB', 'Bootstrap', 'Sass', 'Git', 'Next.js'];
 
 const AboutMe = () =>{
   return(
