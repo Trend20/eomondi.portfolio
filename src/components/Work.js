@@ -74,68 +74,6 @@ const Work = () =>{
           </a>
         </ProjectImage>
       </SecondProjectsWrapper>
-
-
-{/* third project */}
-      <ProjectsWrapper>
-      {/* data-aos="fade-up" data-aos-duration="2000" */}
-        <ProjectImage>
-          <a href="https://myremind.netlify.app/" target="_blank">
-            <img src="/img/mguide.png" alt="project3" />
-          </a>
-        </ProjectImage>
-        <ProjectDescription>
-          <h5>Featured Project</h5>
-          <h3>M-Guide</h3>
-          <p>
-            This is a landing page for a marketing startup that gives entrepreneurs light on how to best do their marketing for their products and services.
-          </p>
-          <Stack>
-            <li>HTML</li>
-            <li>CSS3</li>
-            <li>Vanilla JavaScript</li>
-          </Stack>
-          <ProjectLinks>
-            <a href="https://github.com/Trend20/M-Guide" target="_blank">
-              <FiGithub />
-            </a>
-            <a href="https://m-guide.netlify.app/" target="_blank">
-              <FiExternalLink />
-            </a>
-          </ProjectLinks>
-        </ProjectDescription>
-      </ProjectsWrapper>
-
-      {/* fourth project */}
-
-      <SecondProjectsWrapper>
-      {/* data-aos="fade-up" data-aos-duration="2000" */}
-        <SecondProjectDescription>
-          <h5>Featured Project</h5>
-          <h3>Skyline</h3>
-          <p>
-          Skyline is an agency website that showcases all the services that they offer. 
-          They build templates and showcase them on the Moto Templates website where customers can purchase them.
-          </p>
-          <Stack style={{ justifyContent: 'flex-start' }}>
-            <li>React</li>
-          </Stack>
-          <ProjectLinks style={{ justifyContent: 'flex-start' }}>
-            <a href="https://github.com/Trend20/Skyline" target="_blank">
-              <FiGithub />
-            </a>
-            <a href="https://skylineio.netlify.app/" target="_blank">
-              <FiExternalLink />
-            </a>
-          </ProjectLinks>
-        </SecondProjectDescription>
-        <ProjectImage>
-          <a href="https://skylineio.netlify.app/" target="_blank">
-            <img src="/img/skyline.png" alt="project4" />
-          </a>
-        </ProjectImage>
-      </SecondProjectsWrapper>
-
       <ShowMoreButton>
         <a href="https://github.com/Trend20" target="_blank">Show More</a>
       </ShowMoreButton>
