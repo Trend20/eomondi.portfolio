@@ -5,14 +5,11 @@ import { FiGithub, FiExternalLink } from 'react-icons/fi'
 const Work = () =>{
   return(
     <WorkContainer className='work' id='work'>
-      {/* data-aos="fade-down" data-aos-duration="2000" */}
-      <H3>
-          <WorkSpan>03.</WorkSpan>
-          Some Things I’ve Built
-        </H3>
-
+        <div class="head">
+            <h1>Notable Projects</h1>
+            <p><span></span>Some Things I’ve Built</p>
+        </div>
       <ProjectsWrapper>
-      {/* data-aos="fade-down" data-aos-duration="2000" */}
         <ProjectImage>
           <a href="https://familydoctor.netlify.app/" target="_blank">
             <img src="/img/project.png" alt="project1" />

@@ -1,76 +1,140 @@
-import React from 'react';
 import 'react-tabs/style/react-tabs.css';
 import styled from 'styled-components';
 import { motion } from "framer-motion";
 import '../App.css';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`vertical-tabpanel-${index}`}
+      aria-labelledby={`vertical-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `vertical-tab-${index}`,
+    'aria-controls': `vertical-tabpanel-${index}`,
+  };
+}
 
 const Experience = () =>{
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return(
     <ExperienceContainer className='experience' id='experience'>
-        <H3>
-          <ExperienceSpan>02.</ExperienceSpan>
-          <span>Where I've Worked</span>
-        </H3>
-
+        <div class="head">
+            <h1>Experience</h1>
+            <p><span></span>Where I've Worked</p>
+        </div>
         <PreviousCompanies className="previous-companies">
-            <TabContentContainer>
-              <img src="/img/whrrl.png" alt="whrrl" />
-              <Tittle>FullStack Engineer</Tittle>
-              <JobDuration>June 2022 - Present</JobDuration>
-              <div className="roles">
-                <JobDetails>
-                  Participating in the design and creation of scalable software.
-                </JobDetails>
-                <JobDetails>
-                  Writing clean, functional code on the front- and back-end.
-                </JobDetails>
-                <JobDetails>
-                  Testing and fixing bugs or other coding issues.
-                </JobDetails>
-              </div>
-            </TabContentContainer>
-            <TabContentContainer>
-              <img src="/img/mezy.png" alt="mezy" />
-              <Tittle>Frontend Engineer</Tittle>
-              <JobDuration>June 2021 - May 2022</JobDuration>
-              <div className="roles">
-                <JobDetails>
-                  Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
-                  using Axios from a SpringBoot Backend.
-                </JobDetails>
-                <JobDetails>
-                  Utilized the latest frontend libraries and built reusable 
-                  components using React.js to speed up development time by 30%.
-                </JobDetails>
-                <JobDetails>
-                  Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
-                  the application and reducing the load time of the site by 50%.
-                </JobDetails>
-              </div>
-            </TabContentContainer>
+            <Box sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}>
+          <Tabs
+            orientation="vertical"
+            variant="scrollable"
+            value={value}
+            onChange={handleChange}
+            aria-label="Vertical tabs example"
+            sx={{ borderRight: 1, borderColor: 'divider' }}
+          >
+            <Tab label="Riverbank" {...a11yProps(0)} />
+            <Tab label="Whrrl Fintech" {...a11yProps(1)} />
+            <Tab label="Mortgage Ezy" {...a11yProps(2)} />
+            <Tab label="Jag Technology" {...a11yProps(3)} />
+          </Tabs>
+          <TabPanel value={value} index={0}>
+              <TabContentContainer>
+                <img src="/img/whrrl.png" alt="whrrl" />
+                <Tittle>FullStack Engineer</Tittle>
+                <JobDuration>June 2022 - Present</JobDuration>
+                <div className="roles">
+                  <JobDetails>
+                    Participating in the design and creation of scalable software.
+                  </JobDetails>
+                  <JobDetails>
+                    Writing clean, functional code on the front- and back-end.
+                  </JobDetails>
+                  <JobDetails>
+                    Testing and fixing bugs or other coding issues.
+                  </JobDetails>
+                </div>
+              </TabContentContainer>
+          </TabPanel>
+          <TabPanel value={value} index={1}>
+              <TabContentContainer>
+                <img src="/img/mezy.png" alt="mezy" />
+                <Tittle>Frontend Engineer</Tittle>
+                <JobDuration>June 2021 - May 2022</JobDuration>
+                <div className="roles">
+                  <JobDetails>
+                    Built the Mezy Dashboard using React.js for Frontend while consuming REST APIS 
+                    using Axios from a SpringBoot Backend.
+                  </JobDetails>
+                  <JobDetails>
+                    Utilized the latest frontend libraries and built reusable 
+                    components using React.js to speed up development time by 30%.
+                  </JobDetails>
+                  <JobDetails>
+                    Used Bootstrap for styling the Mezy Dashboard hence increasing the speed of 
+                    the application and reducing the load time of the site by 50%.
+                  </JobDetails>
+                </div>
+              </TabContentContainer>
+          </TabPanel>
+          <TabPanel value={value} index={2}>
+              <TabContentContainer>
+                <img src="/img/jag.png" alt="jag" />
+                  <Tittle>Frontend React Developer</Tittle>
+                  <JobDuration>June 2021 - May 2022</JobDuration>
+                  <div className="roles">
+                    <JobDetails>
+                      Developed and implemented highly responsive user interface components using react concepts. 
+                    </JobDetails>
+                    <JobDetails>
+                      Created website layouts from simple designs by using React.js, and HTML/CSS /JavaScript practices.
+                    </JobDetails>
+                    <JobDetails>
+                      Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.
+                    </JobDetails>
+                  </div>
+              </TabContentContainer>
+          </TabPanel>
+          <TabPanel value={value} index={3}>
           <TabContentContainer>
-            <img src="/img/jag.png" alt="jag" />
-              <Tittle>Frontend React Developer</Tittle>
-              <JobDuration>June 2021 - May 2022</JobDuration>
-              <div className="roles">
-                <JobDetails>
-                  Developed and implemented highly responsive user interface components using react concepts. 
-                </JobDetails>
-                <JobDetails>
-                  Created website layouts from simple designs by using React.js, and HTML/CSS /JavaScript practices.
-                </JobDetails>
-                <JobDetails>
-                  Fixed bugs from existing websites and implemented enhancements that significantly improved web functionality and speed.
-                </JobDetails>
-              </div>
-            </TabContentContainer>
-          <TabContentContainer>
-            <img src="/img/outgrowify.png" alt="outgrowify" />
+              <img src="/img/outgrowify.png" alt="outgrowify" />
               <Tittle>Frontend Developer Intern</Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
                 <JobDetails>
-                 Collaborated, designed, and tested innovative applications, and supported those applications for our highly valued customers. 
+                  Collaborated, designed, and tested innovative applications, and supported those applications for our highly valued customers. 
                 </JobDetails>
                 <JobDetails>
                   Created and maintained the company website while documenting the different releases.
@@ -79,8 +143,10 @@ const Experience = () =>{
                   Employed Design Thinking to create products that provided a great user experience along with high performance, security, quality, and stability. 
                 </JobDetails>
               </div>
-            </TabContentContainer>
-        </PreviousCompanies>
+          </TabContentContainer>
+          </TabPanel>
+        </Box>
+      </PreviousCompanies>
     </ExperienceContainer>
   )
 }

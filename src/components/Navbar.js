@@ -20,13 +20,13 @@ const Navbar = ({about, services,  experience, work, contact}) =>{
             <Link to='about' onClick={closeMobileMenu}><Span>01.</Span>{about}</Link>
           </ListElement>
           <ListElement>
-            <Link to='experience' onClick={closeMobileMenu}><Span>03.</Span>{experience}</Link>
+            <Link to='experience' onClick={closeMobileMenu}><Span>02.</Span>{experience}</Link>
           </ListElement>
           <ListElement>
-            <Link to='work' onClick={closeMobileMenu}><Span>04.</Span>{work}</Link>
+            <Link to='work' onClick={closeMobileMenu}><Span>03.</Span>{work}</Link>
           </ListElement>
           <ListElement>
-            <Link to='contact' onClick={closeMobileMenu}><Span>05.</Span>{contact}</Link>
+            <Link to='contact' onClick={closeMobileMenu}><Span>04.</Span>{contact}</Link>
           </ListElement>
           <ListElement><Anchor href="https://drive.google.com/file/d/1ogV17OSDfV6q7-AkJUtlT-XKm_sPhCYH/view?usp=sharing" target="_blank">Resume</Anchor></ListElement>
         </NavUlElements>
@@ -56,12 +56,12 @@ const HeaderElement = styled.header`
 
 const LogoContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 20%;
 
   img{
-    margin-left: 30px;
+    margin-left: 80px;
   }
 
   @media screen and (max-width: 768px){
@@ -80,7 +80,7 @@ const LogoContainer = styled.div`
 const NavElement = styled.nav`
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 40%;
   justify-content: center;
 
   @media screen and (max-width: 768px){
@@ -95,7 +95,7 @@ const NavUlElements = styled.ul`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
 
     @media screen and (max-width: 768px){
       display: flex;

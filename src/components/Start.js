@@ -15,13 +15,22 @@ const Start = () =>{
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-        I am a Software Developer based in Nairobi who converts complex problems to beautiful Web Solutions while helping Professionals and Businesses to build their Web Apps using 
-        technologies like HTML&CSS, JavaScript, Typescript, Angular, React, Nodejs, Express, and MongoDB.
+          {/* I build accessible, inclusive products and digital experiences for the web. */}
+          <p>As a skilled Javascript developer, I specialize in developing user-friendly and performant 
+            web applications that meet the needs of businesses and their customers. With over 3 years of 
+            experience working with Javascript and related technologies, I have a proven track record of 
+            delivering high-quality software solutions that drive results.
+          </p>
+          <p>
+            I am a highly collaborative team player who thrives in dynamic and fast-paced environments. 
+            My excellent communication and problem-solving skills allow me to work effectively with cross-functional 
+            teams to deliver solutions that exceed expectations.
+          </p>
         </DescriptionContent>
       </AboutDescription>
       <AboutIcons>
         <Icon><a href="https://github.com/Trend20" target="_blank"><FiGithub /></a></Icon>
-        <Icon><a href="https://www.linkedin.com/in/enock-omondi-278554174/" target="_blank"><FiLinkedin /></a></Icon>
+        <Icon><a href="https://www.linkedin.com/in/enock-omondi/" target="_blank"><FiLinkedin /></a></Icon>
         <Icon><a href="https://twitter.com/dev_enock" target="_blank"><FiTwitter /></a></Icon>
       </AboutIcons>
       <AboutButton>
@@ -110,6 +119,12 @@ const DescriptionContent = styled.p`
   display: flex;
   font-size: 0.9rem;
   line-height: 1.6;
+  width: 60%;
+  flex-direction: column;
+
+  p{
+    margin-top: 20px;
+  }
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -157,7 +172,6 @@ const Icon = styled.i`
 
 const AboutButton = styled.div`
   display: flex;
-  margin-top: 15px;
   width: 100;
 
   @media screen and (max-width: 768px){
@@ -169,7 +183,6 @@ const AboutButton = styled.div`
 `
 
 const AboutAnchor = styled.a`
-  margin-top: 20px;
   padding: 20px;
   border: 1px solid #cc2121;
   border-radius: 5px;
@@ -182,7 +195,7 @@ const AboutAnchor = styled.a`
   color: #cc2121;
   font-weight: 500;
   cursor: pointer;
-  width: 20%;
+  width: 10%;
 
   &:hover{
     background: rgb(39, 39, 66);

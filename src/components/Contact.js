@@ -8,10 +8,10 @@ const Contact = () =>{
   return(
     <ContactContainer className='contact' id='contact'>
       {/* data-aos="fade-down" data-aos-duration="2000" */}
-      <h3>
-        <span>04.</span>
-        What's Next?
-      </h3>
+      <div class="head">
+          <h1>Hire Me</h1>
+          <p><span></span>Contact</p>
+      </div>
 
       <ContactDetails className="contact-details">
         <h1>Get In Touch</h1>
@@ -25,13 +25,13 @@ const Contact = () =>{
       <SocialPlatforms>
         <a href="https://github.com/Trend20" target="_blank" rel="noreferrer"><FiGithub /></a>
         <a href="https://twitter.com/dev_enock" target="_blank" rel="noreferrer"><FiTwitter /></a>
-        <a href="https://www.linkedin.com/in/enock-omondi-278554174/" target="_blank" rel="noreferrer"><FiLinkedin /></a>
+        <a href="https://www.linkedin.com/in/enock-omondi/" target="_blank" rel="noreferrer"><FiLinkedin /></a>
         <a href="https://www.hackerrank.com/enockomondi305" target="_blank" rel="noreferrer"><FaHackerrank /></a>
         <a href="https://hashnode.com/@DevEnock" target="_blank" rel="noreferrer"><SiHashnode /></a>
       </SocialPlatforms>
 
       <FooterContainer className='footer'>
-        <p>© Copyright 2022. All right reserved </p>
+        <p>© Copyright {new Date().getFullYear()}. All right reserved </p>
       </FooterContainer>
     </ContactContainer>
   )

@@ -7,38 +7,36 @@ const technologies = ['Javascript', 'Typescript', 'React', 'Angular', 'Node.js',
 const AboutMe = () =>{
   return(
     <AboutWrapper className='about-me' id='about'>
-      {/* data-aos="fade-down" data-aos-duration="2000" */}
+        <div class="head">
+            <h1>About Me</h1>
+            <p><span></span> About</p>
+        </div>
         <Description className="description">
-          <H3>
-            <AboutSpan>01.</AboutSpan>
-            <span>About Me</span>
-          </H3>
           <AboutMeContent className="contents">
-          <ContentParagraph>
-            Hello! My name is Enock and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try and edit a web template but it turned 
-            to be my first web project and it taught me a lot about HTML & CSS!
-          </ContentParagraph>
-          <ContentParagraph>
-            My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.
-          </ContentParagraph>
-          <ContentParagraph>
-            Here are a few technologies I’ve been working with recently:
-          </ContentParagraph>
+            <ContentParagraph>
+              Hello! My name is Enock and I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try and edit a web template but it turned 
+              to be my first web project and it taught me a lot about HTML & CSS!
+            </ContentParagraph>
+            <ContentParagraph>
+              My main focus these days is building accessible, inclusive products and digital experiences for a variety of clients.
+            </ContentParagraph>
+            <ContentParagraph>
+              Here are a few technologies I’ve been working with recently:
+            </ContentParagraph>
+            <TechStackContainer className="languages">
+              {
+                technologies.map((tech, index) =>{
+                  return(
+                    <List key={index}>{tech}</List>
+                  )
+                })
+              }
+            </TechStackContainer>
           </AboutMeContent>
-
-          <TechStackContainer className="languages">
-            {
-              technologies.map((tech, index) =>{
-                return(
-                  <List key={index}>{tech}</List>
-                )
-              })
-            }
-          </TechStackContainer>
+          <AboutImage className="about-img">
+            <Img src="/img/profile.png" alt="profile-pic" />
+          </AboutImage>
         </Description>  
-        <AboutImage className="about-img">
-          <Img src="/img/prof.png" alt="profile-pic" />
-        </AboutImage>
     </AboutWrapper>
   )
 }
@@ -47,9 +45,11 @@ const AboutWrapper = styled(motion.div)`
   display: flex;
   padding: 100px;
   width: 100%;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #8892b0;
+  margin-top: 50px;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -64,8 +64,8 @@ const AboutWrapper = styled(motion.div)`
 
 const Description = styled.div`
   display: flex;
-  flex-direction: column;
-  width: 60%;
+  width: 100%;
+  align-items:center;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -111,6 +111,7 @@ const AboutMeContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
+  width: 60%;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -123,7 +124,7 @@ const AboutMeContent = styled.div`
 const ContentParagraph = styled.p`
   display: flex;
   padding-top: 20px;
-  width: 100%;
+  width: 60%;
   line-height: 1.6;
   font-size: 0.8rem;
 

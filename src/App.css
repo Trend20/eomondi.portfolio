@@ -30,6 +30,40 @@
 	font-size: 2rem;
 }
 
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.head h1 {
+  font-size: 4rem;
+  color: rgb(129, 129, 129);
+  text-transform: uppercase;
+  opacity: 0.3;
+  position: relative;
+}
+
+.head p {
+  display: flex;
+  position: absolute;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.head p span {
+  width: 10%;
+  border: 1px solid rgb(226, 55, 55);
+  margin-right: 30px;
+}
+
 @media screen and (max-width: 768px) {
 
   .nav-options {
