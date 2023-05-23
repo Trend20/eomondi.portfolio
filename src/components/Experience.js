@@ -55,24 +55,24 @@ const Experience = () =>{
             <h1>Experience</h1>
             <p><span></span>Where I've Worked</p>
         </div>
-        <PreviousCompanies className="previous-companies">
-            <Box sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 224 }}>
+        <PreviousCompanies className="previous-companies" style={{ marginTop:'70px' }}>
+            <Box sx={{ flexGrow: 1, color:'#fff', display: 'flex', height: 'auto' }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
             onChange={handleChange}
             aria-label="Vertical tabs example"
-            sx={{ borderRight: 1, borderColor: 'divider' }}
+            sx={{ borderRight: 1, borderColor: 'divider', color:'#fff' }}
           >
-            <Tab label="Riverbank" {...a11yProps(0)} />
-            <Tab label="Whrrl Fintech" {...a11yProps(1)} />
-            <Tab label="Mortgage Ezy" {...a11yProps(2)} />
-            <Tab label="Jag Technology" {...a11yProps(3)} />
+            <Tab label="Riverbank" {...a11yProps(0)} style={{ color:'#fff' }} />
+            <Tab label="Whrrl Fintech" {...a11yProps(1)} style={{ color:'#fff' }} />
+            <Tab label="Mortgage Ezy" {...a11yProps(2)} style={{ color:'#fff' }} />
+            <Tab label="Jag Technology" {...a11yProps(3)} style={{ color:'#fff' }} />
           </Tabs>
           <TabPanel value={value} index={0}>
               <TabContentContainer>
-                <img src="/img/whrrl.png" alt="whrrl" />
+                {/* <img src="/img/whrrl.png" alt="whrrl" /> */}
                 <Tittle>FullStack Engineer</Tittle>
                 <JobDuration>June 2022 - Present</JobDuration>
                 <div className="roles">
@@ -90,7 +90,6 @@ const Experience = () =>{
           </TabPanel>
           <TabPanel value={value} index={1}>
               <TabContentContainer>
-                <img src="/img/mezy.png" alt="mezy" />
                 <Tittle>Frontend Engineer</Tittle>
                 <JobDuration>June 2021 - May 2022</JobDuration>
                 <div className="roles">
@@ -111,7 +110,6 @@ const Experience = () =>{
           </TabPanel>
           <TabPanel value={value} index={2}>
               <TabContentContainer>
-                <img src="/img/jag.png" alt="jag" />
                   <Tittle>Frontend React Developer</Tittle>
                   <JobDuration>June 2021 - May 2022</JobDuration>
                   <div className="roles">
@@ -129,7 +127,6 @@ const Experience = () =>{
           </TabPanel>
           <TabPanel value={value} index={3}>
           <TabContentContainer>
-              <img src="/img/outgrowify.png" alt="outgrowify" />
               <Tittle>Frontend Developer Intern</Tittle>
               <JobDuration>June 2021 - May 2022</JobDuration>
               <div className="roles">
@@ -156,7 +153,7 @@ const ExperienceContainer = styled.div`
   flex-direction: column;
   padding: 100px;
   width: 100%;
-  color: #8892b0;
+  // color: #8892b0;
 
   @media screen and (max-width: 768px){
     width: 100%;
@@ -203,11 +200,11 @@ const ExperienceSpan = styled.span`
 `
 
 const PreviousCompanies = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  width: 100%;
-  grid-gap: 20px;
-  margin-top: 70px;
+  // display: grid;
+  // grid-template-columns: repeat(3, 2fr);
+  // width: 100%;
+  // grid-gap: 20px;
+  // margin-top: 70px;
 
   @media screen and (max-width: 768px){
     display: grid;
@@ -226,6 +223,7 @@ const TabContentContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: auto;
   box-shadow: rgb(39, 39, 66) 0px 5px 15px;
   padding: 20px;
   cursor: pointer;
