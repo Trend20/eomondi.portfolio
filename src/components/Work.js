@@ -11,17 +11,14 @@ const Work = () =>{
         </div>
       <ProjectsWrapper>
         <ProjectImage>
-          <a href="https://familydoctor.netlify.app/" target="_blank">
-            <img src="/img/project.png" alt="project1" />
+        <a href="https://zed.business/" target="_blank">
+            <img src="/img/zed.png" alt="project1" />
           </a>
         </ProjectImage>
         <ProjectDescription>
           <h5>Featured Project</h5>
-          <h3>Family Doctor</h3>
-          <p>
-            Family Doctor is a web application which helps users to acquire home based health care services online. Users can book appointements with 
-            the doctors and they can also be able to call for emergency services
-          </p>
+          <h3>ZED Payments</h3>
+          <p>ZED allows a business to accept different payment methods including mobile money, cash, card and crypto with ease.</p>
           <Stack>
             <li>MongoDB</li>
             <li>ExpressJS</li>
@@ -29,10 +26,10 @@ const Work = () =>{
             <li>NodeJS</li>
           </Stack>
           <ProjectLinks>
-            <a href="https://github.com/Trend20/Family-Doctor" target="_blank">
+            {/* <a href="https://github.com/Trend20/Family-Doctor" target="_blank">
               <FiGithub />
-            </a>
-            <a href="https://familydoctor.netlify.app/" target="_blank">
+            </a> */}
+            <a href="https://zed.business/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
@@ -45,29 +42,29 @@ const Work = () =>{
       {/* data-aos="fade-up" data-aos-duration="2000" */}
         <SecondProjectDescription>
           <h5>Featured Project</h5>
-          <h3>CoursEfree</h3>
+          <h3>BruFinance</h3>
           <p>
-          CoursEfree is a fiction EdTech web application providing a learning platform where
-          students can log in and get access to different courses for free.  
+          Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe. Brú Finance Is Linking Real-World Assets Ranging From Agricultural Commodities, Real Estate, Gold, Mortgages, And Receivables To Securities With A New DeFi Paradigm Bringing The Two Worlds Of TradFi And DeFi Together. 
           </p>
           <Stack style={{ justifyContent: 'flex-start' }}>
             <li>MongoDB</li>
             <li>ExpressJS</li>
-            <li>React</li>
+            <li>Angular</li>
             <li>NodeJS</li>
+            <li>Typescript</li>
           </Stack>
           <ProjectLinks style={{ justifyContent: 'flex-start' }}>
-            <a href="https://github.com/Trend20/CoursEfree" target="_blank">
+            {/* <a href="https://github.com/Trend20/CoursEfree" target="_blank">
               <FiGithub />
-            </a>
-            <a href="https://super-cool-site-by-trend20.netlify.app/" target="_blank">
+            </a> */}
+            <a href="https://bru.finance/" target="_blank">
               <FiExternalLink />
             </a>
           </ProjectLinks>
         </SecondProjectDescription>
         <ProjectImage>
-          <a href="https://super-cool-site-by-trend20.netlify.app/" target="_blank">
-            <img src="/img/coursefree.png" alt="project1" />
+          <a href="https://bru.finance/" target="_blank">
+            <img src="/img/bru.png" alt="project1" />
           </a>
         </ProjectImage>
       </SecondProjectsWrapper>

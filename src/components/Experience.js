@@ -56,21 +56,21 @@ const Experience = () =>{
             <p><span></span>Where I've Worked</p>
         </div>
         <PreviousCompanies className="previous-companies" style={{ marginTop:'70px' }}>
-            <Box sx={{ flexGrow: 1, color:'#fff', display: 'flex', height: 'auto' }}>
+            <Box sx={{ flexGrow: 1, color:'#fff', display: 'flex', height: '400px' }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
             value={value}
             onChange={handleChange}
             aria-label="Vertical tabs example"
-            sx={{ borderRight: 1, borderColor: 'divider', color:'#fff' }}
+            sx={{ borderRight: 1, borderColor: 'divider', textAlign:'left', color:'#fff', display:'flex', height:'400px' }}
           >
-            <Tab label="Riverbank" {...a11yProps(0)} style={{ color:'#fff' }} />
-            <Tab label="Whrrl Fintech" {...a11yProps(1)} style={{ color:'#fff' }} />
-            <Tab label="Mortgage Ezy" {...a11yProps(2)} style={{ color:'#fff' }} />
-            <Tab label="Jag Technology" {...a11yProps(3)} style={{ color:'#fff' }} />
+            <Tab label="Riverbank" {...a11yProps(0)} style={{ color:'#fff', textTransform:'capitalize' }} />
+            <Tab label="Whrrl Fintech" {...a11yProps(1)} style={{ color:'#fff', textTransform:'capitalize' }} />
+            <Tab label="Mortgage Ezy" {...a11yProps(2)} style={{ color:'#fff', textTransform:'capitalize' }} />
+            <Tab label="Jag Technology" {...a11yProps(3)} style={{ color:'#fff', textTransform:'capitalize' }} />
           </Tabs>
-          <TabPanel value={value} index={0}>
+          <TabPanel value={value} index={0} style={{ height:'1200px' }}>
               <TabContentContainer>
                 {/* <img src="/img/whrrl.png" alt="whrrl" /> */}
                 <Tittle>FullStack Engineer</Tittle>
@@ -165,44 +165,48 @@ const ExperienceContainer = styled.div`
   }
 `
 
-const H3 = styled.h3`
-  display: flex;
-  padding: 20px 0px;
-  color:  #cbd2e6;
-  font-size: 1.5rem;
-  align-items: center;
-  width: 50%;
+// const H3 = styled.h3`
+//   display: flex;
+//   padding: 20px 0px;
+//   color:  #cbd2e6;
+//   font-size: 1.5rem;
+//   align-items: center;
+//   width: 50%;
 
-  @media screen and (max-width: 768px){
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-  }
-  @media (min-width: 1024px) {
+//   @media screen and (max-width: 768px){
+//     width: 100%;
+//     margin: 0px;
+//     padding: 0px;
+//     display: flex;
+//   }
+//   @media (min-width: 1024px) {
     
-  }
-`
+//   }
+// `
 
-const ExperienceSpan = styled.span`
-  display: flex;
-  margin-right: 20px;
-  color: #cc2121;
-  font-size: 1rem;
+// const ExperienceSpan = styled.span`JobDetails
+//   display: flex;
+//   margin-right: 20px;
+//   color: #cc2121;
+//   font-size: 1rem;
 
-  @media screen and (max-width: 768px){
-    margin-right: 10px;
-    padding: 0px;
-  }
-  @media (min-width: 1024px) {
+//   @media screen and (max-width: 768px){
+//     margin-right: 10px;
+//     padding: 0px;
+//   }
+//   @media (min-width: 1024px) {
     
-  }
-`
+//   }
+// `
 
 const PreviousCompanies = styled.div`
   // display: grid;
   // grid-template-columns: repeat(3, 2fr);
-  // width: 100%;
+  width: 100%;
+  height: 400px;
+  display:flex;
+  justify-content:'center';
+  margin:auto;
   // grid-gap: 20px;
   // margin-top: 70px;
 
@@ -289,6 +293,7 @@ const JobDetails = styled.p`
   line-height: 12px;
   margin-right: 3px;
   color: #cc2121;
+  width:'60%'
  }
  padding-top: 5px;
  width: 100%;
