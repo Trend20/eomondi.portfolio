@@ -146,5 +146,7 @@
   #notable{
     font-size: 2rem;
   }
-  
+  .e-tab{
+    width: 30% !important;
+  }
 }

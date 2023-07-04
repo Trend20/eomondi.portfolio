@@ -56,12 +56,13 @@ const Experience = () => {
         <p>
           <span></span>Where I've Worked
         </p>
+        toggle
       </div>
       <PreviousCompanies
         className="previous-companies"
-        style={{ marginTop: "70px" }}
+        style={{ marginTop: "50px" }}
       >
-        <Box sx={{ color: "#fff", display: "flex", height: "600px" }}>
+        <Box sx={{ color: "#fff", display: "flex", height: "400px" }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -74,26 +75,30 @@ const Experience = () => {
               textAlign: "left",
               color: "#fff",
               display: "flex",
-              height: "400px",
+              height: "500px",
             }}
           >
             <Tab
               label="Riverbank"
+              className="e-tab"
               {...a11yProps(0)}
               style={{ color: "#fff", textTransform: "capitalize" }}
             />
             <Tab
               label="Whrrl Fintech"
+              className="e-tab"
               {...a11yProps(1)}
               style={{ color: "#fff", textTransform: "capitalize" }}
             />
             <Tab
               label="Mortgage Ezy"
+              className="e-tab"
               {...a11yProps(2)}
               style={{ color: "#fff", textTransform: "capitalize" }}
             />
             <Tab
               label="Jag Technology"
+              className="e-tab"
               {...a11yProps(3)}
               style={{ color: "#fff", textTransform: "capitalize" }}
             />
@@ -211,8 +216,7 @@ const PreviousCompanies = styled.div`
     display: grid;
     grid-template-columns: repeat(1, 2fr);
     width: 100%;
-    grid-gap: 20px;
-    margin-top: 30px;
+    grid-gap: 10px;
     width: 100%;
   }
   @media (min-width: 1024px) {
@@ -245,6 +249,11 @@ const TabContentContainer = styled(motion.div)`
   @media screen and (max-width: 768px) {
     width: 100%;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 20px;
+    cursor: pointer;
   }
   @media (min-width: 1024px) {
   }
@@ -292,10 +301,21 @@ const JobDetails = styled.p`
   font-size: 0.8rem;
   text-align: justify;
   text-indent: 0px;
-  margin-top: 5px;
 
   @media screen and (max-width: 768px) {
+    &::before {
+      content: "▹";
+      line-height: 10px;
+      margin-right: 3px;
+      color: #cc2121;
+      width: 100%;
+    }
     width: 100%;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: justify;
+    text-indent: 0px;
   }
   @media (min-width: 1024px) {
   }
