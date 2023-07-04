@@ -61,9 +61,7 @@ const Experience = () => {
         className="previous-companies"
         style={{ marginTop: "70px" }}
       >
-        <Box
-          sx={{ flexGrow: 1, color: "#fff", display: "flex", height: "400px" }}
-        >
+        <Box sx={{ color: "#fff", display: "flex", height: "600px" }}>
           <Tabs
             orientation="vertical"
             variant="scrollable"
@@ -102,7 +100,6 @@ const Experience = () => {
           </Tabs>
           <TabPanel value={value} index={0} style={{ height: "1200px" }}>
             <TabContentContainer>
-              {/* <img src="/img/whrrl.png" alt="whrrl" /> */}
               <Tittle>FullStack Engineer</Tittle>
               <JobDuration>April 2023 - Present</JobDuration>
               <div className="roles">
@@ -192,7 +189,7 @@ const ExperienceContainer = styled.div`
   flex-direction: column;
   padding: 100px;
   width: 100%;
-  // color: #8892b0;
+  height: auto;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -203,50 +200,12 @@ const ExperienceContainer = styled.div`
   }
 `;
 
-// const H3 = styled.h3`
-//   display: flex;
-//   padding: 20px 0px;
-//   color:  #cbd2e6;
-//   font-size: 1.5rem;
-//   align-items: center;
-//   width: 50%;
-
-//   @media screen and (max-width: 768px){
-//     width: 100%;
-//     margin: 0px;
-//     padding: 0px;
-//     display: flex;
-//   }
-//   @media (min-width: 1024px) {
-
-//   }
-// `
-
-// const ExperienceSpan = styled.span`JobDetails
-//   display: flex;
-//   margin-right: 20px;
-//   color: #cc2121;
-//   font-size: 1rem;
-
-//   @media screen and (max-width: 768px){
-//     margin-right: 10px;
-//     padding: 0px;
-//   }
-//   @media (min-width: 1024px) {
-
-//   }
-// `
-
 const PreviousCompanies = styled.div`
-  // display: grid;
-  // grid-template-columns: repeat(3, 2fr);
   width: 100%;
   height: 400px;
   display: flex;
   justify-content: "center";
   margin: auto;
-  // grid-gap: 20px;
-  // margin-top: 70px;
 
   @media screen and (max-width: 768px) {
     display: grid;
@@ -264,8 +223,8 @@ const TabContentContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: auto;
-  box-shadow: rgb(39, 39, 66) 0px 5px 15px;
+  height: 400px;
+  // box-shadow: rgb(39, 39, 66) 0px 5px 15px;
   padding: 20px;
   cursor: pointer;
 
@@ -329,7 +288,7 @@ const JobDetails = styled.p`
     color: #cc2121;
     width: "60%";
   }
-  padding-top: 5px;
+  padding-top: 30px;
   width: 100%;
   font-size: 0.8rem;
   text-align: justify;
