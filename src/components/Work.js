@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiExternalLink } from "react-icons/fi";
 
 const Work = () => {
   return (
     <WorkContainer className="work" id="work">
       <div class="head">
-        <h1>Notable Projects</h1>
+        <h1 id="notable">Notable Projects</h1>
         <p>
           <span></span>Some Things I’ve Built
         </p>
       </div>
       <ProjectsWrapper>
         <ProjectImage>
-          <a href="https://zed.business/" target="_blank">
+          <a href="https://zed.business/" target="_blank" rel="noreferrer">
             <img src="/img/zed.png" alt="project1" />
           </a>
         </ProjectImage>
@@ -31,7 +31,7 @@ const Work = () => {
             <li>NodeJS</li>
           </Stack>
           <ProjectLinks>
-            <a href="https://zed.business/" target="_blank">
+            <a href="https://zed.business/" target="_blank" rel="noreferrer">
               <FiExternalLink />
             </a>
           </ProjectLinks>
@@ -41,7 +41,6 @@ const Work = () => {
       {/* second project */}
 
       <SecondProjectsWrapper>
-        {/* data-aos="fade-up" data-aos-duration="2000" */}
         <SecondProjectDescription>
           <h5>Featured Project</h5>
           <h3>BruFinance</h3>
@@ -61,22 +60,19 @@ const Work = () => {
             <li>Typescript</li>
           </Stack>
           <ProjectLinks style={{ justifyContent: "flex-start" }}>
-            {/* <a href="https://github.com/Trend20/CoursEfree" target="_blank">
-              <FiGithub />
-            </a> */}
-            <a href="https://bru.finance/" target="_blank">
+            <a href="https://bru.finance/" target="_blank" rel="noreferrer">
               <FiExternalLink />
             </a>
           </ProjectLinks>
         </SecondProjectDescription>
         <ProjectImage>
-          <a href="https://bru.finance/" target="_blank">
+          <a href="https://bru.finance/" target="_blank" rel="noreferrer">
             <img src="/img/bru.png" alt="project1" />
           </a>
         </ProjectImage>
       </SecondProjectsWrapper>
       <ShowMoreButton>
-        <a href="https://github.com/Trend20" target="_blank">
+        <a href="https://github.com/Trend20" target="_blank" rel="noreferrer">
           Show More
         </a>
       </ShowMoreButton>
@@ -98,29 +94,6 @@ const WorkContainer = styled.div`
   }
 `;
 
-const H3 = styled.h3`
-  display: flex;
-  padding: 20px 0px;
-  color: #cbd2e6;
-  font-size: 1.5rem;
-  align-items: center;
-
-  @media screen and (max-width: 768px) {
-    padding: 0px;
-    width: 100%;
-  }
-`;
-const WorkSpan = styled.span`
-  display: flex;
-  margin-right: 20px;
-  color: #cc2121;
-  font-size: 1rem;
-
-  @media screen and (max-width: 768px) {
-    margin-right: 0px;
-  }
-`;
-
 const ProjectsWrapper = styled.div`
   display: flex;
   position: relative;
@@ -130,7 +103,7 @@ const ProjectsWrapper = styled.div`
   @media screen and (max-width: 768px) {
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 `;
 
@@ -189,7 +162,7 @@ const ProjectDescription = styled.div`
     display: flex;
     flex-direction: column;
     width: auto;
-    text-align: right;
+    text-align: left;
 
     h5 {
       color: #cc2121;
@@ -227,6 +200,12 @@ const Stack = styled.ul`
     padding: 10px 5px;
     font-weight: 700;
   }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 const ProjectLinks = styled.div`
@@ -241,6 +220,13 @@ const ProjectLinks = styled.div`
     &:hover {
       color: #cc2121;
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
 `;
 

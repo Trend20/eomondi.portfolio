@@ -224,7 +224,6 @@ const TabContentContainer = styled(motion.div)`
   flex-direction: column;
   width: 100%;
   height: 400px;
-  // box-shadow: rgb(39, 39, 66) 0px 5px 15px;
   padding: 20px;
   cursor: pointer;
 
