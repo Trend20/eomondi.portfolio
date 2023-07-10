@@ -44,7 +44,7 @@ const Navbar = ({ about, services, experience, work, contact }) => {
           </ListElement>
           <ListElement>
             <Anchor
-              href="https://drive.google.com/file/d/1ogV17OSDfV6q7-AkJUtlT-XKm_sPhCYH/view?usp=sharing"
+              href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
               target="_blank"
             >
               Resume
