@@ -56,7 +56,6 @@ const Experience = () => {
         <p>
           <span></span>Where I've Worked
         </p>
-        toggle
       </div>
       <PreviousCompanies
         className="previous-companies"
