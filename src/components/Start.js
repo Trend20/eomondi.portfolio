@@ -6,18 +6,16 @@ import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 const Start = () => {
   return (
     <AboutContainer id="intro">
-      {/* data-aos="fade-down" data-aos-duration="2000" */}
+      <AboutImage className="about-img">
+        <Img src="/img/profile.png" alt="profile-pic" />
+      </AboutImage>
       <AboutHeading>
         <H1>
-          <Span className="animate__animated animate__shakeY">
-            Enock Omondi
-          </Span>
-          I build interactive web stuff.
+          <Span>Enock Omondi</Span>I build interactive web stuff.
         </H1>
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-          {/* I build accessible, inclusive products and digital experiences for the web. */}
           <p>
             As a skilled Javascript developer, I specialize in developing
             user-friendly and performant web applications that meet the needs of
@@ -72,10 +70,11 @@ const Start = () => {
 const AboutContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 20px 100px;
+  margin-top: 30px;
   color: #8892b0;
-  margin-top: 200px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -89,7 +88,9 @@ const AboutContainer = styled.div`
 const AboutHeading = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -103,6 +104,8 @@ const H1 = styled.h1`
   display: flex;
   font-size: 3.5rem;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
@@ -131,8 +134,10 @@ const Span = styled.span`
 
 const AboutDescription = styled.div`
   display: flex;
-  width: 80%;
+  width: 40%;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -143,10 +148,14 @@ const AboutDescription = styled.div`
 
 const DescriptionContent = styled.p`
   display: flex;
-  font-size: 0.9rem;
-  line-height: 1.6;
-  width: 60%;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+  width: 100%;
   flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 
   p {
     margin-top: 20px;
@@ -164,6 +173,7 @@ const AboutIcons = styled.div`
   display: flex;
   width: 30%;
   align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -196,7 +206,9 @@ const Icon = styled.i`
 
 const AboutButton = styled.div`
   display: flex;
-  width: 100;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (max-width: 768px) {
     width: 80%;
@@ -226,6 +238,40 @@ const AboutAnchor = styled.a`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+  }
+  @media (min-width: 1024px) {
+  }
+`;
+
+const AboutImage = styled.div`
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  @media (min-width: 1024px) {
+  }
+`;
+
+const Img = styled.img`
+  max-width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  border: none;
+
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
   }
   @media (min-width: 1024px) {
   }

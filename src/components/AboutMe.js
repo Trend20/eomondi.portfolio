@@ -45,9 +45,6 @@ const AboutMe = () => {
             })}
           </TechStackContainer>
         </AboutMeContent>
-        <AboutImage className="about-img">
-          <Img src="/img/profile.png" alt="profile-pic" />
-        </AboutImage>
       </Description>
     </AboutWrapper>
   );
@@ -141,40 +138,6 @@ const List = styled.li`
 
   @media screen and (max-width: 768px) {
     width: 100%;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
-
-const AboutImage = styled.div`
-  display: flex;
-  width: 40%;
-  justify-content: center;
-  margin-top: 50px;
-
-  @media screen and (max-width: 768px) {
-    margin-top: 10px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
-
-const Img = styled.img`
-  max-width: 100%;
-  padding: 20px;
-  margin: 70px 50px;
-  height: 100%;
-
-  @media screen and (max-width: 768px) {
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
   }
   @media (min-width: 1024px) {
   }
