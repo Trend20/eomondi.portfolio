@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
+import { navData } from "../data/navData";
 
 const Navbar = ({ about, services, experience, work, contact }) => {
   const [click, setClick] = useState(false);
@@ -18,30 +19,14 @@ const Navbar = ({ about, services, experience, work, contact }) => {
       </LogoContainer>
       <NavElement className={click ? "nav-options active" : "nav-options"}>
         <NavUlElements>
-          <ListElement>
-            <Link to="about" onClick={closeMobileMenu}>
-              <Span>01.</Span>
-              {about}
-            </Link>
-          </ListElement>
-          <ListElement>
-            <Link to="experience" onClick={closeMobileMenu}>
-              <Span>02.</Span>
-              {experience}
-            </Link>
-          </ListElement>
-          <ListElement>
-            <Link to="work" onClick={closeMobileMenu}>
-              <Span>03.</Span>
-              {work}
-            </Link>
-          </ListElement>
-          <ListElement>
-            <Link to="contact" onClick={closeMobileMenu}>
-              <Span>04.</Span>
-              {contact}
-            </Link>
-          </ListElement>
+          {navData.map((item) => (
+            <ListElement key={item.id}>
+              <Link to={item.link} onClick={closeMobileMenu}>
+                <Span>0{item.id}.</Span>
+                {item.title}
+              </Link>
+            </ListElement>
+          ))}
           <ListElement>
             <Anchor
               href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
@@ -132,8 +117,8 @@ const ListElement = styled.li`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   width: 20%;
   cursor: pointer;
 
@@ -176,7 +161,7 @@ const Anchor = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: #cc2121;
-  width: 80%;
+  width: 100%;
 
   &:hover {
     background: rgb(39, 39, 66);
