@@ -3,10 +3,12 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
+import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import { navData } from "../data/navData";
 
 const Navbar = ({ about, services, experience, work, contact }) => {
   const [click, setClick] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
@@ -27,16 +29,31 @@ const Navbar = ({ about, services, experience, work, contact }) => {
               </Link>
             </ListElement>
           ))}
-          <ListElement>
-            <Anchor
-              href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
-              target="_blank"
-            >
-              Resume
-            </Anchor>
-          </ListElement>
         </NavUlElements>
       </NavElement>
+      <ActionElement>
+        <Anchor
+          href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
+          target="_blank"
+        >
+          Resume
+        </Anchor>
+        <i>
+          {darkMode ? (
+            <MdOutlineDarkMode
+              size={40}
+              fill="#cc2121"
+              onClick={() => setDarkMode(!darkMode)}
+            />
+          ) : (
+            <MdLightMode
+              size={40}
+              fill="#cc2121"
+              onClick={() => setDarkMode(!darkMode)}
+            />
+          )}
+        </i>
+      </ActionElement>
       <div className="toggle mobile-menu" onClick={handleClick}>
         {click ? (
           <AiOutlineClose className="menu-icon" />
@@ -151,17 +168,45 @@ const Span = styled.span`
   }
 `;
 
+const ActionElement = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20%;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 20px;
+    width: 30%;
+    cursor: pointer;
+  }
+  @media (min-width: 1024px) {
+  }
+
+  i {
+    margin-left: 20px;
+  }
+`;
+
 const Anchor = styled.a`
   display: flex;
   border: 1px solid #cc2121;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
   color: #cc2121;
-  width: 100%;
+  width: 50%;
 
   &:hover {
     background: rgb(39, 39, 66);
