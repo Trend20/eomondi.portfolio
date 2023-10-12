@@ -40,13 +40,13 @@ const Navbar = ({ about, services, experience, work, contact }) => {
         </Anchor>
         <i>
           {darkMode ? (
-            <MdOutlineDarkMode
+            <MdLightMode
               size={40}
               fill="#cc2121"
               onClick={() => setDarkMode(!darkMode)}
             />
           ) : (
-            <MdLightMode
+            <MdOutlineDarkMode
               size={40}
               fill="#cc2121"
               onClick={() => setDarkMode(!darkMode)}
