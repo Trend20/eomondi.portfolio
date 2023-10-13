@@ -16,14 +16,6 @@ const Start = () => {
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
-          {/* <p>
-            As a skilled Javascript developer, I specialize in developing
-            user-friendly and performant web applications that meet the needs of
-            businesses and their customers. With over 3 years of experience
-            working with Javascript and related technologies, I have a proven
-            track record of delivering high-quality software solutions that
-            drive results.
-          </p> */}
           <p>
             I am a highly collaborative team player who thrives in dynamic and
             fast-paced environments. My excellent communication and
