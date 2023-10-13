@@ -67,6 +67,13 @@
   margin-right: 30px;
 }
 
+#live, #code{
+  text-decoration: none;
+  width: 40%;
+  background: rgb(39, 39, 66);
+  padding: 10px;
+}
+
 @media screen and (max-width: 768px) {
 
   .nav-options {

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { workData } from "../data/myData";
 
 const Work = () => {
@@ -30,8 +30,21 @@ const Work = () => {
                 <li>NodeJS</li>
               </Stack> */}
               <ProjectLinks>
-                <a href={project.projectLink} target="_blank" rel="noreferrer">
-                  <FiExternalLink />
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  id="live"
+                >
+                  Live preview <FiExternalLink />
+                </a>
+                <a
+                  href={project.projectLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  id="code"
+                >
+                  Source Code <FiGithub />
                 </a>
               </ProjectLinks>
             </ProjectDescription>
@@ -114,17 +127,20 @@ const ProjectImage = styled.div`
 const ProjectDescription = styled.div`
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
 
   h3 {
     color: #cbd2e6;
     font-size: 1.2rem;
-    padding-bottom: 10px;
+    margin-top: 20px;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     background: #112240;
+    margin-top: 20px;
+    line-height: 1.8;
+    padding: 10px;
   }
 
   @media screen and (max-width: 768px) {
@@ -141,7 +157,6 @@ const ProjectDescription = styled.div`
 
     p {
       font-size: 0.7rem;
-      background: #112240;
     }
   }
 `;
@@ -149,6 +164,8 @@ const ProjectDescription = styled.div`
 const ProjectLinks = styled.div`
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
 
   a {
     color: #8892b0;
@@ -168,7 +185,7 @@ const ProjectLinks = styled.div`
 
 const ShowMoreButton = styled.button`
   display: flex;
-  width: 20%;
+  width: 10%;
   justify-content: center;
   align-items: center;
   margin: auto;
@@ -184,9 +201,10 @@ const ShowMoreButton = styled.button`
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     color: #cc2121;
-    font-weight: 500;
+    font-weight: 700;
+    font-size: 1rem;
   }
 
   &:hover {
