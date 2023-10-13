@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "animate.css";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
+import { socialLinkData } from "../data/navData";
 
 const Start = () => {
   return (
@@ -26,29 +27,11 @@ const Start = () => {
         </DescriptionContent>
       </AboutDescription>
       <AboutIcons>
-        <Icon>
-          <a href="https://github.com/Trend20" target="_blank" rel="noreferrer">
-            <FiGithub />
-          </a>
-        </Icon>
-        <Icon>
-          <a
-            href="https://www.linkedin.com/in/enock-omondi/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FiLinkedin />
-          </a>
-        </Icon>
-        <Icon>
-          <a
-            href="https://twitter.com/dev_enock"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FiTwitter />
-          </a>
-        </Icon>
+        {socialLinkData.map((item) => (
+          <Icon key={item.id}>
+            <a href={item.socialLink}>{item.icon}</a>
+          </Icon>
+        ))}
       </AboutIcons>
       <AboutButton>
         <AboutAnchor href="mailto:enockomondi305@gmail.com">
