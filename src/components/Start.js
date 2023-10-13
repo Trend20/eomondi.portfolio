@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import "animate.css";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { socialLinkData } from "../data/navData";
 
 const Start = () => {

@@ -39,12 +39,12 @@ const AboutMe = () => {
           <ContentParagraph>
             Here are a few technologies I’ve been working with recently:
           </ContentParagraph>
-          <TechStackContainer className="languages">
-            {technologies.map((tech, index) => {
-              return <List key={index}>{tech}</List>;
-            })}
-          </TechStackContainer>
         </AboutMeContent>
+        <TechStackContainer className="languages">
+          {technologies.map((tech, index) => {
+            return <List key={index}>{tech}</List>;
+          })}
+        </TechStackContainer>
       </Description>
     </AboutWrapper>
   );
@@ -72,8 +72,9 @@ const AboutWrapper = styled(motion.div)`
 
 const Description = styled.div`
   display: flex;
-  width: 100%;
+  width: 70%;
   align-items: center;
+  justify-content: space-between;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -88,7 +89,10 @@ const AboutMeContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  width: 60%;
+  width: 40%;
+  padding: 20px;
+  height: 500px;
+  background-color: #940b92;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -100,9 +104,9 @@ const AboutMeContent = styled.div`
 const ContentParagraph = styled.p`
   display: flex;
   padding-top: 20px;
-  width: 60%;
+  width: 100%;
   line-height: 1.6;
-  font-size: 0.8rem;
+  font-size: 1rem;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -114,7 +118,11 @@ const ContentParagraph = styled.p`
 const TechStackContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 30px;
+  width: 40%;
+  height: 500px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #940b92;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -133,7 +141,7 @@ const List = styled.li`
   list-style: none;
   display: flex;
   align-items: center;
-  font-size: 0.8rem;
+  font-size: 1rem;
   padding-top: 10px;
 
   @media screen and (max-width: 768px) {
