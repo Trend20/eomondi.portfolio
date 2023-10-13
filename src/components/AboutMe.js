@@ -92,7 +92,7 @@ const AboutMeContent = styled.div`
   width: 40%;
   padding: 20px;
   height: 500px;
-  background-color: #940b92;
+  background-color: #112240;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -122,7 +122,7 @@ const TechStackContainer = styled.div`
   height: 500px;
   margin-top: 30px;
   padding: 20px;
-  background-color: #940b92;
+  background-color: #112240;
 
   @media screen and (max-width: 768px) {
     width: 100%;

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
-import { navData } from "../data/navData";
+import { navData } from "../data/myData";
 
 const Navbar = ({ about, services, experience, work, contact }) => {
   const [click, setClick] = useState(false);
