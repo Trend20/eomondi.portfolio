@@ -120,3 +120,57 @@ export const skillsData = [
     id: uuidv4(),
   },
 ];
+
+// experience data
+export const experienceData = [
+  {
+    title: "Frontend Engineer",
+    duration: "Present",
+    response: [
+      "This is my role",
+      "This is my role",
+      "This is my role",
+      "This is my role",
+    ],
+  },
+  {
+    title: "Frontend Engineer",
+    duration: "Present",
+    response: [
+      "This is my role",
+      "This is my role",
+      "This is my role",
+      "This is my role",
+    ],
+  },
+  {
+    title: "UX Engineer",
+    duration: "Present",
+    response: [
+      "This is my role",
+      "This is my role",
+      "This is my role",
+      "This is my role",
+    ],
+  },
+  {
+    title: "Fullstack Engineer",
+    duration: "Present",
+    response: [
+      "This is my role",
+      "This is my role",
+      "This is my role",
+      "This is my role",
+    ],
+  },
+  {
+    title: "Backend Engineer",
+    duration: "Present",
+    response: [
+      "This is my role",
+      "This is my role",
+      "This is my role",
+      "This is my role",
+    ],
+  },
+];
