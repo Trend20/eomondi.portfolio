@@ -1,19 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-
-const technologies = [
-  "Javascript",
-  "Typescript",
-  "React",
-  "Angular",
-  "Node.js",
-  "MongoDB",
-  "Bootstrap",
-  "Sass",
-  "Git",
-  "Next.js",
-];
+import { skillsData } from "../data/myData";
 
 const AboutMe = () => {
   return (
@@ -36,13 +24,13 @@ const AboutMe = () => {
             My main focus these days is building accessible, inclusive products
             and digital experiences for a variety of clients.
           </ContentParagraph>
-          <ContentParagraph>
+          {/* <ContentParagraph>
             Here are a few technologies I’ve been working with recently:
-          </ContentParagraph>
+          </ContentParagraph> */}
         </AboutMeContent>
         <TechStackContainer className="languages">
-          {technologies.map((tech, index) => {
-            return <List key={index}>{tech}</List>;
+          {skillsData.map((tech, index) => {
+            return <List key={index}>{tech.icon}</List>;
           })}
         </TechStackContainer>
       </Description>
@@ -58,7 +46,7 @@ const AboutWrapper = styled(motion.div)`
   justify-content: center;
   align-items: center;
   color: #8892b0;
-  margin-top: 50px;
+  margin-top: 70px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -71,10 +59,13 @@ const AboutWrapper = styled(motion.div)`
 `;
 
 const Description = styled.div`
-  display: flex;
-  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 50px;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  width: 70%;
+  margin-top: 100px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -89,7 +80,7 @@ const AboutMeContent = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 30px;
-  width: 40%;
+  width: 100%;
   padding: 20px;
   height: 500px;
   background-color: #112240;
@@ -117,8 +108,10 @@ const ContentParagraph = styled.p`
 
 const TechStackContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 40%;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 500px;
   margin-top: 30px;
   padding: 20px;
@@ -132,17 +125,11 @@ const TechStackContainer = styled.div`
 `;
 
 const List = styled.li`
-  &::before {
-    content: "▹";
-    line-height: 12px;
-    margin-right: 20px;
-    color: #cc2121;
-  }
   list-style: none;
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  padding-top: 10px;
+  justify-content: center;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     width: 100%;
