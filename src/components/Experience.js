@@ -1,9 +1,7 @@
 import "react-tabs/style/react-tabs.css";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import "../App.css";
 import * as React from "react";
-import { experienceData } from "../data/myData";
 
 const Experience = () => {
   return (
@@ -27,10 +25,20 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Participating in the design and creation of scalable software.
+                Collaborate effectively in an agile manner with cross-functional
+                teams on Github and Skype, including backend developers,
+                designers, and product managers, to deliver cohesive solutions.
               </p>
-              <p>Writing clean, functional code on the front- and back-end.</p>
-              <p>Testing and fixing bugs or other coding issues.</p>
+              <p>
+                Conduct thorough end-to-end testing and debugging using Cypress
+                and DevTools to identify and resolve frontend issues, ensuring a
+                bug-free user experience.
+              </p>
+              <p>
+                Communicate with the internal teams and stakeholders through
+                Microsoft Teams and Skype, working to determine solutions for
+                the best user experience.
+              </p>
             </div>
           </div>
           <div class="experience-card">
@@ -43,12 +51,12 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Built the Mezy Dashboard using React.js for Frontend while
-                consuming REST APIS using Axios from a SpringBoot Backend.
-              </p>
-              <p>
                 Utilized the latest frontend libraries and built reusable
                 components using React.js to speed up development time by 30%.
+              </p>
+              <p>
+                Built the Mezy Dashboard using React.js for Frontend while
+                consuming REST APIS using Axios from a SpringBoot Backend.
               </p>
               <p>
                 Used Bootstrap for styling the Mezy Dashboard hence increasing
@@ -58,7 +66,6 @@ const Experience = () => {
             </div>
           </div>
           <div class="experience-card">
-            {/* <h3 class="job-title">Card 1</h3> */}
             <Tittle>Frontend Engineer</Tittle>
             <Tittle className="company">Mortgage Ezy</Tittle>
             <JobDuration>June 2021 - May 2022</JobDuration>
@@ -68,22 +75,24 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Collaborated, designed, and tested innovative applications, and
-                supported those applications for our highly valued customers.
+                Built RESTful APIs using NodeJS and ExpressJS that serve data to
+                a React front-end based on dynamically chosen user inputs that
+                handle over 200,000 concurrent users.
               </p>
               <p>
-                Created and maintained the company website while documenting the
-                different releases.
+                Employed Design Thinking to create products that provide a great
+                user experience along with high performance, security, quality,
+                and stability.
               </p>
               <p>
-                Employed Design Thinking to create products that provided a
-                great user experience along with high performance, security,
-                quality, and stability.
+                Re-built the front end of our Bru Finance web app through an
+                appealing visual design using React, resulting in a more modular
+                code and increasing speed by 30%.
               </p>
             </div>
           </div>
           <div className="experience-card">
-            <Tittle>Frontend React Developer</Tittle>
+            <Tittle>Frontend Developer</Tittle>
             <Tittle className="company">Jag Technology LLC</Tittle>
             <JobDuration>Oct 2020 - April 2021</JobDuration>
             <div class="job-bar">
@@ -92,17 +101,42 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Collaborated, designed, and tested innovative applications, and
-                supported those applications for our highly valued customers.
+                Developed and implemented highly responsive user interface
+                components using react concepts.
               </p>
               <p>
-                Created and maintained the company website while documenting the
-                different releases.
+                Monitored and improved front-end performance by minimizing the
+                CSS code and using libraries like Materialize and Bootstrap.
               </p>
               <p>
-                Employed Design Thinking to create products that provided a
-                great user experience along with high performance, security,
-                quality, and stability.
+                Fixed bugs from existing websites and implemented enhancements
+                that significantly improved web functionality and speed.
+              </p>
+            </div>
+          </div>
+
+          <div class="experience-card">
+            <Tittle>Frontend Engineer</Tittle>
+            <Tittle className="company">MTAANI-TECH HUB LIMITED</Tittle>
+            <JobDuration>Feb 2019 - May 2021</JobDuration>
+            <div class="job-bar">
+              <div class="emptybar"></div>
+              <div class="filledbar"></div>
+            </div>
+            <div className="roles">
+              <p>
+                Integrated third-party APIs to enhance application functionality
+                and data retrieval, enabling seamless integration of external
+                services.
+              </p>
+              <p>
+                Maintained high code quality standards through code reviews and
+                adhered to best practices, ensuring maintainability and
+                scalability.
+              </p>
+              <p>
+                Designed and optimized interfaces for mobile devices, improving
+                accessibility and user engagement.
               </p>
             </div>
           </div>
