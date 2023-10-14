@@ -30,7 +30,12 @@ const AboutMe = () => {
         </AboutMeContent>
         <TechStackContainer className="languages">
           {skillsData.map((tech, index) => {
-            return <List key={index}>{tech.icon}</List>;
+            return (
+              <div className="skills">
+                <List key={index}>{tech.icon}</List>
+                <p>{tech.name}</p>
+              </div>
+            );
           })}
         </TechStackContainer>
       </Description>
@@ -108,7 +113,7 @@ const ContentParagraph = styled.p`
 
 const TechStackContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: repeat(4, 2fr);
   justify-content: center;
   align-items: center;
   width: 100%;

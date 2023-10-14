@@ -7,6 +7,9 @@ import {
   SiMongodb,
   SiSupabase,
   SiNestjs,
+  SiCypress,
+  SiGithub,
+  SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
@@ -82,42 +85,67 @@ export const skillsData = [
   {
     icon: <SiJavascript size={70} fill="#f0d824" />,
     id: uuidv4(),
+    name: "Javascript",
   },
   {
     icon: <SiTypescript size={70} fill="#007acc" />,
     id: uuidv4(),
+    name: "Typescript",
   },
   {
     icon: <SiReact size={70} fill="#0074a6" />,
     id: uuidv4(),
+    name: "React",
   },
   {
     icon: <TbBrandNextjs size={70} fill="#00040a" />,
     id: uuidv4(),
+    name: "NextJS",
   },
   {
     icon: <SiNestjs size={70} fill="#cc2121" />,
     id: uuidv4(),
+    name: "NestJS",
   },
   {
     icon: <FaNodeJs size={70} fill="#026e00" />,
     id: uuidv4(),
+    name: "NodeJS",
   },
   {
     icon: <SiRedux size={70} fill="#764abc" />,
     id: uuidv4(),
+    name: "Redux",
   },
   {
     icon: <DiMaterializecss size={70} fill="#3399FF" />,
     id: uuidv4(),
+    name: "Material UI",
+  },
+  {
+    icon: <SiTailwindcss size={70} fill="#3399FF" />,
+    id: uuidv4(),
+    name: "TailwindCSS",
   },
   {
     icon: <SiMongodb size={70} fill="#234526" />,
     id: uuidv4(),
+    name: "Mongodb",
+  },
+  {
+    icon: <SiGithub size={70} fill="#120f0f" />,
+    id: uuidv4(),
+    name: "Github",
+  },
+  {
+    icon: <SiCypress size={70} fill="#00a400" />,
+    id: uuidv4(),
+    name: "Cypress",
   },
   {
     icon: <SiSupabase size={70} fill="#3cb179" />,
     id: uuidv4(),
+    name: "Supabase",
   },
 ];
 

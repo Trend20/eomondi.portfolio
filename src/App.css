@@ -177,6 +177,12 @@
   /* color: #cc2121 !important; */
 }
 
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
 /* end of experience section */
 
 @media screen and (max-width: 768px) {
