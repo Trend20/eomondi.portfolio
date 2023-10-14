@@ -75,7 +75,7 @@ const Description = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   @media (min-width: 1024px) {
   }
@@ -123,7 +123,11 @@ const TechStackContainer = styled.div`
   background-color: #112240;
 
   @media screen and (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    height: auto;
     width: 100%;
+    margin-top: 10px;
   }
   @media (min-width: 1024px) {
   }

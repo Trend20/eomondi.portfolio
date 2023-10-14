@@ -86,7 +86,10 @@ const ProjectsWrapper = styled.div`
   margin-top: 50px;
 
   @media screen and (max-width: 768px) {
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: 100%;
+    grid-gap: 20px;
   }
 `;
 

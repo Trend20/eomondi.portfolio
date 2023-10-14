@@ -10,9 +10,8 @@ const Start = () => {
         <Img src="/img/profile.png" alt="profile-pic" />
       </AboutImage>
       <AboutHeading>
-        <H1>
-          <Span>Enock Omondi</Span>I build interactive web stuff.
-        </H1>
+        <H1>Enock Omondi</H1>
+        <p>I build interactive web stuff.</p>
       </AboutHeading>
       <AboutDescription>
         <DescriptionContent>
@@ -66,6 +65,26 @@ const AboutHeading = styled.div`
   justify-content: center;
   width: 100%;
 
+  p {
+    display: flex;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      display: flex;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    @media (min-width: 1024px) {
+    }
+  }
+
   @media screen and (max-width: 768px) {
     width: 100%;
     display: flex;
@@ -77,9 +96,11 @@ const AboutHeading = styled.div`
 const H1 = styled.h1`
   display: flex;
   font-size: 3.5rem;
+  font-weight: 700;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     font-size: 2rem;
@@ -91,20 +112,20 @@ const H1 = styled.h1`
   }
 `;
 
-const Span = styled.span`
-  display: flex;
-  color: #cbd2e6;
+// const Span = styled.span`
+//   display: flex;
+//   color: #cbd2e6;
 
-  &hover {
-    --animate-duration: 2s;
-  }
-  @media screen and (max-width: 768px) {
-    display: flex;
-    color: #cbd2e6;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
+//   &hover {
+//     --animate-duration: 2s;
+//   }
+//   @media screen and (max-width: 768px) {
+//     display: flex;
+//     color: #cbd2e6;
+//   }
+//   @media (min-width: 1024px) {
+//   }
+// `;
 
 const AboutDescription = styled.div`
   display: flex;
@@ -133,6 +154,14 @@ const DescriptionContent = styled.p`
 
   p {
     margin-top: 20px;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 0.8rem;
+      width: 100%;
+    }
+    @media (min-width: 1024px) {
+    }
   }
 
   @media screen and (max-width: 768px) {

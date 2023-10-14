@@ -186,6 +186,38 @@
 /* end of experience section */
 
 @media screen and (max-width: 768px) {
+  .experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  
+  .experience-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #112240;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0;
+    color: #fff !important;
+  }
+
+  .experience-card:not(:first-child) {
+    margin-left: 0px;
+}
+
+
+  .skills p{
+   font-size: .8rem;
+  }
 
   .nav-options {
     display: flex;
@@ -252,7 +284,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: .8rem;
     letter-spacing: 2px;
     color: rgb(129, 129, 129);
   }
@@ -260,7 +292,7 @@
   .head p span {
     width: 20% !important;
     border: 1px solid rgb(226, 55, 55);
-    margin-right: 30px;
+    margin-right: 10px;
   }
 
   #notable{

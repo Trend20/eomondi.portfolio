@@ -29,15 +29,15 @@ const Navbar = ({ about, services, experience, work, contact }) => {
               </Link>
             </ListElement>
           ))}
+          <Anchor
+            href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </Anchor>
         </NavUlElements>
       </NavElement>
       <ActionElement>
-        <Anchor
-          href="https://drive.google.com/file/d/15bSV1Sql2tmvXCfm6oOSFBYlOCLAtctd/view?usp=sharing"
-          target="_blank"
-        >
-          Resume
-        </Anchor>
         <i>
           {darkMode ? (
             <MdLightMode
@@ -110,6 +110,7 @@ const NavElement = styled.nav`
 
   @media screen and (max-width: 768px) {
     width: 100%;
+    margin-top: 10px;
   }
   @media (min-width: 1024px) {
   }
@@ -119,7 +120,7 @@ const NavUlElements = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -184,7 +185,6 @@ const ActionElement = styled.div`
     align-items: flex-start;
     font-size: 0.8rem;
     font-weight: 500;
-    padding-top: 20px;
     width: 30%;
     cursor: pointer;
   }
@@ -206,14 +206,15 @@ const Anchor = styled.a`
   cursor: pointer;
   text-decoration: none;
   color: #cc2121;
-  width: 50%;
+  width: 20%;
 
   &:hover {
     background: rgb(39, 39, 66);
   }
 
   @media screen and (max-width: 768px) {
-    width: 100%;
+    width: 40%;
+    margin-top: 20px;
   }
   @media (min-width: 1024px) {
   }
