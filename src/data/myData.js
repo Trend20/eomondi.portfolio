@@ -8,7 +8,7 @@ import {
   SiSupabase,
   SiNestjs,
 } from "react-icons/si";
-import { TbBrandNextjs, TbBrandReactNative } from "react-icons/tb";
+import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { DiMaterializecss } from "react-icons/di";
 import { v4 as uuidv4 } from "uuid";
