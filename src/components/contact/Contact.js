@@ -1,8 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
-import { SiHashnode } from "react-icons/si";
-import { FaHackerrank } from "react-icons/fa";
 import { socialLinkData } from "../../data/myData";
 
 const Contact = () => {
