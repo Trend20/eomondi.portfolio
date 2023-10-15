@@ -1,6 +1,6 @@
 import "react-tabs/style/react-tabs.css";
 import styled from "styled-components";
-import "../App.css";
+import "../../App";
 import * as React from "react";
 
 const Experience = () => {

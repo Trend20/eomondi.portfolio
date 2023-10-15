@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import { workData } from "../data/myData";
+import { workData } from "../../data/myData";
 
 const Work = () => {
   return (

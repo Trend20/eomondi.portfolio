@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { skillsData } from "../data/myData";
+import { skillsData } from "../../data/myData";
 
 const AboutMe = () => {
   return (

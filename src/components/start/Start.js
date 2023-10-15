@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "animate.css";
-import { socialLinkData } from "../data/myData";
+import { socialLinkData } from "../../data/myData";
 
 const Start = () => {
   return (
