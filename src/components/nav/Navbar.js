@@ -198,7 +198,7 @@ const ActionElement = styled.div`
 
 const Anchor = styled.a`
   display: flex;
-  border: 1px solid #cc2121;
+  // border: 1px solid #cc2121;
   justify-content: center;
   align-items: center;
   padding: 15px;
@@ -207,6 +207,9 @@ const Anchor = styled.a`
   text-decoration: none;
   color: #cc2121;
   width: 20%;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 
   &:hover {
     background: rgb(39, 39, 66);

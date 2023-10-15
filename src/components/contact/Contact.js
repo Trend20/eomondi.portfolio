@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { SiHashnode } from "react-icons/si";
 import { FaHackerrank } from "react-icons/fa";
+import { socialLinkData } from "../../data/myData";
 
 const Contact = () => {
   return (
@@ -25,37 +26,11 @@ const Contact = () => {
       </ContactDetails>
 
       <SocialPlatforms>
-        <a href="https://github.com/Trend20" target="_blank" rel="noreferrer">
-          <FiGithub />
-        </a>
-        <a
-          href="https://twitter.com/dev_enock"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FiTwitter />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/enock-omondi/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FiLinkedin />
-        </a>
-        <a
-          href="https://www.hackerrank.com/enockomondi305"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <FaHackerrank />
-        </a>
-        <a
-          href="https://hashnode.com/@DevEnock"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SiHashnode />
-        </a>
+        {socialLinkData.map((icon) => (
+          <a href={icon.socialLink} target="_blank" rel="noreferrer">
+            {icon.icon}
+          </a>
+        ))}
       </SocialPlatforms>
 
       <FooterContainer className="footer">

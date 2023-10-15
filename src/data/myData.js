@@ -10,6 +10,7 @@ import {
   SiCypress,
   SiGithub,
   SiTailwindcss,
+  SiHashnode,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
@@ -44,6 +45,12 @@ export const socialLinkData = [
     socialLink: "https://twitter.com/dev_enock",
     id: uuidv4(),
     icon: <FiTwitter />,
+  },
+  {
+    name: "Hashnode",
+    socialLink: "https://hashnode.com/@DevEnock",
+    id: uuidv4(),
+    icon: <SiHashnode />,
   },
 ];
 
@@ -201,4 +208,6 @@ export const experienceData = [
       "This is my role",
     ],
   },
+
+  //
 ];
