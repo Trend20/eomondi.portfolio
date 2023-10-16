@@ -1,12 +1,11 @@
 import "react-tabs/style/react-tabs.css";
-import styled from "styled-components";
-import "../../App";
 import * as React from "react";
+import "./experience.css";
 
 const Experience = () => {
   return (
     <>
-      <ExperienceContainer className="experience" id="experience">
+      <div className="experience" id="experience">
         <div class="head">
           <h1>Experience</h1>
           <p>
@@ -16,9 +15,9 @@ const Experience = () => {
         {/* demo carousel */}
         <div class="experience-container">
           <div class="experience-card">
-            <Tittle>Lead Frontend Engineer</Tittle>
-            <Tittle className="company">Riverbank Solutions</Tittle>
-            <JobDuration>April 2023 - Present</JobDuration>
+            <h3 className="j_title">Lead Frontend Engineer</h3>
+            <h1 className="company">Riverbank Solutions</h1>
+            <p className="j_duration">April 2023 - Present</p>
             <div class="job-bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
@@ -42,9 +41,9 @@ const Experience = () => {
             </div>
           </div>
           <div class="experience-card">
-            <Tittle>FullStack Developer</Tittle>
-            <Tittle className="company">Whrrl</Tittle>
-            <JobDuration>June 2022 - May 2023</JobDuration>
+            <h3 className="j_title">FullStack Developer</h3>
+            <h1 className="company">Whrrl</h1>
+            <p className="j_duration">June 2022 - May 2023</p>
             <div class="job-bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
@@ -66,9 +65,9 @@ const Experience = () => {
             </div>
           </div>
           <div class="experience-card">
-            <Tittle>Frontend Engineer</Tittle>
-            <Tittle className="company">Mortgage Ezy</Tittle>
-            <JobDuration>June 2021 - May 2022</JobDuration>
+            <h3 className="j_title">Frontend Engineer</h3>
+            <h1 className="company">Mortgage Ezy</h1>
+            <p className="j_duration">June 2021 - May 2022</p>
             <div class="job-bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
@@ -92,9 +91,9 @@ const Experience = () => {
             </div>
           </div>
           <div className="experience-card">
-            <Tittle>Frontend Developer</Tittle>
-            <Tittle className="company">Jag Technology LLC</Tittle>
-            <JobDuration>Oct 2020 - April 2021</JobDuration>
+            <h3 className="j_title">Frontend Developer</h3>
+            <h1 className="company">Jag Technology LLC</h1>
+            <p className="j_duration">Oct 2020 - April 2021</p>
             <div class="job-bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
@@ -116,9 +115,9 @@ const Experience = () => {
           </div>
 
           <div class="experience-card">
-            <Tittle>Frontend Engineer</Tittle>
-            <Tittle className="company">MTAANI-TECH HUB LIMITED</Tittle>
-            <JobDuration>Feb 2019 - May 2021</JobDuration>
+            <h3 className="j_title">Frontend Engineer</h3>
+            <h3 className="company">MTAANI-TECH HUB LIMITED</h3>
+            <p className="j_duration">Feb 2019 - May 2021</p>
             <div class="job-bar">
               <div class="emptybar"></div>
               <div class="filledbar"></div>
@@ -141,54 +140,9 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </ExperienceContainer>
+      </div>
     </>
   );
 };
-
-const ExperienceContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding: 100px;
-  width: 100%;
-  height: auto;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    padding: 20px;
-    margin-top: 50px;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
-
-const Tittle = styled.h3`
-  display: flex;
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-top: 5px;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    font-size: 0.8rem;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
-
-const JobDuration = styled.p`
-  display: flex;
-  font-size: 0.8rem;
-  line-height: 12px;
-  margin-top: 10px;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    margin: 0px;
-    padding: 0px;
-  }
-  @media (min-width: 1024px) {
-  }
-`;
 
 export default Experience;
