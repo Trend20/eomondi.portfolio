@@ -1,0 +1,154 @@
+.header_element{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  color: #8892b0;
+}
+
+.logo-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 20%;
+}
+
+.logo-container img{
+    margin-left: 80px;
+}
+
+#nav_element{
+  display: flex;
+  align-items: center;
+  width: 40%;
+  justify-content: center;
+}
+
+.ul_elements{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.list_element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20%;
+  cursor: pointer;
+}
+
+.list_element:hover{
+  color: #cc2121;
+}
+
+span{
+  color: #cc2121;
+  margin-right: 5px;
+}
+
+.action_element{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  width: 20%;
+  cursor: pointer;
+}
+
+.action_element i{
+  margin-left: 20px;
+}
+
+.anchor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #cc2121;
+  width: 20%;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.anchor:hover{
+  background: rgb(39, 39, 66);
+}
+
+
+/* responsiveness */
+
+@media screen and (max-width: 768px) {
+
+  .header_element{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .logo-container{
+    width: 50%;
+  }
+  
+  .logo-container img{
+      margin-left: 0px;
+  }
+
+  #nav_element{
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .ul_elements{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .list_element{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding-top: 20px;
+    width: 30%;
+    cursor: pointer;
+  }
+  span{
+    width: 100%;
+  }
+
+  .action_element{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 30%;
+    cursor: pointer;
+  }
+  
+  .action_element i{
+    margin-left: 20px;
+  }
+
+  .anchor{
+    width: 40%;
+    margin-top: 20px;
+  }
+}
+
+
+@media (min-width: 1024px) {
+}
