@@ -24,7 +24,7 @@
 
   .experience{
     width: 100%;
-    padding: 20px;
+    padding: 20px !important;
     margin-top: 50px;
   }
 
