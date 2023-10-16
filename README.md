@@ -1,9 +1,5 @@
-<!-- ## Dev Enock's Portfolio Site
+## eomondi
 
-![user-form](readmeimages/home.png)
+My personal website with a list of my projects that help people learn.
 
-![user-form](readmeimages/experience.png)
-
-![user-form](readmeimages/work.png)
-
-![user-form](readmeimages/contact.png) -->
+![user-form](src/assets/images/coverport.png)
