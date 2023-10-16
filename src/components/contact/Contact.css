@@ -1,0 +1,138 @@
+#contact{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  color: #8892b0;
+}
+
+#contact h3{
+  display: flex;
+    padding: 20px 0px;
+    color: #cc2121;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+#contact span{
+  display: flex;
+  margin-right: 20px;
+  color: #cc2121;
+  font-size: 1rem;
+}
+
+.contact-details{
+  display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contact-details h1{
+  color: #cbd2e6;
+  font-size: 2.5rem;
+}
+
+.contact-details p{
+  line-height: 1.5;
+  text-align: center;
+  padding: 20px 0px;
+  width: 70%;
+  font-size: 0.9rem;
+}
+
+.contact-details  a{
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: transparent;
+  outline: none;
+  border: 1px solid #cc2121;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 15px;
+  color: #cc2121;
+  font-weight: 500;
+  margin: 50px 0px;
+  cursor: pointer;
+}
+
+.contact-details  a:hover{
+  background: rgb(39, 39, 66);
+}
+
+.social_platforms{
+  display: flex;
+}
+
+.social_platforms a{
+  display: flex;
+    padding: 10px;
+    cursor: pointer;
+    color: #8892b0;
+}
+
+.social_platforms a:hover{
+  color: #cc2121;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #8892b0;
+  margin-top: 40px;
+}
+
+
+.footer p{
+    font-size: 0.7rem;
+    z-index: 10;
+    text-align: justify;
+    text-indent: 20px;
+    color: #cc2121;
+}
+
+
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  #contact{
+    padding: 20px;
+  }
+  
+  #contact h3{
+    font-size: 1rem;
+  }
+  
+  #contact span{
+    font-size: 1rem;
+  }
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-details p{
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.contact-details a{
+  width: 50%;
+}
+
+.contact-details a:hover{
+    background: rgb(39, 39, 66);
+  }
+}
