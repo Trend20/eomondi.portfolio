@@ -33,7 +33,7 @@ const Work = () => {
                   Live preview <FiExternalLink />
                 </a>
                 <a
-                  href={project.projectLink}
+                  href={project.gitLink}
                   target="_blank"
                   rel="noreferrer"
                   id="code"

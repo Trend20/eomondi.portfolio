@@ -17,7 +17,6 @@ import { FaNodeJs } from "react-icons/fa";
 import { DiMaterializecss } from "react-icons/di";
 import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
-import zedImg from "../assets/images/zed.png";
 import contriImg from "../assets/images/contri.png";
 import fmattersImg from "../assets/images/fmatters.png";
 import stylerImg from "../assets/images/styler.png";
@@ -73,6 +72,7 @@ export const workData = [
       "Built a personal blog where I document all my technical writings using React for frontend and Supabase for backend.",
     title: "Frontend Matters",
     projectLink: "https://fmatters.netlify.app/",
+    gitLink: "https://github.com/Trend20/FrontendMatters",
   },
   {
     img: stylerImg,
@@ -80,13 +80,15 @@ export const workData = [
       "Built a fashion marketplace where you can find different outfits from various vendors in Kenya.",
     title: "Styler",
     projectLink: "https://react-typescript-e-commerce-template.vercel.app/",
+    gitLink: "https://github.com/Trend20/Styler",
   },
   {
     img: contriImg,
     description:
       "Building an OpenSource web platform that helps developers to rank their projects based on activity and impact.",
-    title: "BruFinance",
-    projectLink: "https://bru.finance/",
+    title: "ContriQuest",
+    projectLink: "https://contriquest.vercel.app/",
+    gitLink: "https://github.com/Trend20/ContriQuest",
   },
 ];
 
