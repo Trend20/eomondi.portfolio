@@ -299,9 +299,16 @@
   }
 
   #notable{
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .e-tab{
     width: 30% !important;
+  }
+
+  #live, #code{
+    text-decoration: none;
+    width: 45%;
+    background: rgb(39, 39, 66);
+    padding: 10px;
   }
 }

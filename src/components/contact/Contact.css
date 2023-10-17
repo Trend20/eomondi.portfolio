@@ -59,6 +59,9 @@ justify-content: center;
   font-weight: 500;
   margin: 50px 0px;
   cursor: pointer;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+  rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+  rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .contact-details  a:hover{
@@ -110,6 +113,18 @@ justify-content: center;
     font-size: 1rem;
   }
   
+  #contact-head{
+    margin-left: 100px !important;
+  }
+
+  #contact-head p{
+    margin-left: -100px;
+  }
+
+  #contact-head p span{
+    width: 10% !important;
+  }
+
   #contact span{
     font-size: 1rem;
   }

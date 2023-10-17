@@ -6,10 +6,10 @@ import "./Work.css";
 const Work = () => {
   return (
     <div className="work" id="work">
-      <div class="head">
+      <div class="head" id="work-head">
         <h1 id="notable">Notable Projects</h1>
         <p>
-          <span></span>Some Things I’ve Built
+          <span></span> Previous Projects
         </p>
       </div>
       <div className="projects_wrapper">
