@@ -217,6 +217,16 @@
   }
 
 
+.job-bar {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  height: 5px;
+  width: 90%;
+}
+
+
+
   .skills p{
    font-size: .8rem;
   }

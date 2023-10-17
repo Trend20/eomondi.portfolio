@@ -24,12 +24,19 @@ const Start = () => {
       <div className="about_icons">
         {socialLinkData.map((item) => (
           <i key={item.id}>
-            <a href={item.socialLink}>{item.icon}</a>
+            <a href={item.socialLink} target="_blank" rel="noreferrer">
+              {item.icon}
+            </a>
           </i>
         ))}
       </div>
       <div className="about_btn">
-        <a href="mailto:enockomondi305@gmail.com" className="about_anchor">
+        <a
+          href="mailto:enockomondi305@gmail.com"
+          target="_blank"
+          className="about_anchor"
+          rel="noreferrer"
+        >
           Let us Connect!
         </a>
       </div>
