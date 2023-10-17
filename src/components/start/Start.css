@@ -16,7 +16,7 @@
 }
 
 .about-img img{
-  max-width: 50%;
+  max-width: 50%;width: 100%;
   height: 50%;
   border-radius: 50%;
   border: none;
@@ -30,9 +30,9 @@
   width: 100%;
 }
 
-.about_heading h1{
+.about_heading h3{
   display: flex;
-  font-size: 3.5rem;
+  font-size: 2rem;
   font-weight: 700;
   flex-direction: column;
   align-items: center;
@@ -42,9 +42,7 @@
 
 .about_heading p{
   display: flex;
-  font-size: 2.5rem;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 700;
   flex-direction: column;
   align-items: center;
@@ -69,10 +67,6 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-}
-
-.description_content p{
-  margin-top: 20px;
 }
 
 .about_icons{
@@ -119,6 +113,9 @@
   font-weight: 500;
   cursor: pointer;
   width: 10%;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+  rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+  rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
 .about_anchor:hover{
@@ -129,7 +126,6 @@
 /* responsiveness */
 @media screen and (max-width: 768px) {
  #intro{
-  width: 100%;
   padding: 20px;
   margin-top: 0px;
  }
@@ -143,7 +139,7 @@
 }
 
 .about-img img{
-  max-width: 100%;
+  max-width: 50%;
   margin: 0px;
   padding: 0px;
   display: flex;
@@ -155,34 +151,40 @@
     display: flex;
 }
 
-.about_heading h1{
-  font-size: 2rem;
+.about_heading h3{
+  font-size: 1.5rem;
   width: 100%;
 }
 
 .about_heading p{
       width: 100%;
       display: flex;
-      font-size: 1rem;
-      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
 }
 .about_description{
   width: 100%;
 }
 
-.description_content p{
+.description_content{
   width: 100%;
-  font-size: 0.8rem;
-  width: 100%;
+  font-size: 1rem;
 }
 
 .about_icons{
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 100%;
 }
 
 .about_icons i{
     width: 100%;
-    padding: 0px;
+    padding: 0px !important;
+}
+
+.about_icons i a{
+  padding: 15px 0;
 }
 
 .about_btn{

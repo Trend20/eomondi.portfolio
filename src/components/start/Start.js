@@ -10,18 +10,15 @@ const Start = () => {
         <img src="/img/profile.png" alt="profile-pic" />
       </div>
       <div className="about_heading">
-        <h1>Enock Omondi</h1>
+        <h3>Enock Omondi</h3>
         <p>I build interactive web stuff.</p>
       </div>
       <div className="about_description">
         <p className="description_content">
-          <p>
-            I am a highly collaborative team player who thrives in dynamic and
-            fast-paced environments. My excellent communication and
-            problem-solving skills allow me to work effectively with
-            cross-functional teams to deliver solutions that exceed
-            expectations.
-          </p>
+          I am a highly collaborative team player who thrives in dynamic and
+          fast-paced environments. My excellent communication and
+          problem-solving skills allow me to work effectively with
+          cross-functional teams to deliver solutions that exceed expectations.
         </p>
       </div>
       <div className="about_icons">

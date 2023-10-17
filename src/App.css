@@ -82,7 +82,7 @@
 .experience-card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px;  margin-left: 30px;
   height: 550px;
   width: 400px;
   background-color: #112240;
