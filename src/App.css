@@ -209,11 +209,12 @@
     position: relative;
     left: 0;
     color: #fff !important;
+    margin-left: 0px;
   }
 
   .experience-card:not(:first-child) {
     margin-left: 0px;
-}
+  }
 
 
   .skills p{
