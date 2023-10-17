@@ -18,6 +18,9 @@ import { DiMaterializecss } from "react-icons/di";
 import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
 import zedImg from "../assets/images/zed.png";
+import contriImg from "../assets/images/contri.png";
+import fmattersImg from "../assets/images/fmatters.png";
+import stylerImg from "../assets/images/styler.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
@@ -65,23 +68,23 @@ export const workData = [
     projectLink: "https://bru.finance/",
   },
   {
-    img: bruImg,
+    img: fmattersImg,
     description:
-      "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
-    title: "BruFinance",
-    projectLink: "https://bru.finance/",
+      "Built a personal blog where I document all my technical writings using React for frontend and Supabase for backend.",
+    title: "Frontend Matters",
+    projectLink: "https://fmatters.netlify.app/",
   },
   {
-    img: zedImg,
+    img: stylerImg,
     description:
-      "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
-    title: "BruFinance",
-    projectLink: "https://bru.finance/",
+      "Built a fashion marketplace where you can find different outfits from various vendors in Kenya.",
+    title: "Styler",
+    projectLink: "https://react-typescript-e-commerce-template.vercel.app/",
   },
   {
-    img: zedImg,
+    img: contriImg,
     description:
-      "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
+      "Building an OpenSource web platform that helps developers to rank their projects based on activity and impact.",
     title: "BruFinance",
     projectLink: "https://bru.finance/",
   },
