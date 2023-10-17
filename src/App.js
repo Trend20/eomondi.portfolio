@@ -11,13 +11,7 @@ function App() {
 
   return (
     <div className="app">
-      <Navbar
-        about={"About"}
-        services={"Services"}
-        experience={"Experiences"}
-        work={"Work"}
-        contact={"Contact"}
-      />
+      <Navbar />
       <Start />
       <AboutMe />
       <Experience />

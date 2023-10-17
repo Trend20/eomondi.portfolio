@@ -6,7 +6,7 @@ import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import { navData } from "../../data/myData";
 import "./Nav.css";
 
-const Navbar = ({ about, services, experience, work, contact }) => {
+const Navbar = () => {
   const [click, setClick] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
   const handleClick = () => setClick(!click);
@@ -14,7 +14,7 @@ const Navbar = ({ about, services, experience, work, contact }) => {
 
   return (
     <header className="header_element">
-      <div className="logo">
+      <div className="logo-container">
         <a href="/">
           <img src="/img/logo.png" alt="logo" />
         </a>
