@@ -66,6 +66,7 @@ export const workData = [
       "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
     title: "BruFinance",
     projectLink: "https://bru.finance/",
+    status: "Complete",
   },
   {
     img: fmattersImg,
@@ -74,6 +75,7 @@ export const workData = [
     title: "Frontend Matters",
     projectLink: "https://fmatters.netlify.app/",
     gitLink: "https://github.com/Trend20/FrontendMatters",
+    status: "On Going",
   },
   {
     img: stylerImg,
@@ -82,14 +84,16 @@ export const workData = [
     title: "Styler",
     projectLink: "https://react-typescript-e-commerce-template.vercel.app/",
     gitLink: "https://github.com/Trend20/Styler",
+    status: "On Going",
   },
   {
     img: contriImg,
     description:
-      "Building an OpenSource web platform that helps developers to rank their projects based on activity and impact.",
+      "Building an OpenSource web platform that ranks developers based on their projects impact and activity.",
     title: "ContriQuest",
     projectLink: "https://contriquest.vercel.app/",
     gitLink: "https://github.com/Trend20/ContriQuest",
+    status: "On Going",
   },
 ];
 

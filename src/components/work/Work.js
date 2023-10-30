@@ -41,6 +41,12 @@ const Work = () => {
                   Source Code <FiGithub />
                 </a>
               </div>
+              <div style={{ display: "flex", alignItems: "center" }}>
+                <p style={{ background: "transparent" }}>Status:</p>
+                <p style={{ fontWeight: "bold", background: "transparent" }}>
+                  {project.status}
+                </p>
+              </div>
             </div>
           </div>
         ))}
