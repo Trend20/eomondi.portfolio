@@ -15,7 +15,7 @@ const Experience = () => {
         {/* demo carousel */}
         <div class="experience-container">
           <div class="experience-card">
-            <h3 className="j_title">Lead Frontend Engineer</h3>
+            <h3 className="j_title">Software Engineer</h3>
             <h1 className="company">Riverbank Solutions</h1>
             <p className="j_duration">April 2023 - Present</p>
             <div class="job-bar">

@@ -11,6 +11,7 @@ import {
   SiGithub,
   SiTailwindcss,
   SiHashnode,
+  SiJest,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
@@ -153,6 +154,11 @@ export const skillsData = [
     icon: <SiCypress size={70} fill="#00a400" />,
     id: uuidv4(),
     name: "Cypress",
+  },
+  {
+    icon: <SiJest size={70} fill="#00a400" />,
+    id: uuidv4(),
+    name: "Jest",
   },
   {
     icon: <SiSupabase size={70} fill="#3cb179" />,
