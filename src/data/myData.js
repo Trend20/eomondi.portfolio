@@ -21,6 +21,7 @@ import bruImg from "../assets/images/bru.png";
 import contriImg from "../assets/images/contri.png";
 import fmattersImg from "../assets/images/fmatters.png";
 import stylerImg from "../assets/images/styler.png";
+import swipeImg from "../assets/images/swipe.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
@@ -69,13 +70,13 @@ export const workData = [
     status: "Complete",
   },
   {
-    img: fmattersImg,
+    img: swipeImg,
     description:
-      "Built a personal blog where I document all my technical writings using React for frontend and Supabase for backend.",
-    title: "Frontend Matters",
-    projectLink: "https://fmatters.netlify.app/",
-    gitLink: "https://github.com/Trend20/FrontendMatters",
-    status: "On Going",
+      "Swipe is a banking agency based in Rwanda. I build the frontend of the website from scratch using Html, css, Thymeleaf and Javascript.",
+    title: "SwipeBpr",
+    projectLink: "https://swipe-bpr-portal.rbrc.io/login",
+    gitLink: "https://github.com/Trend20/swipe",
+    status: "Complete",
   },
   {
     img: stylerImg,
