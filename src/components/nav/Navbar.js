@@ -9,12 +9,10 @@ import "./Nav.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  // const [darkMode, setDarkMode] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  const [toggle, toggleNav] = useState(false);
 
   const switchTheme = () => {
     if (darkMode) {
