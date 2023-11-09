@@ -6,7 +6,49 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
 }
+/* light mode styles */
+.bg-light {
+  background-color: #fff;
+}
+
+.heading-light {
+  color: #0a192f;
+}
+
+.para-light {
+  color: #0a192f;
+}
+
+.btn-light {
+  background-color: #0a192f;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Dark Mode Styles */
+
+.bg-dark {
+  background-color: #0a192f;
+}
+
+.heading-dark {
+  color: #fff;
+}
+
+.para-dark {
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: #111;
+  opacity: 1;
+}
+
+/* end dark light theme */
 
 .app{
   background-color: #0a192f;

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 import { Link } from "react-scroll";
 import { AiOutlineClose } from "react-icons/ai";
 import { FaBars } from "react-icons/fa";
@@ -8,9 +9,20 @@ import "./Nav.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
+  // const [darkMode, setDarkMode] = useState(true);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+  const [toggle, toggleNav] = useState(false);
+
+  const switchTheme = () => {
+    if (darkMode) {
+      theme.dispatch({ type: "LIGHTMODE" });
+    } else {
+      theme.dispatch({ type: "DARKMODE" });
+    }
+  };
 
   return (
     <header className="header_element">
@@ -43,21 +55,17 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="action_element">
-        <i>
+        <Link
+          to=""
+          className={` nav-item icons ${darkMode ? "btn-dark" : "btn-light"}`}
+          onClick={switchTheme}
+        >
           {darkMode ? (
-            <MdLightMode
-              size={40}
-              fill="#cc2121"
-              onClick={() => setDarkMode(!darkMode)}
-            />
+            <MdOutlineDarkMode size={40} fill="#cc2121" />
           ) : (
-            <MdOutlineDarkMode
-              size={40}
-              fill="#cc2121"
-              onClick={() => setDarkMode(!darkMode)}
-            />
+            <MdLightMode size={40} fill="#cc2121" />
           )}
-        </i>
+        </Link>
       </div>
       <div className="toggle mobile-menu" onClick={handleClick}>
         {click ? (
