@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-family: 'Roboto Mono', monospace;
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
 }
 /* light mode styles */
 .bg-light {
@@ -50,7 +49,7 @@
 
 /* end dark light theme */
 
-.app{
+#app{
   background-color: #0a192f;
   width: 100%;
   min-height: 100%;

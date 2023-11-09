@@ -15,7 +15,7 @@ function App() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className={`btn ${darkMode ? "btn-dark" : "btn-light"}`}>
+    <div className={`btn ${darkMode ? "btn-dark" : "btn-light"}`} id="app">
       <Navbar />
       <Start />
       <AboutMe />
