@@ -24,19 +24,20 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Collaborate effectively in an agile manner with cross-functional
-                teams on Github and Skype, including backend developers,
-                designers, and product managers, to deliver cohesive solutions.
+                Spearheaded the development of Zed Payments portal's frontend,
+                employing React to enhance visual appeal, foster modular code,
+                and accelerate performance by 40%.
               </p>
               <p>
-                Conduct thorough end-to-end testing and debugging using Cypress
-                and DevTools to identify and resolve frontend issues, ensuring a
-                bug-free user experience.
+                Executed comprehensive end-to-end testing and debugging using
+                Cypress and DevTools, meticulously identifying and resolving
+                frontend issues to guarantee a flawlessly functioning user
+                experience.
               </p>
               <p>
-                Communicate with the internal teams and stakeholders through
-                Microsoft Teams and Skype, working to determine solutions for
-                the best user experience.
+                Proactively contributed to the improvement of development
+                processes, introducing and implementing best practices that
+                resulted in heightened efficiency and code quality.
               </p>
             </div>
           </div>
@@ -50,17 +51,20 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Utilized the latest frontend libraries and built reusable
-                components using React.js to speed up development time by 30%.
+                Engineered and tested RESTful APIs to dynamically serve data to
+                an Angular front-end, adeptly handling over 200,000 concurrent
+                users, ensuring robust performance and responsiveness.
               </p>
               <p>
-                Built the Mezy Dashboard using React.js for Frontend while
-                consuming REST APIS using Axios from a SpringBoot Backend.
+                Designed and implemented an aesthetically appealing front end
+                for the Bru Finance app using React, resulting in a 30% increase
+                in speed and a more modular codebase, thereby enhancing overall
+                user satisfaction.
               </p>
               <p>
-                Used Bootstrap for styling the Mezy Dashboard hence increasing
-                the speed of the application and reducing the load time of the
-                site by 50%.
+                Elevated code quality and developer contribution by 15% through
+                rigorous code reviews and testing sessions for various features
+                on the BruFinance web app.
               </p>
             </div>
           </div>
@@ -74,19 +78,20 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Built RESTful APIs using NodeJS and ExpressJS that serve data to
-                a React front-end based on dynamically chosen user inputs that
-                handle over 200,000 concurrent users.
+                Implemented a robust testing strategy by writing unit tests for
+                various React components, contributing to enhanced application
+                performance and reducing the number of bugs reported during
+                development by an impressive 12%.
               </p>
               <p>
-                Employed Design Thinking to create products that provide a great
-                user experience along with high performance, security, quality,
-                and stability.
+                Played a pivotal role in the cross-collaboration efforts on the
+                Deb project, accelerating the development process and ensuring
+                the timely delivery of the project.
               </p>
               <p>
-                Re-built the front end of our Bru Finance web app through an
-                appealing visual design using React, resulting in a more modular
-                code and increasing speed by 30%.
+                Collaborated closely with the product manager to successfully
+                re-architect a multi-page dashboard into a single-page web app
+                resulting in a remarkable 50% improvement in user experience.
               </p>
             </div>
           </div>
@@ -100,42 +105,21 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Developed and implemented highly responsive user interface
-                components using react concepts.
+                Translated simple designs into dynamic website layouts using
+                React.js, HTML, CSS, and JavaScript best practices. This
+                approach ensured the creation of visually engaging and
+                user-friendly interfaces.
               </p>
               <p>
-                Monitored and improved front-end performance by minimizing the
-                CSS code and using libraries like Materialize and Bootstrap.
+                Played a pivotal role in maintaining, expanding, and scaling the
+                company's official website, contributing to its growth and
+                ensuring its alignment with evolving business needs and
+                objectives.
               </p>
               <p>
-                Fixed bugs from existing websites and implemented enhancements
-                that significantly improved web functionality and speed.
-              </p>
-            </div>
-          </div>
-
-          <div class="experience-card">
-            <h3 className="j_title">Frontend Engineer</h3>
-            <h3 className="company">MTAANI-TECH HUB LIMITED</h3>
-            <p className="j_duration">Feb 2019 - May 2021</p>
-            <div class="job-bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
-            </div>
-            <div className="roles">
-              <p>
-                Integrated third-party APIs to enhance application functionality
-                and data retrieval, enabling seamless integration of external
-                services.
-              </p>
-              <p>
-                Maintained high code quality standards through code reviews and
-                adhered to best practices, ensuring maintainability and
-                scalability.
-              </p>
-              <p>
-                Designed and optimized interfaces for mobile devices, improving
-                accessibility and user engagement.
+                Proactively identified and addressed bugs in existing websites,
+                implementing enhancements that significantly improved web
+                functionality and speed.
               </p>
             </div>
           </div>
