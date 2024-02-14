@@ -55,7 +55,7 @@ const Navbar = () => {
       <div className="action_element">
         <Link
           to=""
-          className={` nav-item icons ${darkMode ? "btn-dark" : "btn-light"}`}
+          className={`${darkMode ? "btn-dark" : "btn-light"}`}
           onClick={switchTheme}
         >
           {darkMode ? (

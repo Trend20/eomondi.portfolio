@@ -14,14 +14,16 @@ const AboutMe = () => {
       <div className="description">
         <div className="contents">
           <p className="content_paragraph">
-            Hello! My name is Enock and I enjoy creating things that live on the
-            internet. My interest in web development started back in 2019 when I
-            decided to try and edit a web template but it turned to be my first
-            web project and it taught me a lot about HTML & CSS!
+            Experienced in JavaScript, React, Next.js, TypeScript, and Tailwind
+            CSS, I specialize in crafting intuitive user interfaces and scalable
+            systems while writing unit tests that ensure robustness and
+            reliability of the systems.
           </p>
           <p className="content_paragraph">
-            My main focus these days is building accessible, inclusive products
-            and digital experiences for a variety of clients.
+            As a DevOps engineer, I optimize deployment processes for seamless
+            software delivery. Passionate about innovation and continuous
+            improvement, I thrive on pushing the boundaries of frontend
+            development and DevOps practices.
           </p>
         </div>
         <div className="languages">

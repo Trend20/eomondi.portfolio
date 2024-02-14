@@ -12,16 +12,20 @@ import {
   SiTailwindcss,
   SiHashnode,
   SiJest,
+  SiDocker,
+  SiJenkins,
+  SiLinux,
+  SiKubernetes,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
 import { DiMaterializecss } from "react-icons/di";
 import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
-import contriImg from "../assets/images/contri.png";
-import fmattersImg from "../assets/images/fmatters.png";
 import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
+import morbellImg from "../assets/images/morbell.png";
+import sulmucImg from "../assets/images/sulmuc.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
@@ -67,7 +71,7 @@ export const workData = [
       "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
     title: "BruFinance",
     projectLink: "https://bru.finance/",
-    status: "Complete",
+    status: "Live",
   },
   {
     img: swipeImg,
@@ -76,7 +80,7 @@ export const workData = [
     title: "SwipeBpr",
     projectLink: "https://swipe-bpr-portal.rbrc.io/login",
     gitLink: "https://github.com/Trend20/swipe",
-    status: "Complete",
+    status: "Live",
   },
   {
     img: stylerImg,
@@ -88,13 +92,22 @@ export const workData = [
     status: "On Going",
   },
   {
-    img: contriImg,
+    img: sulmucImg,
     description:
-      "Building an OpenSource web platform that ranks developers based on their projects impact and activity.",
-    title: "ContriQuest",
-    projectLink: "https://contriquest.vercel.app/",
-    gitLink: "https://github.com/Trend20/ContriQuest",
-    status: "On Going",
+      "This is the official website for Sulmuc Inc built using ReactJs and Typescript.",
+    title: "Sulmuc",
+    projectLink: "https://sulmuc.vercel.app/",
+    gitLink: "https://github.com/Trend20/sulmuc",
+    status: "Live",
+  },
+  {
+    img: morbellImg,
+    description:
+      "Built a landing page for a technology company based in Nairobi, Kenya.",
+    title: "Morbell Solutions",
+    projectLink: "https://morbell.vercel.app/",
+    gitLink: "https://github.com/Trend20/morbell",
+    status: "Live",
   },
 ];
 
@@ -169,6 +182,26 @@ export const skillsData = [
     icon: <SiSupabase size={70} fill="#3cb179" />,
     id: uuidv4(),
     name: "Supabase",
+  },
+  {
+    icon: <SiDocker size={70} fill="#007acc" />,
+    id: uuidv4(),
+    name: "Docker",
+  },
+  {
+    icon: <SiJenkins size={70} fill="#3cb179" />,
+    id: uuidv4(),
+    name: "Jenkins",
+  },
+  {
+    icon: <SiKubernetes size={70} fill="#232bba" />,
+    id: uuidv4(),
+    name: "Kubernetes",
+  },
+  {
+    icon: <SiLinux size={70} fill="#3cb179" />,
+    id: uuidv4(),
+    name: "Linux",
   },
 ];
 
