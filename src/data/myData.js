@@ -26,6 +26,7 @@ import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
 import morbellImg from "../assets/images/morbell.png";
 import sulmucImg from "../assets/images/sulmuc.png";
+// import jestIcon from "../assets/images/sulmuc.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
@@ -129,7 +130,7 @@ export const skillsData = [
     name: "React",
   },
   {
-    icon: <TbBrandNextjs size={70} fill="#00040a" />,
+    icon: <TbBrandNextjs size={70} fill="#120f0f" />,
     id: uuidv4(),
     name: "NextJS",
   },
@@ -174,7 +175,7 @@ export const skillsData = [
     name: "Cypress",
   },
   {
-    icon: <SiJest size={70} fill="#00a400" />,
+    icon: <SiJest size={70} fill="#572931" />,
     id: uuidv4(),
     name: "Jest",
   },
@@ -189,17 +190,17 @@ export const skillsData = [
     name: "Docker",
   },
   {
-    icon: <SiJenkins size={70} fill="#3cb179" />,
+    icon: <SiJenkins size={70} fill="#120f0f" />,
     id: uuidv4(),
     name: "Jenkins",
   },
   {
-    icon: <SiKubernetes size={70} fill="#232bba" />,
+    icon: <SiKubernetes size={70} fill="#1b72de" />,
     id: uuidv4(),
     name: "Kubernetes",
   },
   {
-    icon: <SiLinux size={70} fill="#3cb179" />,
+    icon: <SiLinux size={70} fill="#120f0f" />,
     id: uuidv4(),
     name: "Linux",
   },
