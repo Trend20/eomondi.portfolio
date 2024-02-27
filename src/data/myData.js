@@ -190,7 +190,7 @@ export const skillsData = [
     name: "Docker",
   },
   {
-    icon: <SiJenkins size={70} fill="#120f0f" />,
+    icon: <SiJenkins size={70} fill="#cc2121" />,
     id: uuidv4(),
     name: "Jenkins",
   },
