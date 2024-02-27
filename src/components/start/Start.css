@@ -1,28 +1,38 @@
-#intro{
+#intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin: auto;
   margin-top: 30px;
   color: #8892b0;
 }
 
-.about-img{
+.about-img {
   display: flex;
   width: 30%;
   justify-content: center;
   align-items: center;
+  margin: auto;
+  flex-direction: column;
 }
 
-.about-img img{
-  max-width: 50%;width: 100%;
+.lazy-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-img img {
+  max-width: 50%;
   height: 50%;
   border-radius: 50%;
   border: none;
 }
 
-.about_heading{
+.about_heading {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +40,7 @@
   width: 100%;
 }
 
-.about_heading h3{
+.about_heading h3 {
   display: flex;
   font-size: 2rem;
   font-weight: 700;
@@ -40,7 +50,7 @@
   width: 100%;
 }
 
-.about_heading p{
+.about_heading p {
   display: flex;
   font-size: 3.5rem;
   font-weight: 700;
@@ -49,7 +59,7 @@
   justify-content: center;
 }
 
-.about_description{
+.about_description {
   display: flex;
   width: 40%;
   margin-top: 10px;
@@ -57,7 +67,7 @@
   justify-content: center;
 }
 
-.description_content{
+.description_content {
   display: flex;
   font-size: 1rem;
   line-height: 1.5;
@@ -69,7 +79,7 @@
   justify-content: center;
 }
 
-.about_icons{
+.about_icons {
   margin-top: 10px;
   display: flex;
   width: 30%;
@@ -77,29 +87,29 @@
   justify-content: center;
 }
 
-.about_icons i{
+.about_icons i {
   display: flex;
   padding: 10px;
   cursor: pointer;
 }
 
-.about_icons i a{
+.about_icons i a {
   /* padding: 10px; */
   color: #8892b0;
 }
 
-.about_icons i a:hover{
+.about_icons i a:hover {
   color: #cc2121;
 }
 
-.about_btn{
+.about_btn {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.about_anchor{
+.about_anchor {
   padding: 20px;
   border: 1px solid #cc2121;
   border-radius: 5px;
@@ -114,85 +124,82 @@
   cursor: pointer;
   width: 10%;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
-  rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
-  rgba(240, 46, 170, 0.05) 25px 25px;
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
-.about_anchor:hover{
+.about_anchor:hover {
   background: rgb(39, 39, 66);
 }
 
-
 /* responsiveness */
 @media screen and (max-width: 768px) {
- #intro{
-  padding: 20px;
-  margin-top: 0px;
- }
+  #intro {
+    padding: 20px;
+    margin-top: 0px;
+  }
 
- .about-img{
-  margin-top: 10px;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  width: 100%;
-}
+  .about-img {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
 
-.about-img img{
-  max-width: 50%;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  justify-content: center;
-}
+  .about-img img {
+    max-width: 50%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+  }
 
- .about_heading{
+  .about_heading {
     width: 100%;
     display: flex;
-}
+  }
 
-.about_heading h3{
-  font-size: 1.5rem;
-  width: 100%;
-}
+  .about_heading h3 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 
-.about_heading p{
-      width: 100%;
-      display: flex;
-      font-size: 1.8rem;
-      text-align: center;
-}
-.about_description{
-  width: 100%;
-}
+  .about_heading p {
+    width: 100%;
+    display: flex;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .about_description {
+    width: 100%;
+  }
 
-.description_content{
-  width: 100%;
-  font-size: 1rem;
-}
+  .description_content {
+    width: 100%;
+    font-size: 1rem;
+  }
 
-.about_icons{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
+  .about_icons {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
 
-.about_icons i{
+  .about_icons i {
     width: 100%;
     padding: 0px !important;
-}
+  }
 
-.about_icons i a{
-  padding: 15px 0;
-}
+  .about_icons i a {
+    padding: 15px 0;
+  }
 
-.about_btn{
-  width: 80%;
-}
+  .about_btn {
+    width: 80%;
+  }
 
-.about_anchor{
-  width: 100%;
-}
-
-
+  .about_anchor {
+    width: 100%;
+  }
 }

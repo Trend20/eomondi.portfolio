@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import "animate.css";
 import { socialLinkData } from "../../data/myData";
 import "./Start.css";
+import LazyLoad from "react-lazyload";
 
 const Start = () => {
   useEffect(() => {
@@ -12,11 +13,12 @@ const Start = () => {
   return (
     <div id="intro" data-aos="fade-down" data-aos-duration="1500">
       <div className="about-img">
-        <img src="/img/profile.png" alt="profile-pic" />
-      </div>
-      <div className="about_heading">
-        <h3>Enock Omondi</h3>
-        <p>I build interactive web stuff.</p>
+        <LazyLoad className="lazy-container">
+          <img src="/img/profile.png" alt="profile-pic" />
+        </LazyLoad>
+        <div className="about_heading">
+          <h3>Enock Omondi</h3>
+        </div>
       </div>
       <div className="about_description">
         <p className="description_content">
