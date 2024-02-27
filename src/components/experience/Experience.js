@@ -1,8 +1,13 @@
 import "react-tabs/style/react-tabs.css";
-import * as React from "react";
+import React, { useEffect } from "react";
 import "./experience.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div className="experience" id="experience">
@@ -13,7 +18,11 @@ const Experience = () => {
           </p>
         </div>
         {/* demo carousel */}
-        <div class="experience-container">
+        <div
+          class="experience-container"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
           <div class="experience-card">
             <h3 className="j_title">Software Engineer</h3>
             <h1 className="company">Riverbank Solutions</h1>

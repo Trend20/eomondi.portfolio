@@ -1,11 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "animate.css";
 import { socialLinkData } from "../../data/myData";
 import "./Start.css";
 
 const Start = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div id="intro">
+    <div id="intro" data-aos="fade-down" data-aos-duration="1500">
       <div className="about-img">
         <img src="/img/profile.png" alt="profile-pic" />
       </div>

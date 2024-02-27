@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { socialLinkData } from "../../data/myData";
 import "./Contact.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="contact" id="contact">
+    <div
+      className="contact"
+      id="contact"
+      data-aos="fade-down"
+      data-aos-duration="1500"
+    >
       <div class="head" id="contact-head">
         <h1>Hire Me</h1>
         <p>

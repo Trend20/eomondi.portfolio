@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { workData } from "../../data/myData";
 import "./Work.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Work = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="work" id="work">
       <div class="head" id="work-head">
@@ -12,7 +17,11 @@ const Work = () => {
           <span></span> Previous Projects
         </p>
       </div>
-      <div className="projects_wrapper">
+      <div
+        className="projects_wrapper"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         {workData.map((project) => (
           <div className="project">
             <div className="project_image">

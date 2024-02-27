@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { skillsData } from "../../data/myData";
 import "./About.css";
 
 const AboutMe = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="about-me" id="about">
       <div class="head" id="about-head">
@@ -11,7 +16,11 @@ const AboutMe = () => {
           <span></span> About
         </p>
       </div>
-      <div className="description">
+      <div
+        className="description"
+        data-aos="fade-down"
+        data-aos-duration="1500"
+      >
         <div className="contents">
           <p className="content_paragraph">
             Experienced in JavaScript, React, Next.js, TypeScript, and Tailwind
