@@ -15,10 +15,10 @@ const Start = () => {
       </div>
       <div className="about_description">
         <p className="description_content">
-          I am a highly collaborative team player who thrives in dynamic and
-          fast-paced environments. My excellent communication and
-          problem-solving skills allow me to work effectively with
-          cross-functional teams to deliver solutions that exceed expectations.
+          Hi there! I'm a seasoned frontend software engineer with over 3 years
+          of experience specializing in React, TypeScript, Next.js, Node.js, and
+          Tailwind CSS. I thrive on crafting seamless user experiences and
+          optimizing performance. Let's build something remarkable together!
         </p>
       </div>
       <div className="about_icons">
