@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <>
       <div className="experience" id="experience">
-        <div class="head" id="expe-head">
+        <div className="head" id="expe-head">
           <h1>Experience</h1>
           <p>
             <span></span>Where I've Worked
@@ -19,17 +19,17 @@ const Experience = () => {
         </div>
         {/* demo carousel */}
         <div
-          class="experience-container"
+          className="experience-container"
           data-aos="fade-down"
           data-aos-duration="1500"
         >
-          <div class="experience-card">
+          <div className="experience-card">
             <h3 className="j_title">Software Engineer</h3>
             <h1 className="company">Riverbank Solutions</h1>
             <p className="j_duration">April 2023 - Jan 2024</p>
-            <div class="job-bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div className="job-bar">
+              <div className="emptybar"></div>
+              <div className="filledbar"></div>
             </div>
             <div className="roles">
               <p>
@@ -49,13 +49,13 @@ const Experience = () => {
               </p>
             </div>
           </div>
-          <div class="experience-card">
+          <div className="experience-card">
             <h3 className="j_title">FullStack Developer</h3>
             <h1 className="company">Whrrl</h1>
             <p className="j_duration">June 2022 - May 2023</p>
-            <div class="job-bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div className="job-bar">
+              <div className="emptybar"></div>
+              <div className="filledbar"></div>
             </div>
             <div className="roles">
               <p>
@@ -75,13 +75,13 @@ const Experience = () => {
               </p>
             </div>
           </div>
-          <div class="experience-card">
+          <div className="experience-card">
             <h3 className="j_title">Frontend Engineer</h3>
             <h1 className="company">Mortgage Ezy</h1>
             <p className="j_duration">June 2021 - May 2022</p>
-            <div class="job-bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div className="job-bar">
+              <div className="emptybar"></div>
+              <div className="filledbar"></div>
             </div>
             <div className="roles">
               <p>
@@ -107,9 +107,9 @@ const Experience = () => {
             <h3 className="j_title">Frontend Developer</h3>
             <h1 className="company">Jag Technology LLC</h1>
             <p className="j_duration">Oct 2020 - April 2021</p>
-            <div class="job-bar">
-              <div class="emptybar"></div>
-              <div class="filledbar"></div>
+            <div className="job-bar">
+              <div className="emptybar"></div>
+              <div className="filledbar"></div>
             </div>
             <div className="roles">
               <p>

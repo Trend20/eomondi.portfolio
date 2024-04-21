@@ -22,8 +22,8 @@ const Work = () => {
         data-aos="fade-down"
         data-aos-duration="1500"
       >
-        {workData.map((project) => (
-          <div className="project">
+        {workData.map((project, index) => (
+          <div className="project" key={index}>
             <div className="project_image">
               <a href={project.projectLink} target="_blank" rel="noreferrer">
                 <img src={project.img} alt={project.title} />

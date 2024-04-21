@@ -15,7 +15,7 @@ const Contact = () => {
       data-aos="fade-down"
       data-aos-duration="1500"
     >
-      <div class="head" id="contact-head">
+      <div className="head" id="contact-head">
         <h1>Hire Me</h1>
         <p>
           <span></span>Contact
@@ -34,7 +34,7 @@ const Contact = () => {
 
       <div className="social_platforms">
         {socialLinkData.map((icon) => (
-          <a href={icon.socialLink} target="_blank" rel="noreferrer">
+          <a key={icon.id} href={icon.socialLink} target="_blank" rel="noreferrer">
             {icon.icon}
           </a>
         ))}

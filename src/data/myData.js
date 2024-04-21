@@ -41,25 +41,25 @@ export const socialLinkData = [
     name: "Github",
     socialLink: "https://github.com/Trend20",
     id: uuidv4(),
-    icon: <FiGithub />,
+    icon: <FiGithub size={30}/>,
   },
   {
     name: "LinkedIn",
     socialLink: "https://www.linkedin.com/in/enock-omondi/",
     id: uuidv4(),
-    icon: <FiLinkedin />,
+    icon: <FiLinkedin size={30}/>,
   },
   {
     name: "Twitter",
     socialLink: "https://twitter.com/dev_enock",
     id: uuidv4(),
-    icon: <FiTwitter />,
+    icon: <FiTwitter size={30}/>,
   },
   {
     name: "Hashnode",
     socialLink: "https://hashnode.com/@DevEnock",
     id: uuidv4(),
-    icon: <SiHashnode />,
+    icon: <SiHashnode size={30}/>,
   },
 ];
 
@@ -165,11 +165,6 @@ export const skillsData = [
     name: "Mongodb",
   },
   {
-    icon: <SiGithub size={70} fill="#120f0f" />,
-    id: uuidv4(),
-    name: "Github",
-  },
-  {
     icon: <SiCypress size={70} fill="#00a400" />,
     id: uuidv4(),
     name: "Cypress",
@@ -188,21 +183,6 @@ export const skillsData = [
     icon: <SiDocker size={70} fill="#007acc" />,
     id: uuidv4(),
     name: "Docker",
-  },
-  {
-    icon: <SiJenkins size={70} fill="#cc2121" />,
-    id: uuidv4(),
-    name: "Jenkins",
-  },
-  {
-    icon: <SiKubernetes size={70} fill="#1b72de" />,
-    id: uuidv4(),
-    name: "Kubernetes",
-  },
-  {
-    icon: <SiLinux size={70} fill="#120f0f" />,
-    id: uuidv4(),
-    name: "Linux",
   },
 ];
 

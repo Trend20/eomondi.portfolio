@@ -5,6 +5,7 @@ import "animate.css";
 import { socialLinkData } from "../../data/myData";
 import "./Start.css";
 import LazyLoad from "react-lazyload";
+import { TypeAnimation } from 'react-type-animation';
 
 const Start = () => {
   useEffect(() => {
@@ -17,15 +18,26 @@ const Start = () => {
           <img src="/img/profile.png" alt="profile-pic" />
         </LazyLoad>
         <div className="about_heading">
-          <h3>Enock Omondi</h3>
+            <TypeAnimation
+                sequence={[
+                    'Hello visitor 👋, I\'m Enock',
+                    1000,
+                    'Software Engineer 💻',
+                    1000,
+                    'I speak in Javascript 😀',
+                    1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                style={{ fontSize: '1.5em', width:'100%', textTransform:'uppercase', display: 'flex', justifyContent:'center', alignItems:'center', lineHeight:'inherit' }}
+                repeat={Infinity}
+            />
         </div>
       </div>
       <div className="about_description">
         <p className="description_content">
-          Hi there! I'm a seasoned frontend software engineer with over 3 years
-          of experience specializing in React, TypeScript, Next.js, Node.js, and
-          Tailwind CSS. I thrive on crafting seamless user experiences and
-          optimizing performance. Let's build something remarkable together!
+            "The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past."
+            Let's build something remarkable together!
         </p>
       </div>
       <div className="about_icons">
