@@ -1,13 +1,13 @@
-import { useContext } from "react";
+import {useContext, Suspense, lazy} from "react";
 import "./App.css";
 import "aos/dist/aos.css";
-import AboutMe from "./components/about/AboutMe";
-import Contact from "./components/contact/Contact";
-import Experience from "./components/experience/Experience";
-import Navbar from "./components/nav/Navbar";
-import Start from "./components/start/Start";
-import Work from "./components/work/Work";
 import { ThemeContext } from "./context/ThemeContext";
+const AboutMe = lazy(() => import("./components/about/AboutMe"));
+const Contact = lazy(() => import("./components/contact/Contact"));
+const Experience = lazy(() => import("./components/experience/Experience"));
+const Navbar = lazy(() => import("./components/nav/Navbar"));
+const Start = lazy(() => import("./components/start/Start"));
+const Work = lazy(() => import("./components/work/Work"));
 
 function App() {
   // AOS.init()
@@ -16,12 +16,14 @@ function App() {
 
   return (
     <div className={`btn ${darkMode ? "btn-dark" : "btn-light"}`} id="app">
-      <Navbar />
-      <Start />
-      <AboutMe />
-      <Experience />
-      <Work />
-      <Contact />
+      <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <Start />
+          <AboutMe />
+          <Experience />
+          <Work />
+          <Contact />
+      </Suspense>
     </div>
   );
 }
