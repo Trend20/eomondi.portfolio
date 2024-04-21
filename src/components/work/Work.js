@@ -11,7 +11,7 @@ const Work = () => {
   }, []);
   return (
     <div className="work" id="work">
-      <div class="head" id="work-head">
+      <div className="head" id="work-head">
         <h1 id="notable">Notable Projects</h1>
         <p>
           <span></span> Previous Projects

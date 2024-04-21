@@ -8,14 +8,10 @@ import {
   SiSupabase,
   SiNestjs,
   SiCypress,
-  SiGithub,
   SiTailwindcss,
   SiHashnode,
   SiJest,
   SiDocker,
-  SiJenkins,
-  SiLinux,
-  SiKubernetes,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
@@ -26,7 +22,6 @@ import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
 import morbellImg from "../assets/images/morbell.png";
 import sulmucImg from "../assets/images/sulmuc.png";
-// import jestIcon from "../assets/images/sulmuc.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
