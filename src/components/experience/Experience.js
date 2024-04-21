@@ -33,19 +33,13 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Spearheaded the development of Zed Payments portal's frontend,
-                employing React to enhance visual appeal, foster modular
-                code,and accelerate performance by 40%.
+                Spearheaded the development of Zed Payments portal's frontend, employing React to enhance visual appeal, foster modular code,and accelerate performance by 40%.
               </p>
               <p>
-                Executed comprehensive end-to-end testing and debugging using
-                Cypress and DevTools, meticulously identifying and resolving
-                frontend issues hence improving user experience by 30%.
+                Executed comprehensive end-to-end testing and debugging using Cypress and DevTools, identifying and resolving frontend issues hence improving user experience by 50%.
               </p>
               <p>
-                Contributed to the improvement of development processes,
-                introducing and implementing best practices that resulted in a
-                25% increase in efficiency and code quality.
+                Contributed to the improvement of development processes by introducing and implementing best practices that resulted in a 25% increase in efficiency and code quality.
               </p>
             </div>
           </div>
@@ -59,19 +53,13 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Engineered and tested RESTful APIs to dynamically serve data to
-                an Angular front-end, adeptly handling over 200,000 concurrent
-                users, ensuring robust performance and responsiveness at scale.
+                Engineered and tested RESTful APIs to dynamically serve data to an Angular front-end handling over 20,000 concurrent users, ensuring robust performance and responsiveness at scale.
               </p>
               <p>
-                Designed an aesthetically appealing front end for the Bru
-                Finance app using React, resulting in a notable 30% increase in
-                speed and a more modular codebase, which enhanced overall user
-                satisfaction.
+                Designed an appealing front end for the Bru Finance app using React, resulting in a notable 30% increase in speed and an enhanced user satisfaction.
               </p>
               <p>
-                Elevated code quality and developer contribution by 70% through
-                rigorous code reviews and testing sessions.
+                Elevated code quality and developer contribution by 70% through rigorous code reviews and testing sessions.
               </p>
             </div>
           </div>
@@ -85,21 +73,13 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Implemented a robust testing strategy by writing unit tests for
-                various React components, contributing to enhanced application
-                performance and reducing the number of bugs reported during
-                development by an impressive 50%.
+                Implemented a robust testing strategy by writing unit tests for various React components, contributing to enhanced application performance by an impressive 50%.
               </p>
               <p>
-                Played a pivotal role in the cross-collaboration efforts on the
-                Deb project, accelerating the development process and increasing
-                the project delivery rate by 45%.
+                Collaborated on the Deb project, accelerating the development process and increasing the project delivery rate by 45%.
               </p>
               <p>
-                Collaborated closely with the product manager to successfully
-                re-architect a multi-page dashboard into a single-page web app
-                at Mortgage Ezy, resulting in a remarkable 50% improvement in
-                user experience.
+                Re-architected a multi-page dashboard into a single-page web app, resulting in a remarkable 50% improvement in user experience.
               </p>
             </div>
           </div>
@@ -113,20 +93,13 @@ const Experience = () => {
             </div>
             <div className="roles">
               <p>
-                Developed and implemented highly responsive user interface
-                components using react concepts increasing the user experience
-                by 30%.
+                Developed and implemented highly responsive user-interface components using react concepts improving the accessibility by 30%.
               </p>
               <p>
-                Monitored and optimized front-end performance by streamlining
-                CSS code and leveraging Materialize and Bootstrap leading to a
-                40% reduction in load time and a 25% increase in overall
-                performance.
+                Monitored and optimized front-end performance by streamlining CSS code leading to a 40% reduction in load time and a 25% increase in overall performance.
               </p>
               <p>
-                Identified and resolved 30+ bugs from existing websites while
-                implementing enhancements that resulted in a 50% improvement in
-                web functionality and speed.
+                Identified and resolved 30+ bugs from existing websites while implementing enhancements that resulted in a 50% improvement in web functionality and speed.
               </p>
             </div>
           </div>
