@@ -67,9 +67,9 @@ const Navbar = () => {
       </div>
       <div className="toggle mobile-menu" onClick={handleClick}>
         {click ? (
-          <AiOutlineClose className="menu-icon" />
+          <AiOutlineClose className="menu-icon" fill="#cc2121" />
         ) : (
-          <FaBars className="menu-icon" />
+          <FaBars className="menu-icon" fill="#cc2121" />
         )}
       </div>
     </header>

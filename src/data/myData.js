@@ -36,25 +36,25 @@ export const socialLinkData = [
     name: "Github",
     socialLink: "https://github.com/Trend20",
     id: uuidv4(),
-    icon: <FiGithub size={30}/>,
+    icon: <FiGithub size={25}/>,
   },
   {
     name: "LinkedIn",
     socialLink: "https://www.linkedin.com/in/enock-omondi/",
     id: uuidv4(),
-    icon: <FiLinkedin size={30}/>,
+    icon: <FiLinkedin size={25}/>,
   },
   {
     name: "Twitter",
     socialLink: "https://twitter.com/dev_enock",
     id: uuidv4(),
-    icon: <FiTwitter size={30}/>,
+    icon: <FiTwitter size={25}/>,
   },
   {
     name: "Hashnode",
     socialLink: "https://hashnode.com/@DevEnock",
     id: uuidv4(),
-    icon: <SiHashnode size={30}/>,
+    icon: <SiHashnode size={25}/>,
   },
 ];
 
