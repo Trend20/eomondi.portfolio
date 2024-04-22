@@ -22,6 +22,7 @@ import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
 import morbellImg from "../assets/images/morbell.png";
 import sulmucImg from "../assets/images/sulmuc.png";
+import cronyImg from "../assets/images/crony.png";
 
 export const navData = [
   { title: "About", id: 1, link: "about" },
@@ -64,46 +65,131 @@ export const workData = [
   {
     img: bruImg,
     description:
-      "Brú Finance Is Building A DeFi Lending Platform To Create Bankless Finance Options For Owners Of Real-World Assets Across The Globe.",
+      "Official Website for Brú Finance.",
     title: "BruFinance",
     projectLink: "https://bru.finance/",
-    status: "Live",
+    stack:[
+      {
+        id:1,
+        name:'NextJS'
+      },
+      {
+        id:2,
+        name:'MUI'
+      },
+      {
+        id:3,
+        name:'Typescript'
+      },
+      {
+        id:4,
+        name:'Redux'
+      },
+      {
+        id:5,
+        name:'Tailwind'
+      }
+    ]
   },
   {
     img: swipeImg,
     description:
-      "Swipe is a banking agency based in Rwanda. I build the frontend of the website from scratch using Html, css, Thymeleaf and Javascript.",
+      "Swipe is a banking agency based in Rwanda.",
     title: "SwipeBpr",
     projectLink: "https://swipe-bpr-portal.rbrc.io/login",
     gitLink: "https://github.com/Trend20/swipe",
-    status: "Live",
+    stack:[
+      {
+        id:1,
+        name:'Thymeleaf'
+      },
+      {
+        id:2,
+        name:'Bootstrap'
+      },
+      {
+        id:3,
+        name:'CSS3'
+      },
+      {
+        id:4,
+        name:'HTML5'
+      }
+    ]
   },
   {
     img: stylerImg,
     description:
-      "Built a fashion marketplace where you can find different outfits from various vendors in Kenya.",
+      "Built a fashion marketplace.",
     title: "Styler",
     projectLink: "https://react-typescript-e-commerce-template.vercel.app/",
     gitLink: "https://github.com/Trend20/Styler",
-    status: "On Going",
+    stack:[
+      {
+        id:1,
+        name:'React'
+      },
+      {
+        id:2,
+        name:'Typescript'
+      },
+      {
+        id:3,
+        name:'MUI'
+      },
+      {
+        id:4,
+        name:'Redux Toolkit'
+      }
+    ]
   },
   {
     img: sulmucImg,
     description:
-      "This is the official website for Sulmuc Inc built using ReactJs and Typescript.",
+      "This is the official website for Sulmuc Inc.",
     title: "Sulmuc",
     projectLink: "https://sulmuc.vercel.app/",
     gitLink: "https://github.com/Trend20/sulmuc",
-    status: "Live",
+    stack:[
+      {
+        id:1,
+        name:'Typescript'
+      },
+      {
+        id:2,
+        name:'React'
+      },
+      {
+        id:3,
+        name:'Tailwind'
+      },
+    ]
   },
   {
-    img: morbellImg,
+    img: cronyImg,
     description:
-      "Built a landing page for a technology company based in Nairobi, Kenya.",
-    title: "Morbell Solutions",
-    projectLink: "https://morbell.vercel.app/",
-    gitLink: "https://github.com/Trend20/morbell",
-    status: "Live",
+      "A platform that helps developers easily access third-party libraries.",
+    title: "LCluster",
+    projectLink: "https://code-crony.vercel.app/",
+    gitLink: "https://github.com/Trend20/Lcluster-frontendl",
+    stack:[
+      {
+        id:1,
+        name:'NextJS'
+      },
+      {
+        id:2,
+        name:'Tailwind'
+      },
+      {
+        id:3,
+        name:'Prisma'
+      },
+      {
+        id:4,
+        name:'Typescript'
+      }
+    ]
   },
 ];
 
