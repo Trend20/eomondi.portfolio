@@ -1,18 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { ErrorBoundary as ReactErrorBoundary } from 'react-error-boundary';
+
+function ErrorFallback({ error }) {
+    return (
+        <div role="alert">
+            <p>Something went wrong:</p>
+            <pre>{error.message}</pre>
+        </div>
+    );
+}
 
 function ErrorBoundary({ children }) {
-    const [hasError, setHasError] = useState(false);
-
-    // const componentDidCatch = (error, errorInfo) => {
-    //     console.error('Error caught by ErrorBoundary:', error, errorInfo);
-    //     setHasError(true);
-    // };
-
-    if (hasError) {
-        return <div>Something went wrong.</div>;
-    }
-
-    return children;
+    return (
+        <ReactErrorBoundary
+            FallbackComponent={ErrorFallback}
+            onError={(error, errorInfo) => {
+                console.error('Error caught by ErrorBoundary:', error, errorInfo);
+            }}
+        >
+            {children}
+        </ReactErrorBoundary>
+    );
 }
 
 export default ErrorBoundary;
