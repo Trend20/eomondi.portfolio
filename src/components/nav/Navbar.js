@@ -27,7 +27,7 @@ const Navbar = () => {
     <header className="header_element">
       <div className="logo-container">
         <a href="/">
-          <img src={logoImg} alt="logo" />
+          <img src={logoImg} alt="logo-img" />
         </a>
       </div>
       <nav
