@@ -6,6 +6,7 @@ import { socialLinkData } from "../../data/myData";
 import "./Start.css";
 import LazyLoad from "react-lazyload";
 import { TypeAnimation } from 'react-type-animation';
+import profileImg from '../../assets/images/profile.png'
 
 const Start = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const Start = () => {
     <div id="intro" data-aos="fade-down" data-aos-duration="1500">
       <div className="about-img">
         <LazyLoad className="lazy-container">
-          <img src="/img/profile.png" alt="profile-pic" />
+          <img src={profileImg} alt="profile-pic" />
         </LazyLoad>
         <div className="about_heading">
             <TypeAnimation

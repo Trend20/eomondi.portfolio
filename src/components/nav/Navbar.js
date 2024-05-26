@@ -6,6 +6,7 @@ import { FaBars } from "react-icons/fa";
 import { MdOutlineDarkMode, MdLightMode } from "react-icons/md";
 import { navData } from "../../data/myData";
 import "./Nav.css";
+import logoImg from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
     <header className="header_element">
       <div className="logo-container">
         <a href="/">
-          <img src="/img/logo.png" alt="logo" />
+          <img src={logoImg} alt="logo" />
         </a>
       </div>
       <nav
