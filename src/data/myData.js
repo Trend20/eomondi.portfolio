@@ -20,7 +20,6 @@ import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
 import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
-import morbellImg from "../assets/images/morbell.png";
 import sulmucImg from "../assets/images/sulmuc.png";
 import cronyImg from "../assets/images/crony.png";
 
