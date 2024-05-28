@@ -20,7 +20,6 @@ import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
 import stylerImg from "../assets/images/styler.png";
 import looperImg from "../assets/images/looper.png";
-import openGetImg from "../assets/images/openget.png";
 import cronyImg from "../assets/images/crony.png";
 
 export const navData = [
@@ -113,32 +112,6 @@ export const workData = [
       {
         id:4,
         name:'Redux Toolkit'
-      }
-    ]
-  },
-  {
-    img: openGetImg,
-    description:
-        "Explore the OpenSource world with ease.",
-    title: "OpenGet",
-    projectLink: "https://open-get.vercel.app/",
-    gitLink: "https://github.com/Trend20/OpenGet",
-    stack:[
-      {
-        id:1,
-        name:'NextJS'
-      },
-      {
-        id:2,
-        name:'Tailwind'
-      },
-      {
-        id:3,
-        name:'Prisma'
-      },
-      {
-        id:4,
-        name:'Typescript'
       }
     ]
   },
