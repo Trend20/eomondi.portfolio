@@ -20,7 +20,8 @@ import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
 import stylerImg from "../assets/images/styler.png";
 import swipeImg from "../assets/images/swipe.png";
-import sulmucImg from "../assets/images/sulmuc.png";
+import looperImg from "../assets/images/looper.png";
+import openGetImg from "../assets/images/openget.png";
 import cronyImg from "../assets/images/crony.png";
 
 export const navData = [
@@ -91,32 +92,6 @@ export const workData = [
     ]
   },
   {
-    img: swipeImg,
-    description:
-      "Swipe is a banking agency based in Rwanda.",
-    title: "SwipeBpr",
-    projectLink: "https://swipe-bpr-portal.rbrc.io/login",
-    gitLink: "https://github.com/Trend20/swipe",
-    stack:[
-      {
-        id:1,
-        name:'Thymeleaf'
-      },
-      {
-        id:2,
-        name:'Bootstrap'
-      },
-      {
-        id:3,
-        name:'CSS3'
-      },
-      {
-        id:4,
-        name:'HTML5'
-      }
-    ]
-  },
-  {
     img: stylerImg,
     description:
       "Built a fashion marketplace.",
@@ -143,25 +118,29 @@ export const workData = [
     ]
   },
   {
-    img: sulmucImg,
+    img: openGetImg,
     description:
-      "This is the official website for Sulmuc Inc.",
-    title: "Sulmuc",
-    projectLink: "https://sulmuc.vercel.app/",
-    gitLink: "https://github.com/Trend20/sulmuc",
+        "Explore the OpenSource world with ease.",
+    title: "OpenGet",
+    projectLink: "https://open-get.vercel.app/",
+    gitLink: "https://github.com/Trend20/OpenGet",
     stack:[
       {
         id:1,
-        name:'Typescript'
+        name:'NextJS'
       },
       {
         id:2,
-        name:'React'
+        name:'Tailwind'
       },
       {
         id:3,
-        name:'Tailwind'
+        name:'Prisma'
       },
+      {
+        id:4,
+        name:'Typescript'
+      }
     ]
   },
   {
@@ -171,6 +150,32 @@ export const workData = [
     title: "LCluster",
     projectLink: "https://code-crony.vercel.app/",
     gitLink: "https://github.com/Trend20/Lcluster-frontendl",
+    stack:[
+      {
+        id:1,
+        name:'NextJS'
+      },
+      {
+        id:2,
+        name:'Tailwind'
+      },
+      {
+        id:3,
+        name:'Prisma'
+      },
+      {
+        id:4,
+        name:'Typescript'
+      }
+    ]
+  },
+  {
+    img: looperImg,
+    description:
+        "A browser extension that helps you to manage your bookmarks.",
+    title: "Looper",
+    projectLink: "https://looper-ten.vercel.app/",
+    gitLink: "https://github.com/Trend20/looper",
     stack:[
       {
         id:1,
