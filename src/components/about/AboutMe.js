@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
@@ -7,10 +7,6 @@ import Technologies from "./Technologies";
 import profileImg from "../../assets/images/about.svg";
 
 const AboutMe = () => {
-  const[isFlipped, setIsFlipped] = useState(false);
-  const handleFlip = () =>{
-    setIsFlipped(!isFlipped)
-  }
   useEffect(() => {
     AOS.init();
   }, []);

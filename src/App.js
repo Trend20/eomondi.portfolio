@@ -6,7 +6,7 @@ import ErrorBoundary from "./components/Error";
 import Loader from "./common/Loader";
 const AboutMe = lazy(() => import("./components/about/AboutMe"));
 const Contact = lazy(() => import("./components/contact/Contact"));
-const Experience = lazy(() => import("./components/experience/Experience"));
+// const Experience = lazy(() => import("./components/experience/Experience"));
 const Navbar = lazy(() => import("./components/nav/Navbar"));
 const Start = lazy(() => import("./components/start/Start"));
 const Work = lazy(() => import("./components/work/Work"));

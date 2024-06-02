@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
-import { socialLinkData } from "../../data/myData";
 import "./Start.css";
 import LazyLoad from "react-lazyload";
 import { TypeAnimation } from 'react-type-animation';
