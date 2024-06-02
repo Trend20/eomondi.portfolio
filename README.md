@@ -1,4 +1,5 @@
 <a href="https://looper-ten.vercel.app/">
+<p align="center"><img alt="Official portfolio site." width="100" height="100" src="./public/img/profile.png"></p>
   <h1 align="center">Enock Omondi</h1>
 </a>
 
