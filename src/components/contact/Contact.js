@@ -4,6 +4,7 @@ import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Copyright from "./Copyright";
+import SectionHeader from "../../common/SectionHeader";
 
 const Contact = () => {
   useEffect(() => {
@@ -16,12 +17,7 @@ const Contact = () => {
       data-aos="fade-down"
       data-aos-duration="1500"
     >
-      <div className="head" id="contact-head">
-        <h1>Hire Me</h1>
-        <p>
-          <span></span>Contact
-        </p>
-      </div>
+      <SectionHeader heading={'Hire Me'} overlayText={'Contact'}/>
 
       <div className="contact-details">
         <h1>Get In Touch</h1>
