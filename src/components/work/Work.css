@@ -12,8 +12,8 @@
 
 .projects_wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -90,7 +90,7 @@
 }
 
 .project_links {
-  width: 50%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,7 +123,7 @@
 }
 
 .project_stack p{
-  background-color: #cc2121;
+  background-color: #121230;
   padding: 10px;
   border-radius: 5px;
 }
@@ -239,21 +239,4 @@
   .show_more_button {
     width: 50%;
   }
-
-  /* .show_more_button a{
-    display: flex;
-      text-decoration: none;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      color: #cc2121;
-      font-weight: 700;
-      font-size: 1rem;
-  }
-  
-  
-  .show_more_button a:hover{
-    background: rgb(39, 39, 66);
-  } */
 }

@@ -44,7 +44,7 @@ const Work = () => {
                                   target="_blank"
                                   rel="noreferrer"
                                   id="live"
-                              ><FiExternalLink size={25} />
+                              > Visit <FiExternalLink size={25} />
                               </a>
                               <a
                                   href={project.gitLink}
