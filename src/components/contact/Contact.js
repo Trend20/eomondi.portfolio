@@ -3,6 +3,7 @@ import { socialLinkData } from "../../data/myData";
 import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Copyright from "./Copyright";
 
 const Contact = () => {
   useEffect(() => {
@@ -29,7 +30,6 @@ const Contact = () => {
           open. Whether you have a project or just want to say hi, I’ll get back
           to you!
         </p>
-        <a href="mailto:enockomondi305@gmail.com">Say Hello</a>
       </div>
 
       <div className="social_platforms">
@@ -39,10 +39,7 @@ const Contact = () => {
           </a>
         ))}
       </div>
-
-      <div className="footer">
-        <p>© Copyright {new Date().getFullYear()}. All right reserved </p>
-      </div>
+      <Copyright />
     </div>
   );
 };

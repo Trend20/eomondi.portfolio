@@ -7,16 +7,19 @@ import "aos/dist/aos.css";
 
 const Work = () => {
     const[showContent, setShowContent] = useState(null);
+
     const handleShowContent = (index) => {
         setShowContent(showContent === index ? null : index)
     }
-  useEffect(() => {
-    AOS.init();
-  }, []);
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
   return (
     <div className="work" id="work">
       <div className="head" id="work-head">
-        <h1 id="notable">Notable Projects</h1>
+        <h1 id="notable">Projects</h1>
         <p>
           <span></span> Previous Projects
         </p>

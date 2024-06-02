@@ -3,7 +3,7 @@ import "./App.css";
 import "aos/dist/aos.css";
 import { ThemeContext } from "./context/ThemeContext";
 import ErrorBoundary from "./components/Error";
-import Loader from "./components/Loader";
+import Loader from "./common/Loader";
 const AboutMe = lazy(() => import("./components/about/AboutMe"));
 const Contact = lazy(() => import("./components/contact/Contact"));
 const Experience = lazy(() => import("./components/experience/Experience"));
@@ -17,13 +17,12 @@ function App() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className={`btn ${darkMode ? "btn-dark" : "btn-light"}`} id="app">
+    <div className={`btn px-52 ${darkMode ? "btn-dark" : "btn-light"}`} id="app">
      <ErrorBoundary>
          <Suspense fallback={<Loader />}>
              <Navbar />
              <Start />
              <AboutMe />
-             <Experience />
              <Work />
              <Contact />
          </Suspense>

@@ -43,14 +43,6 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <a
-            className="anchor"
-            href="https://drive.google.com/file/d/1OKk1rXFCJUp7q1Pc5pRjx_Enb9wTW6iE/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Resume
-          </a>
         </ul>
       </nav>
       <div className="action_element">

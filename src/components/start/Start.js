@@ -7,6 +7,7 @@ import "./Start.css";
 import LazyLoad from "react-lazyload";
 import { TypeAnimation } from 'react-type-animation';
 import profileImg from '../../assets/images/profile.png'
+import Resume from "./Resume";
 
 const Start = () => {
   useEffect(() => {
@@ -50,16 +51,7 @@ const Start = () => {
           </i>
         ))}
       </div>
-      <div className="about_btn">
-        <a
-          href="mailto:enockomondi305@gmail.com"
-          target="_blank"
-          className="about_anchor"
-          rel="noreferrer"
-        >
-          Let us Connect!
-        </a>
-      </div>
+       <Resume />
     </div>
   );
 };
