@@ -4,6 +4,8 @@ import { workData } from "../../data/myData";
 import "./Work.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SectionHeader from "../../common/SectionHeader";
+import Button from "../../common/Button";
 
 const Work = () => {
     const[showContent, setShowContent] = useState(null);
@@ -18,12 +20,7 @@ const Work = () => {
 
   return (
     <div className="work" id="work">
-      <div className="head" id="work-head">
-        <h1 id="notable">Projects</h1>
-        <p>
-          <span></span> Previous Projects
-        </p>
-      </div>
+        <SectionHeader heading="Projects" overlayText="Previous Projects"/>
       <div
         className="projects_wrapper"
         data-aos="fade-down"
@@ -71,12 +68,7 @@ const Work = () => {
           </div>
         ))}
       </div>
-
-        <button className="show_more_button">
-            <a href="https://github.com/Trend20" target="_blank" rel="noreferrer">
-                Show More
-            </a>
-        </button>
+        <Button url={"https://github.com/Trend20"}>More on GitHub</Button>
     </div>
   );
 };
