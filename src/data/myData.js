@@ -12,6 +12,8 @@ import {
   SiHashnode,
   SiJest,
   SiDocker,
+  SiHtml5,
+  SiCss3
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
@@ -187,7 +189,7 @@ export const skillsData = [
     name: "React",
   },
   {
-    icon: <TbBrandNextjs size={25} fill="#120f0f" />,
+    icon: <TbBrandNextjs size={25} color={"#fff"} />,
     id: uuidv4(),
     name: "NextJS",
   },
@@ -240,6 +242,16 @@ export const skillsData = [
     icon: <SiDocker size={25} fill="#007acc" />,
     id: uuidv4(),
     name: "Docker",
+  },
+  {
+    icon: <SiHtml5 size={25} fill="#cc2121" />,
+    id: uuidv4(),
+    name: "HTML5",
+  },
+  {
+    icon: <SiCss3 size={25} fill="#007acc" />,
+    id: uuidv4(),
+    name: "CSS3",
   },
 ];
 
