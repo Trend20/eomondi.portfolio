@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import { socialLinkData } from "../../data/myData";
 import "./Contact.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Copyright from "./Copyright";
 import SectionHeader from "../../common/SectionHeader";
+import SocialLinks from "../../common/SocialLinks";
 
 const Contact = () => {
   useEffect(() => {
@@ -27,14 +27,7 @@ const Contact = () => {
           to you!
         </p>
       </div>
-
-      <div className="social_platforms">
-        {socialLinkData.map((icon) => (
-          <a key={icon.id} href={icon.socialLink} target="_blank" rel="noreferrer">
-            {icon.icon}
-          </a>
-        ))}
-      </div>
+      <SocialLinks />
       <Copyright />
     </div>
   );
