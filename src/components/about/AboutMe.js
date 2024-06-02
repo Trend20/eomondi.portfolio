@@ -24,7 +24,7 @@ const AboutMe = () => {
               <div className="description w-3/4 ml-20" data-aos="fade-down" data-aos-duration="1500">
                   <div className="contents">
                       <p className="content_paragraph">
-                          Hi there! I'm a software engineer with over 4 years
+                          Hi there 👋🏽! I'm a software engineer with over 4 years
                           of experience specializing in Frontend Development. I thrive on crafting seamless user
                           experiences and
                           optimizing performance.

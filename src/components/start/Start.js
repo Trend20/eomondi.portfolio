@@ -8,6 +8,7 @@ import LazyLoad from "react-lazyload";
 import { TypeAnimation } from 'react-type-animation';
 import profileImg from '../../assets/images/profile.png'
 import Resume from "./Resume";
+import SocialLinks from "../../common/SocialLinks";
 
 const Start = () => {
   useEffect(() => {
@@ -42,15 +43,7 @@ const Start = () => {
             Let's build something remarkable together!
         </p>
       </div>
-      <div className="about_icons">
-        {socialLinkData.map((item) => (
-          <i key={item.id}>
-            <a href={item.socialLink} target="_blank" rel="noreferrer">
-              {item.icon}
-            </a>
-          </i>
-        ))}
-      </div>
+        <SocialLinks />
        <Resume />
     </div>
   );

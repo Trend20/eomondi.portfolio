@@ -1,4 +1,5 @@
 import {socialLinkData} from "../data/myData";
+import { MdEmail } from "react-icons/md";
 import React from "react";
 
 const SocialLinks = () => {
@@ -9,6 +10,9 @@ const SocialLinks = () => {
                     {icon.icon}
                 </a>
             ))}
+            <a href="mailto:enockomondi305@gmail.com" target="_blank" rel="noreferrer">
+                <MdEmail size={25} />
+            </a>
         </div>
     )
 }

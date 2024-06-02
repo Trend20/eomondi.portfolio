@@ -25,9 +25,9 @@
 
 .contact-details{
   display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-details h1{
@@ -38,8 +38,8 @@ justify-content: center;
 .contact-details p{
   line-height: 1.5;
   text-align: center;
-  padding: 20px 0px;
-  width: 70%;
+  padding: 20px 0;
+  width: 50%;
   font-size: 0.9rem;
 }
 
