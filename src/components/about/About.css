@@ -38,10 +38,6 @@
   margin-top: 40px;
 }
 
-/*.skills{*/
-/*  display:flex;*/
-/*}*/
-
 /* responsiveness */
 
 @media screen and (max-width: 768px) {
@@ -71,15 +67,6 @@
   .content_paragraph {
     width: 100%;
   }
-
-  .languages {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    height: auto;
-    width: 100%;
-    margin-top: 10px;
-  }
-
   .tech_list {
     width: 100%;
   }

@@ -10,15 +10,16 @@ const AboutMe = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
   return (
     <div className="about-me" id="about">
       <SectionHeader heading="About Me" overlayText="About" />
-      <div className="flex justify-start space-x-8 mt-10 w-full">
-        <div className="w-1/4">
-          <img src={profileImg} alt="profile-pic" />
+      <div className="flex flex-col lg:flex-row justify-start space-y-8 lg:space-y-0 lg:space-x-8 mt-10 w-full">
+        <div className="lg:w-1/4 w-full lg:block hidden">
+          <img src={profileImg} alt="profile-pic" className="w-3/4 lg:w-full" />
         </div>
         <div
-          className="description w-3/4 ml-20"
+          className="description lg:w-3/4 w-full"
           data-aos="fade-down"
           data-aos-duration="1500"
         >
@@ -30,9 +31,9 @@ const AboutMe = () => {
             </p>
             <p className="content_paragraph">
               Currently, I focus on helping businesses and individuals scale by
-              building the performant and scalable web applications using{" "}
-              <b className="text-[#cc2121]"> Javascript </b>,
-              <b className="text-[#cc2121]"> Golang </b> and{" "}
+              building performant and scalable web applications using{" "}
+              <b className="text-[#cc2121]">Javascript</b>,{" "}
+              <b className="text-[#cc2121]">Golang</b>, and{" "}
               <b className="text-[#cc2121]">Typescript</b>.
             </p>
           </div>

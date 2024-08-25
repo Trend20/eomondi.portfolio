@@ -1,4 +1,4 @@
-import {useContext, Suspense, lazy} from "react";
+import { useContext, Suspense, lazy } from "react";
 import "./App.css";
 import "aos/dist/aos.css";
 import { ThemeContext } from "./context/ThemeContext";
@@ -11,24 +11,27 @@ const Navbar = lazy(() => import("./components/nav/Navbar"));
 const Start = lazy(() => import("./components/start/Start"));
 const Work = lazy(() => import("./components/work/Work"));
 
-const App = () =>{
+const App = () => {
   // AOS.init()
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className={`btn px-52 ${darkMode ? "btn-dark" : "btn-light"}`} id="app">
-     <ErrorBoundary>
-         <Suspense fallback={<Loader />}>
-             <Navbar />
-             <Start />
-             <AboutMe />
-             <Work />
-             <Contact />
-         </Suspense>
-     </ErrorBoundary>
+    <div
+      className={`btn lg:px-52 px-4 ${darkMode ? "btn-dark" : "btn-light"}`}
+      id="app"
+    >
+      <ErrorBoundary>
+        <Suspense fallback={<Loader />}>
+          <Navbar />
+          <Start />
+          <AboutMe />
+          <Work />
+          <Contact />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
-}
+};
 
 export default App;
