@@ -13,10 +13,11 @@ import {
   SiJest,
   SiDocker,
   SiHtml5,
-  SiCss3
+  SiCss3,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaNodeJs } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { DiMaterializecss } from "react-icons/di";
 import { v4 as uuidv4 } from "uuid";
 import bruImg from "../assets/images/bru.png";
@@ -37,25 +38,25 @@ export const socialLinkData = [
     name: "Github",
     socialLink: "https://github.com/Trend20",
     id: uuidv4(),
-    icon: <FiGithub size={25}/>,
+    icon: <FiGithub size={25} />,
   },
   {
     name: "LinkedIn",
     socialLink: "https://www.linkedin.com/in/enock-omondi/",
     id: uuidv4(),
-    icon: <FiLinkedin size={25}/>,
+    icon: <FiLinkedin size={25} />,
   },
   {
     name: "Twitter",
     socialLink: "https://twitter.com/dev_enock",
     id: uuidv4(),
-    icon: <FiTwitter size={25}/>,
+    icon: <FiTwitter size={25} />,
   },
   {
     name: "Hashnode",
     socialLink: "https://hashnode.com/@DevEnock",
     id: uuidv4(),
-    icon: <SiHashnode size={25}/>,
+    icon: <SiHashnode size={25} />,
   },
 ];
 
@@ -64,110 +65,106 @@ export const socialLinkData = [
 export const workData = [
   {
     img: bruImg,
-    description:
-      "Official Website for Brú Finance.",
+    description: "Official Website for Brú Finance.",
     title: "BruFinance",
     projectLink: "https://bru.finance/",
-    stack:[
+    stack: [
       {
-        id:1,
-        name:'NextJS'
+        id: 1,
+        name: "NextJS",
       },
       {
-        id:2,
-        name:'MUI'
+        id: 2,
+        name: "MUI",
       },
       {
-        id:3,
-        name:'Typescript'
+        id: 3,
+        name: "Typescript",
       },
       {
-        id:4,
-        name:'Redux'
+        id: 4,
+        name: "Redux",
       },
       {
-        id:5,
-        name:'Tailwind'
-      }
-    ]
+        id: 5,
+        name: "Tailwind",
+      },
+    ],
   },
   {
     img: stylerImg,
-    description:
-      "Built a fashion marketplace.",
+    description: "Built a fashion marketplace.",
     title: "Styler",
     projectLink: "https://react-typescript-e-commerce-template.vercel.app/",
     gitLink: "https://github.com/Trend20/Styler",
-    stack:[
+    stack: [
       {
-        id:1,
-        name:'React'
+        id: 1,
+        name: "React",
       },
       {
-        id:2,
-        name:'Typescript'
+        id: 2,
+        name: "Typescript",
       },
       {
-        id:3,
-        name:'MUI'
+        id: 3,
+        name: "MUI",
       },
       {
-        id:4,
-        name:'Redux Toolkit'
-      }
-    ]
+        id: 4,
+        name: "Redux Toolkit",
+      },
+    ],
   },
   {
     img: cronyImg,
-    description:
-      "A platform that helps developers easily access third-party libraries.",
+    description: "Access third-party libraries seamlessly.",
     title: "LCluster",
     projectLink: "https://code-crony.vercel.app/",
     gitLink: "https://github.com/Trend20/Lcluster-frontendl",
-    stack:[
+    stack: [
       {
-        id:1,
-        name:'NextJS'
+        id: 1,
+        name: "NextJS",
       },
       {
-        id:2,
-        name:'Tailwind'
+        id: 2,
+        name: "Tailwind",
       },
       {
-        id:3,
-        name:'Prisma'
+        id: 3,
+        name: "Prisma",
       },
       {
-        id:4,
-        name:'Typescript'
-      }
-    ]
+        id: 4,
+        name: "Typescript",
+      },
+    ],
   },
   {
     img: looperImg,
-    description:
-        "A browser extension that helps you to manage your bookmarks.",
+    description: "A browser extension that helps you to manage your bookmarks.",
     title: "Looper",
     projectLink: "https://looper-ten.vercel.app/",
     gitLink: "https://github.com/Trend20/looper",
-    stack:[
+    stack: [
       {
-        id:1,
-        name:'NextJS'
+        id: 1,
+        name: "NextJS",
       },
       {
-        id:2,
-        name:'Tailwind'
+        id: 2,
+        name: "Tailwind",
       },
       {
-        id:3,
-        name:'Prisma'
+        id: 3,
+        name: "Prisma",
       },
       {
-        id:4,
-        name:'Typescript'
-      }
-    ]
+        id: 4,
+        name: "Typescript",
+      },
+    ],
   },
 ];
 
@@ -182,6 +179,11 @@ export const skillsData = [
     icon: <SiTypescript size={25} fill="#007acc" />,
     id: uuidv4(),
     name: "Typescript",
+  },
+  {
+    icon: <FaGolang size={25} fill="#007acc" />,
+    id: uuidv4(),
+    name: "Golang",
   },
   {
     icon: <SiReact size={25} fill="#0074a6" />,

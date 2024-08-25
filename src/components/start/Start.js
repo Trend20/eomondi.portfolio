@@ -22,11 +22,9 @@ const Start = () => {
         <div className="about_heading">
             <TypeAnimation
                 sequence={[
-                    'Hello visitor 👋, I\'m Enock',
+                    'Hello 👋, I\'m Enock',
                     1000,
                     'Software Engineer 💻',
-                    1000,
-                    'I speak in Javascript 😀',
                     1000,
                 ]}
                 wrapper="span"

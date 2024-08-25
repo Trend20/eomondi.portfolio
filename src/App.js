@@ -11,7 +11,7 @@ const Navbar = lazy(() => import("./components/nav/Navbar"));
 const Start = lazy(() => import("./components/start/Start"));
 const Work = lazy(() => import("./components/work/Work"));
 
-function App() {
+const App = () =>{
   // AOS.init()
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
